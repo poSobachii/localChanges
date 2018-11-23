@@ -1,4 +1,4 @@
-package x011MyProject.addingMaxNumbers;
+package x020.MyProject.addMaxNmbrs;
 
 import java.util.*;
 import java.util.Scanner;

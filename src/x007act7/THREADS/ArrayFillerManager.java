@@ -1,4 +1,4 @@
-package x007act7;
+package x007act7.THREADS;
 
 import java.util.LinkedList;
 

@@ -1,6 +1,4 @@
-package x013BootcampAplication;
-
-import java.util.Arrays;
+package x018.BootcampAplication;
 
 public class Bootcamp {
 

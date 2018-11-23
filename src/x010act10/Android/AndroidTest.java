@@ -1,4 +1,4 @@
-package x010act10;
+package x010act10.Android;
 
 import android.graphics.drawable.ColorDrawable;
 import android.support.test.espresso.NoMatchingViewException;

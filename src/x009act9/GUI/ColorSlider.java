@@ -1,4 +1,4 @@
-package x009act9;
+package x009act9.GUI;
 
 import java.awt.Color;
 import java.awt.EventQueue;

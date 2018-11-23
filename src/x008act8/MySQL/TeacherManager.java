@@ -1,4 +1,4 @@
-package x008act8;
+package x008act8.MySQL;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
