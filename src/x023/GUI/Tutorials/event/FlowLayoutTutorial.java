@@ -12,7 +12,7 @@ public class FlowLayoutTutorial {
 	JButton btn3 = new JButton("Third");
 	
 	public FlowLayoutTutorial() {
-		panel.setLayout(new FlowLayout(FlowLayout.RIGHT,3,3));
+		panel.setLayout(new FlowLayout(FlowLayout.CENTER,50,50));
 		panel.add(btn1);
 		panel.add(btn2);
 		panel.add(btn3);
