@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+ 		http://www.springframework.org/schema/beans
+ 		http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+	<bean id="client" class="x025.SpringBasicsLessons.SpringBasicsLesson2.beans.Client"/>
+
+	<bean id="eventLogger" class="com.yet.spring.x025.SpringBasicsLessons.SpringBasicsLesson4.loggers.ConsoleEventLogger" />
+
+	<bean id="app" class="x025.SpringBasicsLessons.SpringBasicsLesson2.App"/>
+
+</beans>

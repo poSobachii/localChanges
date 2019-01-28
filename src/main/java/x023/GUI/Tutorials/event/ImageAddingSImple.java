@@ -8,7 +8,7 @@ public class ImageAddingSImple {
         JFrame frame = new JFrame("DefaultButton");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        JButton button2 = new JButton(new ImageIcon("src/upwards.png"));
+        JButton button2 = new JButton(new ImageIcon("src/main/resources/upwards1.png"));
         frame.add(button2);
         frame.setSize(300, 200);
         frame.setVisible(true);
