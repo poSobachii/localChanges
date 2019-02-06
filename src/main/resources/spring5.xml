@@ -5,35 +5,42 @@
  		http://www.springframework.org/schema/beans
  		http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
 
-	<bean id="client" class="x025.SpringBasicsLessons.SpringBasicsLesson5.beans.Client">
+	<bean id="client" class="x025.SpringBasicsLessons.SpringBasicsLesson5.beans.Client"
+        init-method="starting">
 		<constructor-arg index="0" value="1" />
 		<constructor-arg value="John Smith" />
 	</bean>
 
-	<bean id="eventLogger" class="x025.SpringBasicsLessons.SpringBasicsLesson5.loggers.ConsoleEventLogger" />
+	<bean id="eventLogger" class="x025.SpringBasicsLessons.SpringBasicsLesson5.loggers.ConsoleEventLogger"
+    init-method="starting"/>
 
-	<bean id="app" class="x025.SpringBasicsLessons.SpringBasicsLesson5.App">
+	<bean id="app" class="x025.SpringBasicsLessons.SpringBasicsLesson5.App"
+        init-method="starting">
 		<constructor-arg ref="client" />
 		<constructor-arg ref="eventLogger" />
+        <!--    <constructor-arg ref="fileEventLogger" />     -->
+        <!--    <constructor-arg ref="eventLogger" />     -->
 	</bean>
 	
-	<bean id="event" class="x025.SpringBasicsLessons.SpringBasicsLesson5.beans.Event" scope="prototype">
-        <constructor-arg>
+	<bean id="event" class="x025.SpringBasicsLessons.SpringBasicsLesson5.beans.Huent" scope="prototype"
+        init-method="starting">                                     <!-- scope="prototype" -->
+        <constructor-arg>                                              <!-- scope="singleton" -->
             <bean class="java.util.Date"/>
         </constructor-arg>
         <constructor-arg ref="dateFormat"/>
     </bean>
     
-    <bean id="dateFormat" class="java.text.DateFormat"
-        factory-method="getDateTimeInstance"/>
+    <bean id="dateFormat" class="java.text.SimpleDateFormat">
+    <constructor-arg value="MM/dd/yyyy HH:mm:ss:SS"/>
+    </bean>
     
     <bean id="fileEventLogger" class="x025.SpringBasicsLessons.SpringBasicsLesson5.loggers.FileEventLogger"
-        init-method="init">
-        <constructor-arg value="target/events_log.txt"/>
+        init-method="huinit">   <!--  abstract="true" -->
+        <constructor-arg value="target/events_log1.txt"/>
     </bean>
     
     <bean id="cacheFileEventLogger" class="x025.SpringBasicsLessons.SpringBasicsLesson5.loggers.CacheFileEventLogger"
-        destroy-method="destroy">
+        init-method="starting" destroy-method="destroy">
         <constructor-arg value="target/events_log.txt"/>
         <constructor-arg value="5"/>
     </bean>

@@ -3,38 +3,46 @@ package x025.SpringBasicsLessons.SpringBasicsLesson5;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import x025.SpringBasicsLessons.SpringBasicsLesson5.beans.Client;
-import x025.SpringBasicsLessons.SpringBasicsLesson5.beans.Event;
-import x025.SpringBasicsLessons.SpringBasicsLesson5.loggers.EventLogger;
+import x025.SpringBasicsLessons.SpringBasicsLesson5.beans.Huent;
+import x025.SpringBasicsLessons.SpringBasicsLesson5.loggers.EventLoggerINTRAFACE;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class App {
 
     private Client client;
 
-    private EventLogger eventLogger;
+    private EventLoggerINTRAFACE eventLogger;
     
     public static void main(String[] args) {
         ConfigurableApplicationContext ctx = new ClassPathXmlApplicationContext("spring5.xml");
         App app = (App) ctx.getBean("app");
         
-        Event event = ctx.getBean(Event.class);
-        app.logEvent(event, "Some event for 1");
+        Huent event = ctx.getBean(Huent.class);
+        app.logEventMethod(event, "Some event for 1");
         
-        event = ctx.getBean(Event.class);
-        app.logEvent(event, "Some event for 2");
+        event = ctx.getBean(Huent.class);
+        app.logEventMethod(event, "Some event for 2");
         
         ctx.close();
     }
     
-    public App(Client client, EventLogger eventLogger) {
+    public App(Client client, EventLoggerINTRAFACE eventLogger) {
         super();
         this.client = client;
         this.eventLogger = eventLogger;
     }
 
-    private void logEvent(Event event, String msg) {
+    private void logEventMethod(Huent event, String msg) {
         String message = msg.replaceAll(client.getId(), client.getFullName());
         event.setMsg(message);
         eventLogger.logEvent(event);
+    }
+
+    private void starting(){
+        Client.TimeCheck("App bean");
     }
 
 }

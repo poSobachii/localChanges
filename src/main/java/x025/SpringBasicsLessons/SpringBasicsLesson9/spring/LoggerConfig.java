@@ -49,7 +49,7 @@ public class LoggerConfig {
     }
 
     @Bean
-    public EventLogger defaultLogger() {
+    public EventLogger defaultLoggerss() {
         return cacheEventLogger;
     }
 

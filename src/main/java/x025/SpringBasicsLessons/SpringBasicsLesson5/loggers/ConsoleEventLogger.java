@@ -1,12 +1,16 @@
 package x025.SpringBasicsLessons.SpringBasicsLesson5.loggers;
 
-import x025.SpringBasicsLessons.SpringBasicsLesson5.beans.Event;
+import x025.SpringBasicsLessons.SpringBasicsLesson5.beans.Huent;
+import x025.SpringBasicsLessons.SpringBasicsLesson5.beans.Client;
 
-public class ConsoleEventLogger implements EventLogger {
+public class ConsoleEventLogger implements EventLoggerINTRAFACE {
 
-	@Override
-	public void logEvent(Event event) {
+	public void logEvent(Huent event) {
 		System.out.println(event.toString());
+	}
+
+	public void starting(){
+		Client.TimeCheck("ConsoleEventLogger bean");
 	}
 
 }

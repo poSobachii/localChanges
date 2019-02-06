@@ -6,10 +6,19 @@ public class Client {
 
 	private String fullName;
 
+	private String age;
+
 	public Client(String id, String fullName) {
 		super();
 		this.id = id;
 		this.fullName = fullName;
+	}
+
+	public Client(String id, String fullName, String age) {
+		super();
+		this.id = id;
+		this.fullName = fullName;
+		this.age=age;
 	}
 
 	public String getId() {
@@ -24,6 +33,13 @@ public class Client {
 		return fullName;
 	}
 
+	public void setAge(String age){
+		this.age = age;
+	}
+
+	public String getAge(){
+		return age;
+	}
 	public void setFullName(String fullName) {
 		this.fullName = fullName;
 	}

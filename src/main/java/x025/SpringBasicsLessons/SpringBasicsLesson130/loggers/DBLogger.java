@@ -39,7 +39,7 @@ public class DBLogger extends AbstractLogger {
                 .map(Event::getId)
                 .map(String::valueOf)
                 .collect(Collectors.joining(", "));
-        System.out.println("All DB Event ids: " + allEventIds);
+        System.out.println("All DB Huivent ids: " + allEventIds);
     }
 
     private void createDBSchema() {
@@ -84,7 +84,7 @@ public class DBLogger extends AbstractLogger {
     private void updateEventAutoId() {
         int maxId = getMaxId();
         Event.initAutoId(maxId + 1);
-        System.out.println("Initialized Event.AUTO_ID to " + maxId);
+        System.out.println("Initialized Huivent.AUTO_ID to " + maxId);
     }
 
     private int getMaxId() {

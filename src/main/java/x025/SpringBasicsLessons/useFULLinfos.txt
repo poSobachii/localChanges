@@ -1,0 +1,20 @@
+tutorial link ---->  https://www.youtube.com/watch?v=3wBteulZaAs
+tutorial lesson git ---->  https://github.com/yuriytkach/spring-basics-course-project/releases
+
+spring 4  - как правильно приобразовывать время в секунды и тп
+как обозначать классы в коде ref на xml
+
+spring 5  - разница писать ивенты  в консоль или в файл
+лог со временем по созданию бинов
+юзаешь в строке бина abstratc="true", чтобы не создавать бин, но можно использовать как родителя
+depends-on="app,hujapp,etc.." - бин создается только после конкретных условий
+
+spring 7  - вставить list и map В бины.
+
+spring 8 - как вытащить данные в отдельный файл пропертис. что такой utils
+
+spring 9 - annotations
+
+spring 11 - AOP
+
+spring 12 - аспекты POINTCUT, BEFORE AFTER etc.

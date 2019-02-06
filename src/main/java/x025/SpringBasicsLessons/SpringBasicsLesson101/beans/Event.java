@@ -57,7 +57,7 @@ public class Event {
 
     @Override
     public String toString() {
-        return "Event [id=" + id + ", msg=" + msg + ", date="
+        return "Huivent [id=" + id + ", msg=" + msg + ", date="
                 + (dateFormat != null ? dateFormat.format(date) : date) + "]";
     }
 

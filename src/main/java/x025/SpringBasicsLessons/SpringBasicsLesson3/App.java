@@ -12,12 +12,11 @@ public class App {
     private EventLogger eventLogger;
     
     public static void main(String[] args) {
-        @SuppressWarnings("resource") // We will remove this suppress in further lessons 
         ApplicationContext ctx = new ClassPathXmlApplicationContext("spring3.xml");
         App app = (App) ctx.getBean("app");
         
-        app.logEvent("Some event for 1");
-        app.logEvent("Some event for 2");
+        app.logEvent("Some event for 1 and He is 1");
+        app.logEvent("Some event for 2 and He is 2");
     }
     
     public App(Client client, EventLogger eventLogger) {
@@ -27,7 +26,7 @@ public class App {
     }
 
     private void logEvent(String msg) {
-        String message = msg.replaceAll(client.getId(), client.getFullName());
+        String message = msg.replaceFirst(client.getId(), client.getFullName()).replaceFirst(client.getId(), client.getAge());
         eventLogger.logEvent(message);
     }
 

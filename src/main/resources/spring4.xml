@@ -17,14 +17,31 @@
 		<constructor-arg ref="eventLogger" />
 	</bean>
 	
-	<bean id="event" class="x025.SpringBasicsLessons.SpringBasicsLesson4.beans.Event" scope="prototype">
+	<bean id="event" class="x025.SpringBasicsLessons.SpringBasicsLesson4.beans.Huivent" scope="prototype">
         <constructor-arg>
             <bean class="java.util.Date"/>
         </constructor-arg>
         <constructor-arg ref="dateFormat"/>
     </bean>
-    
-    <bean id="dateFormat" class="java.text.DateFormat"
-        factory-method="getDateTimeInstance"/>
+
+	<bean id="dateFormat" class="java.text.SimpleDateFormat">
+		<constructor-arg value="MM/dd/yyyy HH:mm:ss:SS"/>
+	</bean>
+
+	<!--
+        <bean id="dateFormat" class="java.text.DateFormat"
+              factory-method="getDateTimeInstance"/>
+            factory-method="getDateInstance"/>
+             factory-method="getTimeInstance"/>
+         -->
+
+	<!--
+       <bean id="dateFormat" class="java.text.SimpleDateFormat">
+       <constructor-arg value="MM/dd/yyyy HH:mm:ss:SS"/>
+       </bean>
+
+   use scope="singleton" to check miliseconds
+   -->
+
 
 </beans>

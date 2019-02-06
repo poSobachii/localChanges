@@ -28,7 +28,7 @@ public class ConsoleLoggerLimitAspect {
         this.otherLogger = otherLogger;
     }
 
-    @Around("execution(* *.logEvent(x025.SpringBasicsLessons.SpringBasicsLesson121.beans.Event)) "
+    @Around("execution(* *.logEvent(x025.SpringBasicsLessons.SpringBasicsLesson121.beans.Huent)) "
             + "&& within(x025.SpringBasicsLessons.SpringBasicsLesson121.loggers.ConsoleEventLogger) "
             + "&& args(evt)")
     public void aroundLogEvent(ProceedingJoinPoint jp, Event evt) throws Throwable {

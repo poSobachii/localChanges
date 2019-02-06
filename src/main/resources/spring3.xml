@@ -8,6 +8,9 @@
 <bean id="client" class="x025.SpringBasicsLessons.SpringBasicsLesson3.beans.Client">
 	<constructor-arg index="0" value="1" />
 	<constructor-arg value="John Smith" />
+	<constructor-arg value="29 years old" />
+	<!-- <constructor-arg index="1" value="John Smith" />
+	 <constructor-arg index="0" value="1" />-->
 </bean>
 
 <bean id="eventLogger" class="x025.SpringBasicsLessons.SpringBasicsLesson3.loggers.ConsoleEventLogger" />

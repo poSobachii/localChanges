@@ -20,6 +20,9 @@ public class App {
     public static void main(String[] args) {
         ConfigurableApplicationContext ctx = new ClassPathXmlApplicationContext("spring7.xml");
         App app = (App) ctx.getBean("app");
+
+        Client client = ctx.getBean(Client.class);
+        System.out.println("Client says: " + client.getGreeting());
         
         Event event = ctx.getBean(Event.class);
         app.logEvent(EventType.INFO, event, "Some event for 1");
@@ -29,7 +32,7 @@ public class App {
         
         event = ctx.getBean(Event.class);
         app.logEvent(null, event, "Some event for 3");
-        
+
         ctx.close();
     }
     
@@ -43,7 +46,9 @@ public class App {
     private void logEvent(EventType eventType, Event event, String msg) {
         String message = msg.replaceAll(client.getId(), client.getFullName());
         event.setMsg(message);
-        
+
+
+
         EventLogger logger = loggers.get(eventType);
         if (logger == null) {
             logger = defaultLogger;

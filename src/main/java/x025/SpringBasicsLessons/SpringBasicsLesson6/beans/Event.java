@@ -39,7 +39,7 @@ public class Event {
 
 	@Override
 	public String toString() {
-		return "Event [id=" + id + ", msg=" + msg + ", date=" + dateFormat.format(date) + "]";
+		return "Huivent [id=" + id + ", msg=" + msg + ", date=" + dateFormat.format(date) + "]";
 	}
 
 }

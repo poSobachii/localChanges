@@ -22,7 +22,7 @@ public class App {
     @Autowired
     private Client client;
 
-    @Value("#{ T(x025.SpringBasicsLessons.SpringBasicsLesson121.beans.Event).isDay(8,17) ? "
+    @Value("#{ T(x025.SpringBasicsLessons.SpringBasicsLesson121.beans.Huent).isDay(8,17) ? "
             + "cacheFileEventLogger : consoleEventLogger }")
     private EventLogger defaultLogger;
 

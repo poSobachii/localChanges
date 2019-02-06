@@ -4,7 +4,7 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class Event {
+public class Huent {
 	
 	private static final AtomicInteger AUTO_ID = new AtomicInteger(0);
 	
@@ -14,7 +14,7 @@ public class Event {
 
 	private DateFormat dateFormat;
 	
-	public Event(Date date, DateFormat df) {
+	public Huent(Date date, DateFormat df) {
 		this.id = AUTO_ID.getAndIncrement();
 		
 		this.date = date;
@@ -37,9 +37,13 @@ public class Event {
 		return date;
 	}
 
-	@Override
+
 	public String toString() {
-		return "Event [id=" + id + ", msg=" + msg + ", date=" + dateFormat.format(date) + "]";
+		return "THE FIFTH EMINEM [id=" + id + ", msg=" + msg + ", date=" + dateFormat.format(date) + "]";
+	}
+
+	private void starting(){
+		Client.TimeCheck("Huent bean");
 	}
 
 }

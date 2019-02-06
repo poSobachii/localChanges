@@ -19,7 +19,7 @@ public class App {
     @Autowired
     private Client client;
 
-    @Resource(name = "defaultLogger")
+    @Resource(name = "defaultLoggerss")
     private EventLogger defaultLogger;
 
     @Resource(name = "loggerMap")

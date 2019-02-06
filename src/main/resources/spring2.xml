@@ -7,7 +7,7 @@
 
 	<bean id="client" class="x025.SpringBasicsLessons.SpringBasicsLesson2.beans.Client"/>
 
-	<bean id="eventLogger" class="com.yet.spring.x025.SpringBasicsLessons.SpringBasicsLesson4.loggers.ConsoleEventLogger" />
+	<bean id="eventLogger" class="x025.SpringBasicsLessons.SpringBasicsLesson4.loggers.ConsoleEventLogger" />
 
 	<bean id="app" class="x025.SpringBasicsLessons.SpringBasicsLesson2.App"/>
 

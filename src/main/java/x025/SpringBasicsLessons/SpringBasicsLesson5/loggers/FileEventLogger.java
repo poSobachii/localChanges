@@ -1,12 +1,12 @@
 package x025.SpringBasicsLessons.SpringBasicsLesson5.loggers;
 
 import org.apache.commons.io.FileUtils;
-import x025.SpringBasicsLessons.SpringBasicsLesson5.beans.Event;
-
+import x025.SpringBasicsLessons.SpringBasicsLesson5.beans.Huent;
+import x025.SpringBasicsLessons.SpringBasicsLesson5.beans.Client;
 import java.io.File;
 import java.io.IOException;
 
-public class FileEventLogger implements EventLogger {
+public class FileEventLogger implements EventLoggerINTRAFACE {
 	
 	private File file;
 	private String filename;
@@ -15,7 +15,8 @@ public class FileEventLogger implements EventLogger {
 		this.filename = filename;
 	}
 	
-	public void init() {
+	public void huinit() {
+		Client.TimeCheck("FileEventlogger bean");
 		file = new File(filename);
 		if (file.exists() && !file.canWrite()) {
 			throw new IllegalArgumentException("Can't write to file " + filename);
@@ -30,7 +31,7 @@ public class FileEventLogger implements EventLogger {
 	}
 
 	@Override
-	public void logEvent(Event event) {
+	public void logEvent(Huent event) {
 		try {
 			FileUtils.writeStringToFile(file, event.toString(), true);
 		} catch (IOException e) {

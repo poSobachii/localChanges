@@ -4,9 +4,9 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class Event {
+public class Huivent {
 	
-	private static final AtomicInteger AUTO_ID = new AtomicInteger(0);
+	private static final AtomicInteger AUTO_ID = new AtomicInteger(0); // from which number it will count ID's
 	
 	private int id;
 	private String msg;
@@ -14,7 +14,7 @@ public class Event {
 
 	private DateFormat dateFormat;
 	
-	public Event(Date date, DateFormat df) {
+	public Huivent(Date date, DateFormat df) {
 		this.id = AUTO_ID.getAndIncrement();
 		
 		this.date = date;
@@ -37,9 +37,14 @@ public class Event {
 		return date;
 	}
 
-	@Override
-	public String toString() {
-		return "Event [id=" + id + ", msg=" + msg + ", date=" + dateFormat.format(date) + "]";
+//	@Override
+//	public String toString(){ return "AMMA BITCH";}    // why is that for ?????
+
+	public String toHujing() {
+		return "EEEEEEEEEEvent [id=" + id + ", msg=" + msg + ", date= " + dateFormat.format(date) + "]";
 	}
+//	public String toHujing() {
+//		return "EEEEEEEEEEvent [id=" + id + ", msg=" + msg + ", date= " + date + "]";
+//	}
 
 }
