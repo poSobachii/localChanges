@@ -11,7 +11,7 @@ public class JDBCconnectionTest {   // Save as "JdbcSelectTest.java"
         try (
                 // Step 1: Allocate a database 'Connection' object
                 Connection conn = DriverManager.getConnection(
-                        "jdbc:mysql://localhost:3306/ebookshop", "root", "12345");
+                        "jdbc:mysql://localhost:3306/ebookshop", "root", "12345678");
                 // MySQL: "jdbc:mysql://hostname:port/databaseName", "username", "password"
 
                 // Step 2: Allocate a 'Statement' object in the Connection
