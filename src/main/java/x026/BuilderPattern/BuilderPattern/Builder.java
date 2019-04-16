@@ -1,4 +1,4 @@
-package x026.BuilderPattern;
+package x026.BuilderPattern.BuilderPattern;
 
 /**
  * Builder interface defines all possible ways to configure a product.

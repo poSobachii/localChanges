@@ -1,4 +1,4 @@
-package x026.BuilderPattern;
+package x026.BuilderPattern.BuilderPattern;
 
 /**
  * Demo class. Everything comes together here.

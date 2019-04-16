@@ -1,4 +1,4 @@
-package x026.BuilderPattern;
+package x026.BuilderPattern.BuilderPattern;
 
 /**
  * Just another feature of a car.
