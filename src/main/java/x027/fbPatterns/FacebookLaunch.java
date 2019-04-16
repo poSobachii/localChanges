@@ -1,4 +1,4 @@
-package u001Usefull;
+package x027.fbPatterns;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
