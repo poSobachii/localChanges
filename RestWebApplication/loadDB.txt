@@ -1,0 +1,39 @@
+
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+
+
+@Configuration
+public class LoadThatBeast {
+
+    @Bean
+    CommandLineRunner initDatabase(final BookRepository bookrep) {
+        return args -> {
+            bookrep.save(new Book("English","Vocabulary", "PrintUK", "3010"));
+            bookrep.save(new Book("Thriller","St.King","California Inc", "3005"));
+            bookrep.save(new Book("Avengers V","MARVEL","21st FOX","3019"));
+            bookrep.save(new Book("Bird","NatGeo","AmericanPress", "3007"));
+            bookrep.save(new Book("Fantasy","St.King","California Inc", "3010"));
+            bookrep.save(new Book("Danish","Vocabulary","PrintUK","3012"));
+            bookrep.save(new Book("Dog","NatGeo","AmericanPress", "3007"));
+            bookrep.save(new Book("Drama","St.King","California Inc", "3007"));
+            bookrep.save(new Book("Guardians GALAXY 2","MARVEL","21st FOX","3018"));
+            bookrep.save(new Book("Cow","NatGeo","AmericanPress", "3009"));
+            bookrep.save(new Book("Avengers","MARVEL","21st FOX","3015"));
+            bookrep.save(new Book("Spanish","Vocabulary","PrintUK", "3011"));
+            bookrep.save(new Book("Horse","NatGeo","AmericanPress", "3008"));
+            bookrep.save(new Book("Adventure","St.King","Shobizz", "3009"));
+            bookrep.save(new Book("Deutsch","Vocabulary", "PrintUK", "3010"));
+            bookrep.save(new Book("Science","St.King","Shobizz", "3010"));
+            bookrep.save(new Book("Cpt Marvel","MARVEL","21st FOX","3019"));
+            bookrep.save(new Book("Guardians GALAXY","MARVEL","21st FOX","3016"));
+            bookrep.save(new Book("French","Vocabulary", "PrintUK", "3010"));
+            bookrep.save(new Book("Cat","NatGeo","AmericanPress", "3007"));
+            bookrep.save(new Book("Shazamm","MARVEL","21st FOX","3017"));
+            bookrep.save(new Book("Russian","Vocabulary", "PrintUK", "3010"));
+        };
+    }
+}

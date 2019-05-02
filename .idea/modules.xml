@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/RestWebApplication/RestWebApplication.iml" filepath="$PROJECT_DIR$/RestWebApplication/RestWebApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringSheduler/SpringSheduler.iml" filepath="$PROJECT_DIR$/SpringSheduler/SpringSheduler.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo.iml" filepath="$PROJECT_DIR$/demo.iml" />
     </modules>
   </component>

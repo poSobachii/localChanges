@@ -1,0 +1,10 @@
+-Dconn.prop=h2
+
+
+spring.h2.console.enabled: true
+http://localhost:8080/h2-console
+jdbc:h2:mem:testdb
+
+
+SET @@global.time_zone = '+00:00';
+SET @@session.time_zone = '+00:00';

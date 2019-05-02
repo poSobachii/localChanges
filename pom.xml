@@ -5,7 +5,13 @@
 
     <groupId>com.example</groupId>
     <artifactId>demo</artifactId>
+    <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
+    <modules>
+        <module>SpringSchedule</module>
+        <module>SpringSheduler</module>
+        <module>RestWebApplication</module>
+    </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>

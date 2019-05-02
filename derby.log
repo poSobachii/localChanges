@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Wed Jan 30 15:59:29 EET 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-0168-9f0e-bb53-0000069198f0 
+on database directory C:\Users\aleksandrs.grisanovs\IdeaProjects\AccentureBootcamp\target\db with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
+Loaded from file:/C:/Users/aleksandrs.grisanovs/.m2/repository/org/apache/derby/derby/10.13.1.1/derby-10.13.1.1.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_202-b08
+user.dir=C:\Users\aleksandrs.grisanovs\IdeaProjects\AccentureBootcamp
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

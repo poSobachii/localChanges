@@ -1,4 +1,4 @@
-package x027.fbPatterns;
+package x027.fbPatternsSelenium;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
