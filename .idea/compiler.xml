@@ -6,22 +6,29 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="RestWebApplication" />
-        <module name="SpringSheduler" />
+        <module name="FBapi" />
+        <module name="Rest" />
+        <module name="Schedulling" />
+        <module name="SeleniumTests" />
+        <module name="YML" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo" target="1.8" />
-      <module name="RestWebApplication" target="1.8" />
+      <module name="FBapi" target="1.8" />
+      <module name="Rest" target="1.8" />
+      <module name="Schedulling" target="1.8" />
+      <module name="SeleniumTests" target="1.7" />
       <module name="SpringSchedule" target="1.8" />
-      <module name="SpringSheduler" target="1.8" />
+      <module name="YML" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="RestWebApplication" options="" />
+      <module name="Rest" options="" />
+      <module name="Schedulling" options="-parameters" />
       <module name="SpringSchedule" options="-parameters" />
-      <module name="SpringSheduler" options="-parameters" />
+      <module name="YML" options="-parameters" />
       <module name="demo" options="-parameters" />
     </option>
   </component>
