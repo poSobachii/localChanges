@@ -1,0 +1,14 @@
+package jquery.controller;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class TimeChecker {
+    public static void TimeCheck(String text) {
+        long duration = System.currentTimeMillis();
+        DateFormat simple = new SimpleDateFormat("HH:mm:ss:SSS");
+        Date result = new Date(duration);
+        System.out.println( simple.format(result) + " " + text);
+    }
+}

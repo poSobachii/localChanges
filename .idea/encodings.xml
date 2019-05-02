@@ -4,9 +4,16 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Facebook" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/FacebookApi" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HibernateTutorials" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JUnitTestExample" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SomeWebTests" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringJQueryDataTable" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringRest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringRestApp" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringSchedule" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringSheduler" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringWebExample" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringWebMockito" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringYML" charset="UTF-8" />
   </component>
 </project>

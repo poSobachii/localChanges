@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FacebookApi/FBapi.iml" filepath="$PROJECT_DIR$/FacebookApi/FBapi.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SpringRest/Rest.iml" filepath="$PROJECT_DIR$/SpringRest/Rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringRestApp/CURL examples.iml" filepath="$PROJECT_DIR$/SpringRestApp/CURL examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FacebookApi/FBapi - DevelopersForFacebook.iml" filepath="$PROJECT_DIR$/FacebookApi/FBapi - DevelopersForFacebook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringJQueryDataTable/JQueryTable.iml" filepath="$PROJECT_DIR$/SpringJQueryDataTable/JQueryTable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JUnitTestExample/Parametrizes Tests.iml" filepath="$PROJECT_DIR$/JUnitTestExample/Parametrizes Tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringRest/Rest With 3 Databases.iml" filepath="$PROJECT_DIR$/SpringRest/Rest With 3 Databases.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringSheduler/Schedulling.iml" filepath="$PROJECT_DIR$/SpringSheduler/Schedulling.iml" />
       <module fileurl="file://$PROJECT_DIR$/Facebook/SeleniumTests.iml" filepath="$PROJECT_DIR$/Facebook/SeleniumTests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HibernateTutorials/Some Hibernate Tutorials and Tests.iml" filepath="$PROJECT_DIR$/HibernateTutorials/Some Hibernate Tutorials and Tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringWebMockito/Testing Web Pages with Mockito.iml" filepath="$PROJECT_DIR$/SpringWebMockito/Testing Web Pages with Mockito.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringYML/YML.iml" filepath="$PROJECT_DIR$/SpringYML/YML.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo.iml" filepath="$PROJECT_DIR$/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringWebExample/someSortOfWebPages.iml" filepath="$PROJECT_DIR$/SpringWebExample/someSortOfWebPages.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SomeWebTests/x024.REF.iml" filepath="$PROJECT_DIR$/SomeWebTests/x024.REF.iml" />
     </modules>
   </component>
 </project>
