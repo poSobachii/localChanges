@@ -3,14 +3,28 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SpringRestApp/CURL examples.iml" filepath="$PROJECT_DIR$/SpringRestApp/CURL examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringConvertingBatch/Converting CSV adding to DB.iml" filepath="$PROJECT_DIR$/SpringConvertingBatch/Converting CSV adding to DB.iml" />
       <module fileurl="file://$PROJECT_DIR$/FacebookApi/FBapi - DevelopersForFacebook.iml" filepath="$PROJECT_DIR$/FacebookApi/FBapi - DevelopersForFacebook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringDatabaseAccess/H2.iml" filepath="$PROJECT_DIR$/SpringDatabaseAccess/H2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringJMSmessaging/JMS example of sub and message.iml" filepath="$PROJECT_DIR$/SpringJMSmessaging/JMS example of sub and message.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringSimpleJPAdatabase/JPA example.iml" filepath="$PROJECT_DIR$/SpringSimpleJPAdatabase/JPA example.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJQueryDataTable/JQueryTable.iml" filepath="$PROJECT_DIR$/SpringJQueryDataTable/JQueryTable.iml" />
       <module fileurl="file://$PROJECT_DIR$/JUnitTestExample/Parametrizes Tests.iml" filepath="$PROJECT_DIR$/JUnitTestExample/Parametrizes Tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringRestQuoting/QuotingSomeLinks.iml" filepath="$PROJECT_DIR$/SpringRestQuoting/QuotingSomeLinks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringIntegratedData/Reading Data Copying into File.iml" filepath="$PROJECT_DIR$/SpringIntegratedData/Reading Data Copying into File.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringWebHypermedia/Rest Hypermedia example.iml" filepath="$PROJECT_DIR$/SpringWebHypermedia/Rest Hypermedia example.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringRest/Rest With 3 Databases.iml" filepath="$PROJECT_DIR$/SpringRest/Rest With 3 Databases.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringSheduler/Schedulling.iml" filepath="$PROJECT_DIR$/SpringSheduler/Schedulling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringSecurity/Security Hard Example.iml" filepath="$PROJECT_DIR$/SpringSecurity/Security Hard Example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringSecurityV2/Security Simple Example.iml" filepath="$PROJECT_DIR$/SpringSecurityV2/Security Simple Example.iml" />
       <module fileurl="file://$PROJECT_DIR$/Facebook/SeleniumTests.iml" filepath="$PROJECT_DIR$/Facebook/SeleniumTests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringManagingTransactions/Simple DB example without queries.iml" filepath="$PROJECT_DIR$/SpringManagingTransactions/Simple DB example without queries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringWebActuator/Debugging With Acuator ?.iml" filepath="$PROJECT_DIR$/SpringWebActuator/Debugging With Acuator ?.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringSimpleWebInputForm/Simple web input example.iml" filepath="$PROJECT_DIR$/SpringSimpleWebInputForm/Simple web input example.iml" />
       <module fileurl="file://$PROJECT_DIR$/HibernateTutorials/Some Hibernate Tutorials and Tests.iml" filepath="$PROJECT_DIR$/HibernateTutorials/Some Hibernate Tutorials and Tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringWebValidation/Some Input Validation.iml" filepath="$PROJECT_DIR$/SpringWebValidation/Some Input Validation.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringWebMockito/Testing Web Pages with Mockito.iml" filepath="$PROJECT_DIR$/SpringWebMockito/Testing Web Pages with Mockito.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringUploadingFiles/UploadAFile.iml" filepath="$PROJECT_DIR$/SpringUploadingFiles/UploadAFile.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringYML/YML.iml" filepath="$PROJECT_DIR$/SpringYML/YML.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo.iml" filepath="$PROJECT_DIR$/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringWebExample/someSortOfWebPages.iml" filepath="$PROJECT_DIR$/SpringWebExample/someSortOfWebPages.iml" />

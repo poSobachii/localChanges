@@ -26,10 +26,10 @@ public class TempClass {
         try {
             ScriptEngineManager manager = new ScriptEngineManager();
             ScriptEngine engine = manager.getEngineByName("JavaScript");
-            String script1 = (String)"function hello() {alert(\"JS worked\");}";
+            String script1 = (String)"function Uploading() {alert(\"JS worked\");}";
             engine.eval(script1);
             Invocable inv = (Invocable) engine;
-            inv.invokeFunction("hello");
+            inv.invokeFunction("Uploading");
         }
         catch(Exception e) {
             System.out.println("error: "+ e);

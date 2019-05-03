@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 
-@RestController
+@RestController       // depends what retunr will be be // @Controller - will return page.
 @RequestMapping ("animal")    //adds string to adress --  http://localhost:8080/animal
 public class Animals {
 

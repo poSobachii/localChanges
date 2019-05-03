@@ -8,7 +8,7 @@ public class DemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
-		System.out.println("hello Spring Application");
+		System.out.println("Uploading Spring Application");
 	}
 
 	// -- http://localhost:8080/     -> after running main app, youll see AnimalSimpleClassName World in browser

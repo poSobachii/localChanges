@@ -22,6 +22,18 @@
         <option value="$PROJECT_DIR$/HibernateTutorials/pom.xml" />
         <option value="$PROJECT_DIR$/FacebookApi/pom.xml" />
         <option value="$PROJECT_DIR$/Facebook/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringSecurity/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringWebValidation/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringWebActuator/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringJMSmessaging/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringConvertingBatch/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringSecurityV2/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringWebHypermedia/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringDatabaseAccess/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringIntegratedData/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringManagingTransactions/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringSimpleJPAdatabase/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringSimpleWebInputForm/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
