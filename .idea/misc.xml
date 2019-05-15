@@ -34,6 +34,7 @@
         <option value="$PROJECT_DIR$/SpringManagingTransactions/pom.xml" />
         <option value="$PROJECT_DIR$/SpringSimpleJPAdatabase/pom.xml" />
         <option value="$PROJECT_DIR$/SpringSimpleWebInputForm/pom.xml" />
+        <option value="$PROJECT_DIR$/ParallelTesting/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

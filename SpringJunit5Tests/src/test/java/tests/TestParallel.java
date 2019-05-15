@@ -1,29 +1,22 @@
-package u001Usefull;
+package tests;
 
-import com.googlecode.junittoolbox.ParallelRunner;
-import org.junit.After;
-import org.junit.Before;
-//import org.junit.Test;
-import org.junit.FixMethodOrder;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.api.parallel.Execution;
 import org.junit.jupiter.api.parallel.ExecutionMode;
-import org.junit.runner.RunWith;
-import org.junit.runners.MethodSorters;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-//@RunWith(ParallelRunner.class)
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
-//@Execution(ExecutionMode.CONCURRENT)
-public class TestOrderingSequence {
-
+//@TestMethodOrder(MethodOrderer.Alphanumeric.class)
+@Execution(ExecutionMode.CONCURRENT)
+@ExtendWith(CustomRule.class)
+public class TestParallel {
 
     private int globalInt;
     private long duration;
-    static TestOrderingSequence  yo = new TestOrderingSequence ();
+    static TestParallel yo = new TestParallel();
 
     public void setDuration(long duration) {
         this.duration = duration;
@@ -72,18 +65,8 @@ public class TestOrderingSequence {
         Thread.sleep(1000);
     }
 
-//    @Before
-//    public void init(){
-//        System.out.println("->");
-//    }
-//
-//    @After
-//    public void ended(){
-//        System.out.println("<-");
-//    }
-
     @Test
-    public void stringAOne() throws InterruptedException {
+    public void stringEOne() throws InterruptedException {
         int temp = 1111;
         System.out.println(" #1 triggered: " + temp);
         System.out.println(" #1 current global: " + globalInt);
@@ -96,7 +79,7 @@ public class TestOrderingSequence {
 
     @Test
     @Disabled
-    public void stringBTwo() throws InterruptedException {
+    public void stringFTwo() throws InterruptedException {
         int temp = 2222;
         System.out.println(" #2 triggered: " + temp);
         System.out.println(" #2 current global: " + globalInt);
@@ -108,7 +91,7 @@ public class TestOrderingSequence {
     }
 
     @Test
-    public void stringCThree() throws InterruptedException {
+    public void stringBThree() throws InterruptedException {
         int temp = 3333;
         System.out.println(" #3 triggered: " + temp);
         System.out.println(" #3 current global: " + globalInt);
@@ -120,7 +103,8 @@ public class TestOrderingSequence {
     }
 
     @Test
-    public void stringDFour() throws InterruptedException {
+    @ThisInterfaceForName
+    public void stringCFour() throws InterruptedException {
         int temp = 4444;
         System.out.println(" #4 triggered: " + temp);
         System.out.println(" #4 current global: " + globalInt);
@@ -132,7 +116,20 @@ public class TestOrderingSequence {
     }
 
     @Test
-    public void stringEFive() throws InterruptedException {
+    public void stringDFive() throws InterruptedException {
+        int temp = 5555;
+        System.out.println(" #5 triggered: " + temp);
+        System.out.println(" #5 current global: " + globalInt);
+        setNumber(temp);
+        sleep();
+        System.out.println(" #5.5 current global: " + globalInt);
+        int temp5 = getNumber();
+        System.out.println(" 5 test finnaly done with number :" + temp5);
+    }
+
+    @Test
+    @CustomExtensionDisable.ThisMethodNameForAnnotaion
+    public void stringASix() throws InterruptedException {
         int temp = 5555;
         System.out.println(" #5 triggered: " + temp);
         System.out.println(" #5 current global: " + globalInt);

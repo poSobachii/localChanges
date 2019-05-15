@@ -19,7 +19,6 @@
       <module fileurl="file://$PROJECT_DIR$/SpringSecurityV2/Security Simple Example.iml" filepath="$PROJECT_DIR$/SpringSecurityV2/Security Simple Example.iml" />
       <module fileurl="file://$PROJECT_DIR$/Facebook/SeleniumTests.iml" filepath="$PROJECT_DIR$/Facebook/SeleniumTests.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringManagingTransactions/Simple DB example without queries.iml" filepath="$PROJECT_DIR$/SpringManagingTransactions/Simple DB example without queries.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SpringWebActuator/Debugging With Acuator ?.iml" filepath="$PROJECT_DIR$/SpringWebActuator/Debugging With Acuator ?.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringSimpleWebInputForm/Simple web input example.iml" filepath="$PROJECT_DIR$/SpringSimpleWebInputForm/Simple web input example.iml" />
       <module fileurl="file://$PROJECT_DIR$/HibernateTutorials/Some Hibernate Tutorials and Tests.iml" filepath="$PROJECT_DIR$/HibernateTutorials/Some Hibernate Tutorials and Tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringWebValidation/Some Input Validation.iml" filepath="$PROJECT_DIR$/SpringWebValidation/Some Input Validation.iml" />
@@ -27,6 +26,7 @@
       <module fileurl="file://$PROJECT_DIR$/SpringUploadingFiles/UploadAFile.iml" filepath="$PROJECT_DIR$/SpringUploadingFiles/UploadAFile.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringYML/YML.iml" filepath="$PROJECT_DIR$/SpringYML/YML.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo.iml" filepath="$PROJECT_DIR$/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringJunit5Tests/junit5-parallel.iml" filepath="$PROJECT_DIR$/SpringJunit5Tests/junit5-parallel.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringWebExample/someSortOfWebPages.iml" filepath="$PROJECT_DIR$/SpringWebExample/someSortOfWebPages.iml" />
       <module fileurl="file://$PROJECT_DIR$/SomeWebTests/x024.REF.iml" filepath="$PROJECT_DIR$/SomeWebTests/x024.REF.iml" />
     </modules>

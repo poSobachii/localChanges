@@ -13,6 +13,7 @@
         <module name="JMS example of sub and message" />
         <module name="JPA example" />
         <module name="JQueryTable" />
+        <module name="junit5-parallel" />
         <module name="Parametrizes Tests" />
         <module name="QuotingSomeLinks" />
         <module name="Reading Data Copying into File" />
@@ -46,6 +47,7 @@
       <module name="JMS example of sub and message" target="1.8" />
       <module name="JPA example" target="1.8" />
       <module name="JQueryTable" target="1.8" />
+      <module name="junit5-parallel" target="1.8" />
       <module name="Parametrizes Tests" target="1.7" />
       <module name="QuotingSomeLinks" target="1.8" />
       <module name="Reading Data Copying into File" target="1.8" />
