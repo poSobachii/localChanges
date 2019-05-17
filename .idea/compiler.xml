@@ -13,7 +13,6 @@
         <module name="JMS example of sub and message" />
         <module name="JPA example" />
         <module name="JQueryTable" />
-        <module name="junit5-parallel" />
         <module name="Parametrizes Tests" />
         <module name="QuotingSomeLinks" />
         <module name="Reading Data Copying into File" />
@@ -33,6 +32,12 @@
         <module name="UploadAFile" />
         <module name="x024.REF" />
         <module name="YML" />
+      </profile>
+      <profile name="Annotation profile for junit5-parallel" enabled="true">
+        <sourceOutputDir name="../ParallelTesting/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../ParallelTesting/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="junit5-parallel" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
