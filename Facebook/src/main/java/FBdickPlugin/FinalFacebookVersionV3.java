@@ -43,6 +43,7 @@ public class FinalFacebookVersionV3 {
         currentElement2.sendKeys("test");
 
         driver.findElement(By.cssSelector("button[class*='_271k _271l _271m _1qjd _7tvm _7tv2 _7tv4 _p']")).click();
+        Thread.sleep(1000);
         driver.findElement(By.cssSelector("div[class*='_54nq _57di _558b _2n_z']")).click();
 
         /*CHANGE DATE*/
@@ -79,6 +80,4 @@ public class FinalFacebookVersionV3 {
     }
 }
 
-// <button action="confirm" class="layerConfirm _4jy0 _4jy3 _4jy1 _51sy selected _42ft" role="button" type="submit" value="1">Запланировать</button>
-//<button class="_1mf7 _69g1 _4jy0 _4jy3 _4jy1 _51sy selected _42ft" data-testid="react-composer-post-button" type="submit" value="1"><div alt="" class="_3-8_ _2ph- _6q3h"><span class="img _55ym _55yn _55yp" role="progressbar" aria-valuetext="Загрузка..." aria-busy="true" aria-valuemin="0" aria-valuemax="100"></span></div><span class="">Запланировать публикацию</span></button>
 

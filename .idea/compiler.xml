@@ -29,6 +29,7 @@
         <module name="Some Input Validation" />
         <module name="someSortOfWebPages" />
         <module name="Testing Web Pages with Mockito" />
+        <module name="thymeleaf examples" />
         <module name="UploadAFile" />
         <module name="x024.REF" />
         <module name="YML" />
@@ -70,6 +71,7 @@
       <module name="someSortOfWebPages" target="1.8" />
       <module name="SpringSchedule" target="1.8" />
       <module name="Testing Web Pages with Mockito" target="1.8" />
+      <module name="thymeleaf examples" target="1.8" />
       <module name="UploadAFile" target="1.8" />
       <module name="x024.REF" target="1.8" />
       <module name="YML" target="1.8" />
@@ -100,6 +102,7 @@
       <module name="UploadAFile" options="-parameters" />
       <module name="YML" options="-parameters" />
       <module name="demo" options="-parameters" />
+      <module name="thymeleaf examples" options="-parameters" />
       <module name="x024.REF" options="-parameters" />
     </option>
   </component>

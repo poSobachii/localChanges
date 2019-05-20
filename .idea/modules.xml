@@ -28,6 +28,7 @@
       <module fileurl="file://$PROJECT_DIR$/demo.iml" filepath="$PROJECT_DIR$/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJunit5Tests/junit5-parallel.iml" filepath="$PROJECT_DIR$/SpringJunit5Tests/junit5-parallel.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringWebExample/someSortOfWebPages.iml" filepath="$PROJECT_DIR$/SpringWebExample/someSortOfWebPages.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringThymeleaf/thymeleaf examples.iml" filepath="$PROJECT_DIR$/SpringThymeleaf/thymeleaf examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/SomeWebTests/x024.REF.iml" filepath="$PROJECT_DIR$/SomeWebTests/x024.REF.iml" />
     </modules>
   </component>
