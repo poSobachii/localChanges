@@ -2,11 +2,7 @@ package tests;
 
 import io.github.artsok.RepeatedIfExceptionsTest;
 import org.junit.Assert;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class FailingTests {
 

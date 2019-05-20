@@ -7,8 +7,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.PageGenerator;
 
-import java.util.Scanner;
-
 public class BaseTest {
     public WebDriver driver;
     public WebDriverWait wait;
