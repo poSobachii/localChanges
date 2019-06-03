@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/SpringSimpleJPAdatabase/JPA example.iml" filepath="$PROJECT_DIR$/SpringSimpleJPAdatabase/JPA example.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJQueryDataTable/JQueryTable.iml" filepath="$PROJECT_DIR$/SpringJQueryDataTable/JQueryTable.iml" />
       <module fileurl="file://$PROJECT_DIR$/JUnitTestExample/Parametrizes Tests.iml" filepath="$PROJECT_DIR$/JUnitTestExample/Parametrizes Tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringJsonExample/PathAnnotation.Json.Examples.iml" filepath="$PROJECT_DIR$/SpringJsonExample/PathAnnotation.Json.Examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringRestQuoting/QuotingSomeLinks.iml" filepath="$PROJECT_DIR$/SpringRestQuoting/QuotingSomeLinks.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringIntegratedData/Reading Data Copying into File.iml" filepath="$PROJECT_DIR$/SpringIntegratedData/Reading Data Copying into File.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringWebHypermedia/Rest Hypermedia example.iml" filepath="$PROJECT_DIR$/SpringWebHypermedia/Rest Hypermedia example.iml" />
@@ -22,6 +23,7 @@
       <module fileurl="file://$PROJECT_DIR$/SpringSimpleWebInputForm/Simple web input example.iml" filepath="$PROJECT_DIR$/SpringSimpleWebInputForm/Simple web input example.iml" />
       <module fileurl="file://$PROJECT_DIR$/HibernateTutorials/Some Hibernate Tutorials and Tests.iml" filepath="$PROJECT_DIR$/HibernateTutorials/Some Hibernate Tutorials and Tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringWebValidation/Some Input Validation.iml" filepath="$PROJECT_DIR$/SpringWebValidation/Some Input Validation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringJsonExample/SomeOutputExampleOfJson.iml" filepath="$PROJECT_DIR$/SpringJsonExample/SomeOutputExampleOfJson.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringWebMockito/Testing Web Pages with Mockito.iml" filepath="$PROJECT_DIR$/SpringWebMockito/Testing Web Pages with Mockito.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringUploadingFiles/UploadAFile.iml" filepath="$PROJECT_DIR$/SpringUploadingFiles/UploadAFile.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringYML/YML.iml" filepath="$PROJECT_DIR$/SpringYML/YML.iml" />

@@ -10,7 +10,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 //@TestMethodOrder(MethodOrderer.Alphanumeric.class)
-@Execution(ExecutionMode.CONCURRENT)
+//@Execution(ExecutionMode.CONCURRENT)
 @ExtendWith(CustomRule.class)
 public class TestParallel {
 
@@ -78,7 +78,7 @@ public class TestParallel {
     }
 
     @Test
-    @Disabled
+//    @Disabled
     public void stringFTwo() throws InterruptedException {
         int temp = 2222;
         System.out.println(" #2 triggered: " + temp);
@@ -103,7 +103,7 @@ public class TestParallel {
     }
 
     @Test
-    @ThisInterfaceForName
+//    @ThisInterfaceForName
     public void stringCFour() throws InterruptedException {
         int temp = 4444;
         System.out.println(" #4 triggered: " + temp);
@@ -128,7 +128,7 @@ public class TestParallel {
     }
 
     @Test
-    @CustomExtensionDisable.ThisMethodNameForAnnotaion
+//    @CustomExtensionDisable.ThisMethodNameForAnnotaion
     public void stringASix() throws InterruptedException {
         int temp = 5555;
         System.out.println(" #5 triggered: " + temp);

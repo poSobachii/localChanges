@@ -26,27 +26,27 @@ public class Computer {
     }
 
     public Computer(ComputerBuilder builder) {
-        this.HDD=builder.HDD;
-        this.RAM=builder.RAM;
-        this.isGraphicsCardEnabled=builder.isGraphicsCardEnabled;
-        this.isBluetoothEnabled=builder.isBluetoothEnabled;
+        this.HDD = builder.HDD;
+        this.RAM = builder.RAM;
+        this.isGraphicsCardEnabled = builder.isGraphicsCardEnabled;
+        this.isBluetoothEnabled = builder.isBluetoothEnabled;
     }
 
     //Builder Class
-    static class ComputerBuilder{
+    static class ComputerBuilder {
 
         private String HDD;
         private String RAM;
         private boolean isGraphicsCardEnabled;
         private boolean isBluetoothEnabled;
 
-        ComputerBuilder setHDD(String hdd){
+        ComputerBuilder setHDD(String hdd) {
 
             this.HDD = hdd;
             return this;
         }
 
-        ComputerBuilder setRAM(String ram){
+        ComputerBuilder setRAM(String ram) {
 
             this.RAM = ram;
             return this;
@@ -63,7 +63,7 @@ public class Computer {
             return this;
         }
 
-         Computer build(){
+        Computer build() {
             return new Computer(this);
         }
 

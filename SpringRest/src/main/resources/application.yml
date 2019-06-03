@@ -5,6 +5,7 @@
 #    username: root
 #    password: 12345678
 
+#driverClassName: com.mysql.jdbc.Driver
 
 #welcome.message: Hello welcome 1 message
 #available conn.props jdbc/h2/hibernate

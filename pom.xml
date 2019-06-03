@@ -9,6 +9,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>SpringThymeleaf</module>
+        <module>SpringJsonExample</module>
     </modules>
 
     <parent>

@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="@path, Json examples" />
         <module name="Converting CSV adding to DB" />
         <module name="CURL examples" />
         <module name="FBapi - DevelopersForFacebook" />
@@ -13,7 +14,9 @@
         <module name="JMS example of sub and message" />
         <module name="JPA example" />
         <module name="JQueryTable" />
+        <module name="junit5-parallel" />
         <module name="Parametrizes Tests" />
+        <module name="PathAnnotation.Json.Examples" />
         <module name="QuotingSomeLinks" />
         <module name="Reading Data Copying into File" />
         <module name="Rest Hypermedia example" />
@@ -34,14 +37,9 @@
         <module name="x024.REF" />
         <module name="YML" />
       </profile>
-      <profile name="Annotation profile for junit5-parallel" enabled="true">
-        <sourceOutputDir name="../ParallelTesting/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../ParallelTesting/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="junit5-parallel" />
-      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="@path, Json examples" target="1.8" />
       <module name="Converting CSV adding to DB" target="1.8" />
       <module name="CURL examples" target="8" />
       <module name="demo" target="1.8" />
@@ -55,6 +53,7 @@
       <module name="JQueryTable" target="1.8" />
       <module name="junit5-parallel" target="1.8" />
       <module name="Parametrizes Tests" target="1.7" />
+      <module name="PathAnnotation.Json.Examples" target="1.8" />
       <module name="QuotingSomeLinks" target="1.8" />
       <module name="Reading Data Copying into File" target="1.8" />
       <module name="Rest Hypermedia example" target="1.8" />
@@ -79,6 +78,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="@path, Json examples" options="-parameters" />
       <module name="CURL examples" options="-parameters" />
       <module name="Converting CSV adding to DB" options="-parameters" />
       <module name="Gemfire Accessing" options="-parameters" />
@@ -87,6 +87,7 @@
       <module name="JMS example of sub and message" options="-parameters" />
       <module name="JPA example" options="-parameters" />
       <module name="JQueryTable" options="" />
+      <module name="PathAnnotation.Json.Examples" options="-parameters" />
       <module name="QuotingSomeLinks" options="-parameters" />
       <module name="Reading Data Copying into File" options="-parameters" />
       <module name="Rest Hypermedia example" options="-parameters" />

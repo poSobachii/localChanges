@@ -14,8 +14,8 @@ public class SNippet {
         System.out.println("third");
 
 
-        int a = 9;
-        int b = 3;
+        int a = 60;
+        int b = 60;
         System.out.println("" + a + b);
         int sum = a%b;
         System.out.println(sum);

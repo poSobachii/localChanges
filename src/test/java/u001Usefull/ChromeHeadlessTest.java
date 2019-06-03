@@ -6,6 +6,8 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 import java.io.File;
 import java.io.IOException;
@@ -18,7 +20,8 @@ public class ChromeHeadlessTest {
     public void init() throws IOException, InterruptedException {
         //        LOG.info("Test has been started");
         ChromeOptions ops = new ChromeOptions ();
-        ops.addArguments("--headless");
+//        ops.addArguments("--headless");
+//        ops.addArguments("--incognito");
         int port = 0;
 
         File path = new File("/usr/local/bin/chromedriver");
@@ -32,16 +35,15 @@ public class ChromeHeadlessTest {
 
         WebDriver driver = new ChromeDriver(service.build(), ops);
 
-        driver.get("http://www.google.com/xhtml");
+        driver.get("http://www.google.com");
 //        Thread.sleep(1000);  // Let the user actually see something!
         WebElement searchBox = driver.findElement(By.name("q"));
         searchBox.sendKeys("dog");
         searchBox.submit();
-//        Thread.sleep(1000);  // Let the user actually see something!
+        Thread.sleep(1000);  // Let the user actually see something!
 
 //        File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 //        FileUtils.copyFile(screenshot, new File("/Users/aleksandrs.grisanovs/Desktop/screenshot.png"));
-        driver.close();
         driver.quit();
     }
 }

@@ -35,6 +35,7 @@
         <option value="$PROJECT_DIR$/SpringSimpleJPAdatabase/pom.xml" />
         <option value="$PROJECT_DIR$/SpringSimpleWebInputForm/pom.xml" />
         <option value="$PROJECT_DIR$/ParallelTesting/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringJunit5Tests/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
