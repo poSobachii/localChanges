@@ -1,0 +1,14 @@
+2019-06-06 12:42:15.059 [main] INFO  - Example log from  version V2 JsonHuider
+2019-06-06 12:42:15.061 [main] INFO  - this is already form this class - LoggerExample
+2019-06-06 12:42:15.062 [main] WARN  - from this class version V2  - JsonHuider
+2019-06-06 12:43:05.372 [main] INFO  - Example log from  version V2 JsonHuider
+2019-06-06 12:43:05.373 [main] WARN  - from this class version V2  - JsonHuider
+2019-06-06 12:43:34.085 [main] INFO  - Example log from  version V2 JsonHuider
+2019-06-06 12:43:34.087 [main] DEBUG - this is already form this class - LoggerExample
+2019-06-06 12:43:34.087 [main] WARN  - from this class version V2  - JsonHuider
+2019-06-06 14:51:01.088 [main] INFO  - Example log from  version V2 JsonHuider
+2019-06-06 14:51:01.089 [main] DEBUG - this is already form this class - LoggerExample
+2019-06-06 14:51:01.090 [main] WARN  - from this class version V2  - JsonHuider
+2019-06-06 16:11:09.136 [main] INFO  - Example log from  version V2 JsonHuider
+2019-06-06 16:11:09.138 [main] DEBUG - this is already form this class - LoggerExample
+2019-06-06 16:11:09.138 [main] WARN  - from this class version V2  - JsonHuider

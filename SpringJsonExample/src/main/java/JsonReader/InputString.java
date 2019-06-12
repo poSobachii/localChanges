@@ -3,6 +3,7 @@ package JsonReader;
 public class InputString {
 
     private String name;
+    public String yo = "yo";
 
     public String getName() {
         return name;

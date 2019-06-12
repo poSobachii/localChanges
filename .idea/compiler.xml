@@ -9,6 +9,7 @@
         <module name="@path, Json examples" />
         <module name="Converting CSV adding to DB" />
         <module name="CURL examples" />
+        <module name="Docker.JAR.SpringApp" />
         <module name="FBapi - DevelopersForFacebook" />
         <module name="H2" />
         <module name="JMS example of sub and message" />
@@ -16,7 +17,7 @@
         <module name="JQueryTable" />
         <module name="junit5-parallel" />
         <module name="Parametrizes Tests" />
-        <module name="PathAnnotation.Json.Examples" />
+        <module name="PathAnnotation.Json.Logging" />
         <module name="QuotingSomeLinks" />
         <module name="Reading Data Copying into File" />
         <module name="Rest Hypermedia example" />
@@ -27,13 +28,14 @@
         <module name="SeleniumTests" />
         <module name="Simple DB example without queries" />
         <module name="Simple Web hello with increment" />
-        <module name="Simple web input example" />
         <module name="Some Hibernate Tutorials and Tests" />
         <module name="Some Input Validation" />
         <module name="someSortOfWebPages" />
         <module name="Testing Web Pages with Mockito" />
         <module name="thymeleaf examples" />
+        <module name="Thymleaf.POST.GET" />
         <module name="UploadAFile" />
+        <module name="WarTomcat" />
         <module name="x024.REF" />
         <module name="YML" />
       </profile>
@@ -43,6 +45,7 @@
       <module name="Converting CSV adding to DB" target="1.8" />
       <module name="CURL examples" target="8" />
       <module name="demo" target="1.8" />
+      <module name="Docker.JAR.SpringApp" target="1.8" />
       <module name="Dzigurda" target="8" />
       <module name="FBapi - DevelopersForFacebook" target="1.8" />
       <module name="Gemfire Accessing" target="1.8" />
@@ -53,7 +56,7 @@
       <module name="JQueryTable" target="1.8" />
       <module name="junit5-parallel" target="1.8" />
       <module name="Parametrizes Tests" target="1.7" />
-      <module name="PathAnnotation.Json.Examples" target="1.8" />
+      <module name="PathAnnotation.Json.Logging" target="1.8" />
       <module name="QuotingSomeLinks" target="1.8" />
       <module name="Reading Data Copying into File" target="1.8" />
       <module name="Rest Hypermedia example" target="1.8" />
@@ -64,14 +67,15 @@
       <module name="SeleniumTests" target="1.7" />
       <module name="Simple DB example without queries" target="1.8" />
       <module name="Simple Web hello with increment" target="1.8" />
-      <module name="Simple web input example" target="1.8" />
       <module name="Some Hibernate Tutorials and Tests" target="1.5" />
       <module name="Some Input Validation" target="1.8" />
       <module name="someSortOfWebPages" target="1.8" />
       <module name="SpringSchedule" target="1.8" />
       <module name="Testing Web Pages with Mockito" target="1.8" />
       <module name="thymeleaf examples" target="1.8" />
+      <module name="Thymleaf.POST.GET" target="1.8" />
       <module name="UploadAFile" target="1.8" />
+      <module name="WarTomcat" target="1.8" />
       <module name="x024.REF" target="1.8" />
       <module name="YML" target="1.8" />
     </bytecodeTargetLevel>
@@ -81,13 +85,14 @@
       <module name="@path, Json examples" options="-parameters" />
       <module name="CURL examples" options="-parameters" />
       <module name="Converting CSV adding to DB" options="-parameters" />
+      <module name="Docker.JAR.SpringApp" options="-parameters" />
       <module name="Gemfire Accessing" options="-parameters" />
       <module name="Gemfire Caching" options="-parameters" />
       <module name="H2" options="-parameters" />
       <module name="JMS example of sub and message" options="-parameters" />
       <module name="JPA example" options="-parameters" />
       <module name="JQueryTable" options="" />
-      <module name="PathAnnotation.Json.Examples" options="-parameters" />
+      <module name="PathAnnotation.Json.Logging" options="-parameters" />
       <module name="QuotingSomeLinks" options="-parameters" />
       <module name="Reading Data Copying into File" options="-parameters" />
       <module name="Rest Hypermedia example" options="-parameters" />
@@ -97,10 +102,11 @@
       <module name="Security Simple Example" options="-parameters" />
       <module name="Simple DB example without queries" options="-parameters" />
       <module name="Simple Web hello with increment" options="-parameters" />
-      <module name="Simple web input example" options="-parameters" />
       <module name="Some Input Validation" options="-parameters" />
       <module name="SpringSchedule" options="-parameters" />
+      <module name="Thymleaf.POST.GET" options="-parameters" />
       <module name="UploadAFile" options="-parameters" />
+      <module name="WarTomcat" options="" />
       <module name="YML" options="-parameters" />
       <module name="demo" options="-parameters" />
       <module name="thymeleaf examples" options="-parameters" />

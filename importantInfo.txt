@@ -1,0 +1,13 @@
+?variable=input      //post form
+ps -ef | grep java     //to see all java processers
+sudo kill -9 <pid>           // to kill processor with ID
+
+cat > hello.txt         // to create a file
+mv hello.txt hello1.txt      //to rename a file
+vi hello.txt     // to edit file
+ctrl + c , :x      // to save a file
+
+
+
+javac    // compile .java file into .class file
+java HelloWorld    // no .class needed to run a class

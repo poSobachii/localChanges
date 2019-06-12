@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DockerExample" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Facebook" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/FacebookApi" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/HibernateTutorials" charset="UTF-8" />
@@ -29,5 +30,6 @@
     <file url="file://$PROJECT_DIR$/SpringWebMockito" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringWebValidation" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringYML" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-app" charset="UTF-8" />
   </component>
 </project>

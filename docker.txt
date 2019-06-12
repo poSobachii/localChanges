@@ -1,5 +1,6 @@
     docker run --name "yoyo" -d -p 4444:4444 selenium/standalone-chrome
 
+docker ps - to see full list
 To stop everything unused and delete: docker system prune
 
 To stop all contatiners: docker stop $(docker ps -a -q)
