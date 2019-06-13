@@ -4,10 +4,32 @@ sudo kill -9 <pid>           // to kill processor with ID
 
 cat > hello.txt         // to create a file
 mv hello.txt hello1.txt      //to rename a file
-vi hello.txt     // to edit file
+vi hello.txt     // to edit file. press "i" for insert or "esc" for quiting insert mode
 ctrl + c , :x      // to save a file
-
+:q :q!          // to quit file, and quit unsaved
+nano hello.txt
 
 
 javac    // compile .java file into .class file
 java HelloWorld    // no .class needed to run a class
+jar cfm HelloWorld.jar manifest.txt HelloWorld.class      // creating jar file
+java -jar Chuchi.jar
+
+
+
+    docker run --name "yoyo" -d -p 4444:4444 selenium/standalone-chrome
+
+docker ps - to see full list
+To stop everything unused and delete: docker system prune
+
+To stop all contatiners: docker stop $(docker ps -a -q)
+To delete all contatier: docker rm $(docker ps -a -q)
+To kill image: docker rmi <IMAGE ID>
+docker rmi $(docker images -a -q)          // to remove all images
+docker image prune -a
+docker build -t helloworld .      // to build a docker image with this name. Must be a Dockerfile.withnoextension in a folder.
+docker login
+docker tag dogstyle posobachii/catstyle     // image dogstyle is merged with ur username / catstyle repository
+docker push posobachii/catstyle              // push into catstyle repository
+
+http://localhost:4444/wd/hub/
