@@ -30,7 +30,7 @@ public class JsonConfiguration {
             String surname = jsonStringList.get(0).getSurname();
             int age = jsonStringList.get(0).getAge();
             String price = jsonStringList.get(0).getPrice();
-            System.out.println(name + surname + age + price);
+            System.out.println("Bean: " + name + " "+ surname +" "+ age +" "+ price);
             return new JsonString(name, surname, age, price);
         } catch (IOException e) {
             System.out.println("-------------Error: " + e);

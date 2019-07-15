@@ -1,6 +1,7 @@
 ?variable=input      //post form
 ps -ef | grep java     //to see all java processers
 sudo kill -9 <pid>           // to kill processor with ID
+history | grep variable         // to search for something in terminal
 
 cat > hello.txt         // to create a file
 mv hello.txt hello1.txt      //to rename a file
@@ -33,3 +34,12 @@ docker tag dogstyle posobachii/catstyle     // image dogstyle is merged with ur 
 docker push posobachii/catstyle              // push into catstyle repository
 
 http://localhost:4444/wd/hub/
+
+
+
+ssh-add -l
+ssh-add ~/.ssh/id_rs
+
+sudo chmod 0755 /usr/local/bin/vpn.sh
+sudo vpn.sh nl
+sudo pkill openconnect

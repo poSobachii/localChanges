@@ -9,6 +9,7 @@
         <module name="@path, Json examples" />
         <module name="Converting CSV adding to DB" />
         <module name="CURL examples" />
+        <module name="Docker.Jar" />
         <module name="Docker.JAR.SpringApp" />
         <module name="FBapi - DevelopersForFacebook" />
         <module name="H2" />
@@ -16,8 +17,9 @@
         <module name="JPA example" />
         <module name="JQueryTable" />
         <module name="junit5-parallel" />
+        <module name="JWTSManager" />
         <module name="Parametrizes Tests" />
-        <module name="PathAnnotation.Json.Logging" />
+        <module name="Path.Json.Log.Jersey" />
         <module name="QuotingSomeLinks" />
         <module name="Reading Data Copying into File" />
         <module name="Rest Hypermedia example" />
@@ -45,6 +47,7 @@
       <module name="Converting CSV adding to DB" target="1.8" />
       <module name="CURL examples" target="8" />
       <module name="demo" target="1.8" />
+      <module name="Docker.Jar" target="1.8" />
       <module name="Docker.JAR.SpringApp" target="1.8" />
       <module name="Dzigurda" target="8" />
       <module name="FBapi - DevelopersForFacebook" target="1.8" />
@@ -55,8 +58,9 @@
       <module name="JPA example" target="1.8" />
       <module name="JQueryTable" target="1.8" />
       <module name="junit5-parallel" target="1.8" />
+      <module name="JWTSManager" target="1.8" />
       <module name="Parametrizes Tests" target="1.7" />
-      <module name="PathAnnotation.Json.Logging" target="1.8" />
+      <module name="Path.Json.Log.Jersey" target="1.8" />
       <module name="QuotingSomeLinks" target="1.8" />
       <module name="Reading Data Copying into File" target="1.8" />
       <module name="Rest Hypermedia example" target="1.8" />
@@ -86,17 +90,19 @@
       <module name="CURL examples" options="-parameters" />
       <module name="Converting CSV adding to DB" options="-parameters" />
       <module name="Docker.JAR.SpringApp" options="-parameters" />
+      <module name="Docker.Jar" options="-parameters" />
       <module name="Gemfire Accessing" options="-parameters" />
       <module name="Gemfire Caching" options="-parameters" />
       <module name="H2" options="-parameters" />
       <module name="JMS example of sub and message" options="-parameters" />
       <module name="JPA example" options="-parameters" />
       <module name="JQueryTable" options="" />
-      <module name="PathAnnotation.Json.Logging" options="-parameters" />
+      <module name="JWTSManager" options="" />
+      <module name="Path.Json.Log.Jersey" options="-parameters" />
       <module name="QuotingSomeLinks" options="-parameters" />
       <module name="Reading Data Copying into File" options="-parameters" />
       <module name="Rest Hypermedia example" options="-parameters" />
-      <module name="Rest With 3 Databases" options="" />
+      <module name="Rest With 3 Databases" options="-parameters" />
       <module name="Schedulling" options="-parameters" />
       <module name="Security Hard Example" options="-parameters" />
       <module name="Security Simple Example" options="-parameters" />

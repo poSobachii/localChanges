@@ -1,0 +1,45 @@
+create database if not exists bookAplication;
+
+use bookAplication;
+
+drop table if exists BOOKSHELF;
+
+create table BOOKSHELF (
+	id MEDIUMINT NOT NULL AUTO_INCREMENT,
+   BOOKNAME varchar(255),
+   BOOKAUTHOR varchar(255),
+   BOOKPUB varchar(255),
+   PUBDATE varchar(255),
+   primary key (id),
+   unique (id)
+);
+
+TRUNCATE TABLE BOOKSHELF;            // to delete entities in table
+
+ALTER TABLE BOOKSHELF AUTO_INCREMENT=1001;
+
+insert into BOOKSHELF(BOOKNAME, BOOKAUTHOR, BOOKPUB, PUBDATE) values ('English','Vocabulary', 'PrintUK', '2010');
+insert into BOOKSHELF(BOOKNAME, BOOKAUTHOR, BOOKPUB, PUBDATE) values ('Thriller','St.King','California Inc', '2005');
+
+CREATE INDEX state ON state_exchange(state);
+
+---------------------------------------------
+CREATE TABLE state_exchange (
+	id MEDIUMINT NOT NULL AUTO_INCREMENT,
+	state varchar(255),
+    stamp varchar(255),
+    index(stamp, state),
+    index(state, stamp),
+    primary key (id)
+    );
+---------------------------------------------
+
+SELECT stamp FROM state_exchange WHERE state = '11' ;
+SELECT * FROM state_exchange WHERE state = '11' ;
+SELECT *, from_unixtime(updated/1000) FROM papi.paymentrequest where stamp = '9D2604C1CD4D462787CC';
+
+---------------------------------------------
+
+UPDATE STATE_EXCHANGE SET STATE='91392088-79c2-4c66-b22f-47c5cafb1a60' WHERE STAMP='E6E6B82CAED24FD8AA10'
+
+

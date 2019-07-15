@@ -39,6 +39,9 @@
         <option value="$PROJECT_DIR$/DockerExample/pom.xml" />
         <option value="$PROJECT_DIR$/SpringThymeleaf/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-app/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringJsonExample/pom.xml" />
+        <option value="$PROJECT_DIR$/JWTS/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringRestQuoting/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

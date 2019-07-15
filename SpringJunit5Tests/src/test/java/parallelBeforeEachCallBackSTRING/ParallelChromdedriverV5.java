@@ -1,20 +1,19 @@
 package parallelBeforeEachCallBackSTRING;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.parallel.Execution;
+import org.junit.jupiter.api.parallel.ExecutionMode;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+@Execution(ExecutionMode.CONCURRENT)
 public class ParallelChromdedriverV5 extends MainParalleler {
 
 
     @Test
     public void tstOne() throws InterruptedException {
 
-
         System.out.println("50");
-
-
-
 
     }
 
@@ -22,7 +21,7 @@ public class ParallelChromdedriverV5 extends MainParalleler {
     public void tstTwo() throws InterruptedException {
 
 
-        System.out.println("50");
+        System.out.println("51");
 
 
 
@@ -33,7 +32,7 @@ public class ParallelChromdedriverV5 extends MainParalleler {
     public void tstThree() throws InterruptedException {
 
 
-        System.out.println("50");
+        System.out.println("52");
 
 
 
@@ -44,7 +43,7 @@ public class ParallelChromdedriverV5 extends MainParalleler {
     public void tstFour() throws InterruptedException {
 
 
-        System.out.println("50");
+        System.out.println("53");
 
 
 
@@ -55,7 +54,7 @@ public class ParallelChromdedriverV5 extends MainParalleler {
     public void tstFive() throws InterruptedException {
 
 
-        System.out.println("50");
+        System.out.println("54");
 
 
 

@@ -9,7 +9,8 @@
         <file>SpringJsonExample/logs/access_log.log</file>
         <append>true</append>
         <encoder>
-            <pattern>%d{"yyyy-MM-dd HH:mm:ss.SSS", Europe/Riga} [%thread] %-5level - %msg%n</pattern>
+            <pattern>%p/%-5level %c:%-1L/%d{"yyyy-MM-dd HH:mm:ss.SSS", Europe/Riga} [%thread]/[%t] - %logger{4} [%L]/[%file : %line] - %msg%n</pattern>
+
         </encoder>
     </appender>
 
@@ -20,5 +21,3 @@
         <appender-ref ref="FILE" />
     </logger>
 </configuration>
-
-

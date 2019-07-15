@@ -1,0 +1,22 @@
+{
+  "keys": [
+    {
+      "kty": "RSA",
+      "e": "AQAB",
+      "n": "AJ6E0vqZ4nnbybpQPMS4evbcMhdc=",
+      "kid": "nasf-id-token"
+    },
+    {
+      "kty": "RSA",
+      "e": "AQAB",
+      "n": "eV+95Ws19D0TUfkrur1zAJOv6hYKLSzXZ9HRxArM=",
+      "kid": "nasf-access-token"
+    },
+    {
+      "kty": "RSA",
+      "e": "AQAB",
+      "n": "AILbSo7bZfzc=",
+      "kid": "demo-id-token"
+    }
+  ]
+}

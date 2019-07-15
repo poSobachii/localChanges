@@ -21,7 +21,9 @@ public class H2 implements DatabaseDAO {
     @Autowired
     private BookRepository bookrep;
 
-    public H2(){
+    private Book booktemp;
+
+    public H2() {
 
     }
 
@@ -38,30 +40,52 @@ public class H2 implements DatabaseDAO {
     @Override
     public void addBook(String name, String author, String publisher, String date) {
         if (!name.isEmpty() && !author.isEmpty() && !publisher.isEmpty() && !date.isEmpty()) {
-        bookrep.save(new Book(name, author,publisher,date));
-        AppController.changeLine(new StringBuffer("<h3>New Book added !</h3>"));}
-        else {AppController.changeLine(new StringBuffer("<h3>Please fill the form correctly!</h3>"));}
+            bookrep.save(new Book(name, author, publisher, date));
+            AppController.changeLine(new StringBuffer("<h3>New Book added !</h3>"));
+        } else {
+            AppController.changeLine(new StringBuffer("<h3>Please fill the form correctly!</h3>"));
+        }
 
     }
 
     @Override
     public void deleteBook(String deletion) {
         if (!deletion.isEmpty()) {
-        Book check = bookrep.findOne(Long.parseLong(deletion));
-        if ( check == null) { AppController.changeLine(new StringBuffer("<h3>There is no such book to delete !</h3>")); }
-         else {bookrep.delete(Long.parseLong(deletion));
-        AppController.changeLine(new StringBuffer("<h3>The book with ID: " + deletion + " is deleted!</h3>"));} }
-        else {AppController.changeLine(new StringBuffer("<h3>Please type ID to delete !</h3>"));}
+            Book check = bookrep.findById(Long.parseLong(deletion)).orElse(null);
+            if (check == null) {
+                AppController.changeLine(new StringBuffer("<h3>There is no such book to delete !</h3>"));
+            } else {
+                bookrep.deleteById(Long.parseLong(deletion));
+                AppController.changeLine(new StringBuffer("<h3>The book with ID: " + deletion + " is deleted!</h3>"));
+            }
+        } else {
+            AppController.changeLine(new StringBuffer("<h3>Please type ID to delete !</h3>"));
+        }
     }
 
     @Override
     public void fetchBook(String insert) {
         if (!insert.isEmpty()) {
-        Book temp = bookrep.findOne(Long.parseLong(insert));
-        AppController.changeLine(new StringBuffer("<h3> id: " +
-                temp.getId() + ", name: " + temp.getName() + ", author: " + temp.getAuthor() +
-                ", publisher: " + temp.getPublisher() + ", date: " + temp.getPublication_date() + "</h3>"));}
-        else {AppController.changeLine(new StringBuffer("<h3>Please type ID to search for the book !</h3>"));}
+            try {
+                booktemp = bookrep.findById(Long.parseLong(insert)).orElse(null);
+                AppController.changeLine(new StringBuffer("<h3> id: " +
+                        booktemp.getId() + ", name: " + booktemp.getName() + ", author: " + booktemp.getAuthor() +
+                        ", publisher: " + booktemp.getPublisher() + ", date: " + booktemp.getPublication_date() + "</h3>"));
+            } catch (Exception e) {
+                booktemp = bookrep.findBookByName(insert);
+                String name = insert;
+                String id = bookrep.findID(name);
+                String author = bookrep.findAuthor(Long.parseLong(id));
+                String publihser = bookrep.findPublisher(name);
+                String date = bookrep.findDate(id);
+                AppController.changeLine(new StringBuffer("<h3> id: " +
+                        id + ", name: " + name + ", author: " + author +
+                        ", publisher: " + publihser + ", date: " + date + "</h3>"));
+            }
+
+        } else {
+            AppController.changeLine(new StringBuffer("<h3>Please type ID to search for the book !</h3>"));
+        }
 
     }
 

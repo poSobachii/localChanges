@@ -8,5 +8,6 @@ public class LaunchPad {
 
     public static void main(String[] args) {
         SpringApplication.run(LaunchPad.class, args);
+        System.out.println("App has been lauched ");
     }
 }

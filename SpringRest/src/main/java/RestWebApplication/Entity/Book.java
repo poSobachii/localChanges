@@ -11,24 +11,18 @@ import javax.persistence.Table;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
+import static javax.persistence.GenerationType.IDENTITY;
+
+@Entity(name = "BOOKSHELF")
 @Table(name = "BOOKSHELF")
 public class Book {
 
 
-    private @Id @GeneratedValue Long id;
-
-    @Column(name="BOOKNAME")
-    private String name;
-
-    @Column(name="BOOKAUTHOR")
-    private String author;
-
-    @Column(name="BOOKPUB")
-    private String publisher;
-
-    @Column(name="PUBDATE")
-    private String publication_date;
+    @Id @GeneratedValue(strategy = IDENTITY) private Long id;
+    @Column(name="BOOKNAME") private String name;
+    @Column(name="BOOKAUTHOR") private String author;
+    @Column(name="BOOKPUB") private String publisher;
+    @Column(name="PUBDATE") private String publication_date;
 
 //    private Set<Book> books = new HashSet<Book>(0);
 

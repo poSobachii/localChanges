@@ -1,9 +1,12 @@
 package parallelBeforeEachCallBackSTRING;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.parallel.Execution;
+import org.junit.jupiter.api.parallel.ExecutionMode;
 
 import static parallelBeforeEachCallBackSTRING.FileWriterTT.printTwo;
 
+@Execution(ExecutionMode.CONCURRENT)
 public class ParallelChromdedriverV3 extends MainParalleler {
 
 
@@ -20,7 +23,7 @@ public class ParallelChromdedriverV3 extends MainParalleler {
     public void tstTwo() throws InterruptedException {
 
         tt.printTwo();
-        System.out.println("30");
+        System.out.println("31");
 
 
     }
@@ -29,7 +32,7 @@ public class ParallelChromdedriverV3 extends MainParalleler {
     public void tstThree() throws InterruptedException {
 
         tt.printTwo();
-        System.out.println("30");
+        System.out.println("32");
 
 
     }
@@ -38,7 +41,7 @@ public class ParallelChromdedriverV3 extends MainParalleler {
     public void tstFour() throws InterruptedException {
 
         tt.printTwo();
-        System.out.println("30");
+        System.out.println("33");
 
 
     }
@@ -47,7 +50,7 @@ public class ParallelChromdedriverV3 extends MainParalleler {
     public void tstFive() throws InterruptedException {
 
         tt.printTwo();
-        System.out.println("30");
+        System.out.println("34");
 
 
     }

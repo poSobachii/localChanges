@@ -12,3 +12,66 @@
 2019-06-06 16:11:09.136 [main] INFO  - Example log from  version V2 JsonHuider
 2019-06-06 16:11:09.138 [main] DEBUG - this is already form this class - LoggerExample
 2019-06-06 16:11:09.138 [main] WARN  - from this class version V2  - JsonHuider
+2019-06-19 16:51:41.957 [main] INFO  - Example log from  version V2 JsonHuider
+2019-06-19 16:51:41.958 [main] DEBUG - this is already form this class - LoggerExample
+2019-06-19 16:51:41.958 [main] WARN  - from this class version V2  - JsonHuider
+2019-06-19 16:52:15.523 [main] INFO  - Example log from  version V2 JsonHuider
+2019-06-19 16:52:15.525 [main] DEBUG - this is already form this class - LoggerExample
+2019-06-19 16:52:15.525 [main] WARN  - from this class version V2  - JsonHuider
+2019-06-20 13:47:25.109 [main] [main] INFO  - Example log from  version V2 JsonHuider
+2019-06-20 13:47:25.110 [main] [main] DEBUG - this is already form this class - LoggerExample
+2019-06-20 13:47:25.111 [main] [main] WARN  - from this class version V2  - JsonHuider
+2019-06-20 13:48:05.425 [main] -  -  - Example log from  version V2 JsonHuider
+ [main] INFO  - Example log from  version V2 JsonHuider
+2019-06-20 13:48:05.426 [main] -  -  - this is already form this class - LoggerExample
+ [main] DEBUG - this is already form this class - LoggerExample
+2019-06-20 13:48:05.426 [main] -  -  - from this class version V2  - JsonHuider
+ [main] WARN  - from this class version V2  - JsonHuider
+2019-06-20 13:50:58.419 [main] -  -  - Example log from  version V2 JsonHuider [main] INFO  - Example log from  version V2 JsonHuider
+2019-06-20 13:50:58.420 [main] -  -  - this is already form this class - LoggerExample [main] DEBUG - this is already form this class - LoggerExample
+2019-06-20 13:50:58.420 [main] -  -  - from this class version V2  - JsonHuider [main] WARN  - from this class version V2  - JsonHuider
+2019-06-20 13:51:35.648 [main] -  -  - Example log from  version V2 JsonHuider [main] INFO - Example log from  version V2 JsonHuider
+2019-06-20 13:51:35.649 [main] -  -  - this is already form this class - LoggerExample [main] DEBUG - this is already form this class - LoggerExample
+2019-06-20 13:51:35.650 [main] -  -  - from this class version V2  - JsonHuider [main] WARN - from this class version V2  - JsonHuider
+2019-06-20 13:55:53.149 [main] - INFO tutifrutti [JsonHuider.java : 25] - Example log from  version V2 JsonHuider [main] INFO  - Example log from  version V2 JsonHuider
+2019-06-20 13:55:53.153 [main] - DEBUG tutifrutti [LoggerExample.java : 10] - this is already form this class - LoggerExample [main] DEBUG - this is already form this class - LoggerExample
+2019-06-20 13:55:53.153 [main] - WARN tutifrutti [JsonHuider.java : 35] - from this class version V2  - JsonHuider [main] WARN  - from this class version V2  - JsonHuider
+2019-06-20 13:56:23.974 [main] - INFO tutifrutti [JsonHuider.java : 25] - Example log from  version V2 JsonHuider [main] INFO  - Example log from  version V2 JsonHuider
+2019-06-20 13:56:23.976 [main] - DEBUG tutifrutti [LoggerExample.java : 10] - this is already form this class - LoggerExample [main] DEBUG - this is already form this class - LoggerExample
+2019-06-20 13:56:23.976 [main] - WARN tutifrutti [JsonHuider.java : 35] - from this class version V2  - JsonHuider [main] WARN  - from this class version V2  - JsonHuider
+INFO  2019-06-20 13:57:53.077 [main] - INFO tutifrutti [JsonHuider.java : 25] - Example log from  version V2 JsonHuider [main] INFO  - Example log from  version V2 JsonHuider
+DEBUG 2019-06-20 13:57:53.081 [main] - DEBUG tutifrutti [LoggerExample.java : 10] - this is already form this class - LoggerExample [main] DEBUG - this is already form this class - LoggerExample
+WARN  2019-06-20 13:57:53.082 [main] - WARN tutifrutti [JsonHuider.java : 35] - from this class version V2  - JsonHuider [main] WARN  - from this class version V2  - JsonHuider
+INFO                                               2019-06-20 13:58:04.258 [main] - INFO tutifrutti [JsonHuider.java : 25] - Example log from  version V2 JsonHuider [main] INFO  - Example log from  version V2 JsonHuider
+DEBUG                                              2019-06-20 13:58:04.261 [main] - DEBUG tutifrutti [LoggerExample.java : 10] - this is already form this class - LoggerExample [main] DEBUG - this is already form this class - LoggerExample
+WARN                                               2019-06-20 13:58:04.262 [main] - WARN tutifrutti [JsonHuider.java : 35] - from this class version V2  - JsonHuider [main] WARN  - from this class version V2  - JsonHuider
+INFO 2019-06-20 13:58:24.843 [main] - INFO tutifrutti [JsonHuider.java : 25] - Example log from  version V2 JsonHuider [main] INFO  - Example log from  version V2 JsonHuider
+DEBUG 2019-06-20 13:58:24.847 [main] - DEBUG tutifrutti [LoggerExample.java : 10] - this is already form this class - LoggerExample [main] DEBUG - this is already form this class - LoggerExample
+WARN 2019-06-20 13:58:24.847 [main] - WARN tutifrutti [JsonHuider.java : 35] - from this class version V2  - JsonHuider [main] WARN  - from this class version V2  - JsonHuider
+INFO       /           2019-06-20 13:58:42.919 [main] - INFO tutifrutti [JsonHuider.java : 25] - Example log from  version V2 JsonHuider [main] INFO  - Example log from  version V2 JsonHuider
+DEBUG      /           2019-06-20 13:58:42.924 [main] - DEBUG tutifrutti [LoggerExample.java : 10] - this is already form this class - LoggerExample [main] DEBUG - this is already form this class - LoggerExample
+WARN       /           2019-06-20 13:58:42.924 [main] - WARN tutifrutti [JsonHuider.java : 35] - from this class version V2  - JsonHuider [main] WARN  - from this class version V2  - JsonHuider
+INFO       / 2019-06-20 13:59:14.088 [main] - INFO tutifrutti [JsonHuider.java : 25] - Example log from  version V2 JsonHuider [main] INFO  - Example log from  version V2 JsonHuider
+DEBUG      / 2019-06-20 13:59:14.092 [main] - DEBUG tutifrutti [LoggerExample.java : 10] - this is already form this class - LoggerExample [main] DEBUG - this is already form this class - LoggerExample
+WARN       / 2019-06-20 13:59:14.092 [main] - WARN tutifrutti [JsonHuider.java : 35] - from this class version V2  - JsonHuider [main] WARN  - from this class version V2  - JsonHuider
+INFO       / 2019-06-20 13:59:46.248 [main] - INFO tutifrutti [JsonHuider.java : 25] - Example log from  version V2 JsonHuider [main] INFO  - Example log from  version V2 JsonHuider
+DEBUG      / 2019-06-20 13:59:46.253 [main] - DEBUG tutifrutti [LoggerExample.java : 10] - this is already form this class - LoggerExample [main] DEBUG - this is already form this class - LoggerExample
+WARN       / 2019-06-20 13:59:46.253 [main] - WARN tutifrutti [JsonHuider.java : 35] - from this class version V2  - JsonHuider [main] WARN  - from this class version V2  - JsonHuider
+INFO       / 2019-06-20 14:00:12.637 [main] - INFO tutifrutti [JsonHuider.java : 25] - Example log from  version V2 JsonHuider [main] INFO  - Example log from  version V2 JsonHuider
+DEBUG      / 2019-06-20 14:00:12.641 [main] - DEBUG tutifrutti [LoggerExample.java : 10] - this is already form this class - LoggerExample [main] DEBUG - this is already form this class - LoggerExample
+WARN       / 2019-06-20 14:00:12.642 [main] - WARN tutifrutti [JsonHuider.java : 35] - from this class version V2  - JsonHuider [main] WARN  - from this class version V2  - JsonHuider
+INFO       / 2019-06-20 14:00:32.575 [main] - INFO tutifrutti [JsonHuider.java : 25] - Example log from  version V2 JsonHuider [main] INFO  - Example log from  version V2 JsonHuider
+DEBUG      / 2019-06-20 14:00:32.578 [main] - DEBUG tutifrutti [LoggerExample.java : 10] - this is already form this class - LoggerExample [main] DEBUG - this is already form this class - LoggerExample
+WARN       / 2019-06-20 14:00:32.578 [main] - WARN tutifrutti [JsonHuider.java : 35] - from this class version V2  - JsonHuider [main] WARN  - from this class version V2  - JsonHuider
+INFO tutifrutti:25         / 2019-06-20 14:01:39.189 [main] - INFO tutifrutti [JsonHuider.java : 25] - Example log from  version V2 JsonHuider [main] INFO  - Example log from  version V2 JsonHuider
+DEBUG tutifrutti:10         / 2019-06-20 14:01:39.192 [main] - DEBUG tutifrutti [LoggerExample.java : 10] - this is already form this class - LoggerExample [main] DEBUG - this is already form this class - LoggerExample
+WARN tutifrutti:35         / 2019-06-20 14:01:39.193 [main] - WARN tutifrutti [JsonHuider.java : 35] - from this class version V2  - JsonHuider [main] WARN  - from this class version V2  - JsonHuider
+INFO/INFO  tutifrutti:25         / 2019-06-20 14:06:23.337 [main]/[main] - INFO tutifrutti [JsonHuider.java : 25] - Example log from  version V2 JsonHuider
+DEBUG/DEBUG tutifrutti:10         / 2019-06-20 14:06:23.340 [main]/[main] - DEBUG tutifrutti [LoggerExample.java : 10] - this is already form this class - LoggerExample
+WARN/WARN  tutifrutti:35         / 2019-06-20 14:06:23.340 [main]/[main] - WARN tutifrutti [JsonHuider.java : 35] - from this class version V2  - JsonHuider
+INFO/INFO  tutifrutti:25/2019-06-20 14:06:46.799 [main]/[main] - INFO tutifrutti [JsonHuider.java : 25] - Example log from  version V2 JsonHuider
+DEBUG/DEBUG tutifrutti:10/2019-06-20 14:06:46.803 [main]/[main] - DEBUG tutifrutti [LoggerExample.java : 10] - this is already form this class - LoggerExample
+WARN/WARN  tutifrutti:35/2019-06-20 14:06:46.804 [main]/[main] - WARN tutifrutti [JsonHuider.java : 35] - from this class version V2  - JsonHuider
+INFO/INFO  tutifrutti:25/2019-06-20 14:09:57.921 [main]/[main] - tutifrutti [25]/[JsonHuider.java : 25] - Example log from  version V2 JsonHuider
+DEBUG/DEBUG tutifrutti:10/2019-06-20 14:09:57.924 [main]/[main] - tutifrutti [10]/[LoggerExample.java : 10] - this is already form this class - LoggerExample
+WARN/WARN  tutifrutti:35/2019-06-20 14:09:57.925 [main]/[main] - tutifrutti [35]/[JsonHuider.java : 35] - from this class version V2  - JsonHuider

@@ -31,13 +31,13 @@ public class FacebookLaunch {
         WebDriver driver = new ChromeDriver(service.build(), ops);
 //        driver.manage().window().maximize();
 //        driver.get("https://www.facebook.com");
-        driver.get("https://mbasic.facebook.com");
-        driver.findElement(By.name("email")).sendKeys("--your login--");
+        driver.get("https://www.facebook.com/");
+        driver.findElement(By.name("email")).sendKeys("facebooktest2@inbox.lv");
         WebElement element = driver.findElement(By.name("pass"));
-        element.sendKeys("--your password--");
+        element.sendKeys("facebook0412");
         element.submit();
         System.out.println("waiting for command:");
-        driver.get("https://mbasic.facebook.com/profile.php?ref_component=mbasic_home_header&ref_page=%2Fwap%2Fhome.php&refid=7&ref=wizard");
+//        driver.get("https://mbasic.facebook.com/profile.php?ref_component=mbasic_home_header&ref_page=%2Fwap%2Fhome.php&refid=7&ref=wizard");
 //        driver.findElement(By.name("view_photo")).click();
 //        File fileImage = new File("/Users/aleksandrs.grisanovs/IdeaProjects/FBdickPlugin/src/main/resources/photos/text_test_yo.png");
 //        driver.findElement(By.name("file1")).sendKeys(fileImage.getAbsolutePath());
@@ -51,22 +51,22 @@ public class FacebookLaunch {
         System.out.println("Entered");
 //        WebElement element1 = driver.findElement((By.xpath("//textarea[@name='xhpc_message']")));       // www.facebook.com
 //        WebElement element1 = driver.findElement((By.name("xhpc_message")));                            // www.facebook.com
-        WebElement element1 = driver.findElement(By.name("xc_message"));                                   // www.mbasic.facebook.com
-        element1.sendKeys("This is test message with Java Selenium Chromedriver");
-        element1.submit();
+//        WebElement element1 = driver.findElement(By.name("xc_message"));                                   // www.mbasic.facebook.com
+//        element1.sendKeys("This is test message with Java Selenium Chromedriver");
+//        element1.submit();
 
-        driver.findElement(By.name("view_post")).click();
-        System.out.println("type smth");
-
-
-
+//        driver.findElement(By.name("view_post")).click();
+//        System.out.println("type smth");
+//
 
 
 
 
 
 
-        String temp = scan.nextLine();
+
+
+//        String temp = scan.nextLine();
         driver.close();
         driver.quit();
     }
