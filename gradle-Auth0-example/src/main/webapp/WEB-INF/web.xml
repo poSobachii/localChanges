@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1"
+         metadata-complete="false">
+    <context-param>
+        <param-name>com.auth0.domain</param-name>
+        <param-value>po-sobachii.eu.auth0.com</param-value>
+    </context-param>
+    <context-param>
+        <param-name>com.auth0.clientId</param-name>
+        <param-value>Eouf15z23KoSs8u6ENd45bqTEtKLKW1J</param-value>
+        <!--<param-value>Y7H9HX2HrRanJ5gXNjIQ72fc2M9lm3Ed</param-value>-->
+    </context-param>
+    <context-param>
+        <param-name>com.auth0.clientSecret</param-name>
+        <param-value>A8fj_Rj7adQqbBjvl61EwKK4HphwL94nySLeDgC6rEw4pQz58D2nbgtiFPrIVyPD</param-value>
+        <!--<param-value>VRneBQ9XZ8lexaPsxp7eb-2YwdKEjxOQ3VJH5VhHD1_WnTW4tZUZnCFT3lQW_fSx</param-value>-->
+    </context-param>
+</web-app>

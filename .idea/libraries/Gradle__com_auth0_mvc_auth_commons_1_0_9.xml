@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.auth0:mvc-auth-commons:1.0.9">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.auth0/mvc-auth-commons/1.0.9/aa7a7d88cfa07d254c1a2dab9f40f1a941cbb041/mvc-auth-commons-1.0.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.auth0/mvc-auth-commons/1.0.9/29d93736395519c79907cf0b6b0e0b075259d70c/mvc-auth-commons-1.0.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -90,8 +90,8 @@ public class Encryption {
 
     public static void main(String[] args) throws Exception {
         Encryption ac = new Encryption();
-        PrivateKey privateKey = ac.getPrivate("KeyPair/privateKey");
-        PublicKey publicKey = ac.getPublic("KeyPair/publicKey");
+        PrivateKey privateKey = ac.getPrivate("JWTS/KeyPair/privateKey");
+        PublicKey publicKey = ac.getPublic("JWTS/KeyPair/publicKey");
 
         String msg = "Cryptography is fun!";
         String encrypted_msg = ac.encryptText(msg, privateKey);
@@ -100,13 +100,13 @@ public class Encryption {
                 "\nEncrypted Message: " + encrypted_msg
                 + "\nDecrypted Message: " + decrypted_msg);
 
-        if (new File("KeyPair/text.txt").exists()) {
-            ac.encryptFile(ac.getFileInBytes(new File("KeyPair/text.txt")),
-                    new File("KeyPair/text_encrypted.txt"),privateKey);
-            ac.decryptFile(ac.getFileInBytes(new File("KeyPair/text_encrypted.txt")),
-                    new File("KeyPair/text_decrypted.txt"), publicKey);
+        if (new File("JWTS/KeyPair/text.txt").exists()) {
+            ac.encryptFile(ac.getFileInBytes(new File("JWTS/KeyPair/text.txt")),
+                    new File("JWTS/KeyPair/text_encrypted.txt"),privateKey);
+            ac.decryptFile(ac.getFileInBytes(new File("JWTS/KeyPair/text_encrypted.txt")),
+                    new File("JWTS/KeyPair/text_decrypted.txt"), publicKey);
         } else {
-            System.out.println("Create a file text.txt under folder KeyPair");
+            System.out.println("Create a file text.txt under folder JWTS/KeyPair");
         }
     }
 }

@@ -18,11 +18,11 @@ import java.util.Map;
 
 public class TokenAuth {
 
-    public static String secret = "someString";
+    public static String secret = "someString2";
     public static String token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhdXRoMCIsImVtYWlsIjoieW9AYWluYm94Lmx2In0.FKRIKSrQk8wlHyR8BttBDuaBAvU2WRppC0mElnus5gw";
 
     public static void main(String[] args) {
-//        createToken();
+        createToken();
 //        decodePart();
 //        decodeToken();
 
@@ -33,7 +33,7 @@ public class TokenAuth {
                 .withIssuer("auth0")
                 .withClaim("email", "yo@ainbox.lv")
                 .sign(Algorithm.HMAC256(secret));
-        System.out.println("Token = " + temp);
+        System.out.println("Token =" + temp);
 
     }
 

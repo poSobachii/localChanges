@@ -31,6 +31,9 @@
       <module fileurl="file://$PROJECT_DIR$/SpringUploadingFiles/UploadAFile.iml" filepath="$PROJECT_DIR$/SpringUploadingFiles/UploadAFile.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-app/WarTomcat.iml" filepath="$PROJECT_DIR$/spring-boot-app/WarTomcat.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringYML/YML.iml" filepath="$PROJECT_DIR$/SpringYML/YML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.auth0.auth0-servlet.iml" filepath="$PROJECT_DIR$/.idea/modules/com.auth0.auth0-servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.auth0.auth0-servlet.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.auth0.auth0-servlet.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.auth0.auth0-servlet.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.auth0.auth0-servlet.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo.iml" filepath="$PROJECT_DIR$/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJunit5Tests/junit5-parallel.iml" filepath="$PROJECT_DIR$/SpringJunit5Tests/junit5-parallel.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringWebExample/someSortOfWebPages.iml" filepath="$PROJECT_DIR$/SpringWebExample/someSortOfWebPages.iml" />
