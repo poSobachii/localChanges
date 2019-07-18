@@ -5,7 +5,7 @@ import java.util.List;
 
 public class KeyClass {
 
-    private ArrayList<KeyValues> keys;
+    private List<KeyValues> keys;
 
     public KeyClass(){}
 

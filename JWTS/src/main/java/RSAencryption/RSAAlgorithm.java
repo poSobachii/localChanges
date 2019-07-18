@@ -20,10 +20,11 @@ public class RSAAlgorithm {
 
     public static void main(String[] args) throws NoSuchAlgorithmException {
         KeyPairGenerator keyGenerator = KeyPairGenerator.getInstance("RSA");
-        keyGenerator.initialize(1024);
+        keyGenerator.initialize(2048);
 
         KeyPair kp = keyGenerator.genKeyPair();
         RSAPublicKey publicKey = (RSAPublicKey) kp.getPublic();
+        System.out.println("exp:" + ((RSAPublicKey) kp.getPublic()).getPublicExponent());
         RSAPrivateKey privateKey = (RSAPrivateKey) kp.getPrivate();
 
         String encodedPublicKey = Base64.getEncoder().encodeToString(publicKey.getEncoded());
@@ -47,7 +48,7 @@ public class RSAAlgorithm {
 
     //Print structure of JWT
     public static void printStructure(String token, RSAPublicKey publicKey, RSAPrivateKey privatekey) {
-        JWTVerifier verifier = JWT.require(Algorithm.RSA256(publicKey, privatekey))
+        JWTVerifier verifier = JWT.require(Algorithm.RSA256(publicKey, null))
                 .withIssuer("adam")
                 .build();
         DecodedJWT parseClaimsJws = verifier.verify(token);
@@ -55,6 +56,7 @@ public class RSAAlgorithm {
         System.out.println("Header     : " + parseClaimsJws.getHeader());
         System.out.println("Body       : " + parseClaimsJws.getPayload());
         System.out.println("Signature  : " + parseClaimsJws.getSignature());
+        System.out.println("Claims : " + parseClaimsJws.getClaim("email").asString());
     }
 
 

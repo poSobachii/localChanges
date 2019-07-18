@@ -22,8 +22,8 @@ public class TokenAuth {
     public static String token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhdXRoMCIsImVtYWlsIjoieW9AYWluYm94Lmx2In0.FKRIKSrQk8wlHyR8BttBDuaBAvU2WRppC0mElnus5gw";
 
     public static void main(String[] args) {
-        createToken();
-//        decodePart();
+//        createToken();
+        decodePart();
 //        decodeToken();
 
     }

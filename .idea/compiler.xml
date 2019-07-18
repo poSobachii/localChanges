@@ -18,6 +18,7 @@
         <module name="JQueryTable" />
         <module name="junit5-parallel" />
         <module name="JWTSManager" />
+        <module name="LamdaExpression" />
         <module name="Parametrizes Tests" />
         <module name="Path.Json.Log.Jersey" />
         <module name="QuotingSomeLinks" />
@@ -61,6 +62,7 @@
       <module name="JQueryTable" target="1.8" />
       <module name="junit5-parallel" target="1.8" />
       <module name="JWTSManager" target="1.8" />
+      <module name="LamdaExpression" target="8" />
       <module name="Parametrizes Tests" target="1.7" />
       <module name="Path.Json.Log.Jersey" target="1.8" />
       <module name="QuotingSomeLinks" target="1.8" />
@@ -100,6 +102,7 @@
       <module name="JPA example" options="-parameters" />
       <module name="JQueryTable" options="" />
       <module name="JWTSManager" options="" />
+      <module name="LamdaExpression" options="" />
       <module name="Path.Json.Log.Jersey" options="-parameters" />
       <module name="QuotingSomeLinks" options="-parameters" />
       <module name="Reading Data Copying into File" options="-parameters" />

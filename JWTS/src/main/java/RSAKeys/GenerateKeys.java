@@ -51,11 +51,11 @@ public class GenerateKeys {
         try {
             gk = new GenerateKeys(1024);
             gk.createKeys();
+            System.out.println("====" + gk.getPublicKey());
             gk.writeToFile("JWTS/KeyPair/publicKey", gk.getPublicKey().getEncoded());
             gk.writeToFile("JWTS/KeyPair/privateKey", gk.getPrivateKey().getEncoded());
             String pubKey = gk.getPublicKey().toString();
             String privKey = gk.getPrivateKey().toString();
-            System.out.println(gk.getPublicKey().getEncoded());
 //            System.out.println(pubKey);
 //            System.out.println(privKey);
         } catch (NoSuchAlgorithmException | NoSuchProviderException e) {
