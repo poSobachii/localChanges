@@ -3,7 +3,9 @@ package PostJson;
 import JsonExample.Controller.SomeDiffObjectRandom;
 
 import org.apache.http.Header;
+import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
+import org.apache.http.util.EntityUtils;
 import org.glassfish.jersey.client.JerseyClient;
 import org.glassfish.jersey.client.JerseyClientBuilder;
 import org.glassfish.jersey.client.JerseyWebTarget;
@@ -28,8 +30,8 @@ public class JerseyDep {
 //        getJson();
 
 //        paramPost();
-        responsePost();
-//        jsonPost();
+//        responsePost();
+        jsonPost();
     }
 
 
@@ -107,7 +109,6 @@ public class JerseyDep {
                 .request(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON).post(Entity.entity(entity, MediaType.APPLICATION_JSON_TYPE));
 
 //        Response response = webTarget.request(HttpHeaders.CONTENT_TYPE, MediaType.APPLICATION_JSON).method("POST", Entity.json(entity));
-
         SomeDiffObjectRandom object = response.readEntity(SomeDiffObjectRandom.class);
         System.out.println("The Object values = Value1: " + object.getValue1() + " Value2: " + object.getValue2() + " Value3: " + object.getValue3());
         System.out.println("Executed !");

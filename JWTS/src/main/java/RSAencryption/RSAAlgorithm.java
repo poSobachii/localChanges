@@ -6,11 +6,15 @@ import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithm;
 
+import java.io.UnsupportedEncodingException;
+import java.security.InvalidKeyException;
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
 import java.security.NoSuchAlgorithmException;
 import java.security.PrivateKey;
 import java.security.PublicKey;
+import java.security.Signature;
+import java.security.SignatureException;
 import java.security.interfaces.RSAPrivateKey;
 import java.security.interfaces.RSAPublicKey;
 import java.util.Base64;
@@ -20,7 +24,7 @@ public class RSAAlgorithm {
 
     public static void main(String[] args) throws NoSuchAlgorithmException {
         KeyPairGenerator keyGenerator = KeyPairGenerator.getInstance("RSA");
-        keyGenerator.initialize(2048);
+        keyGenerator.initialize(512);
 
         KeyPair kp = keyGenerator.genKeyPair();
         RSAPublicKey publicKey = (RSAPublicKey) kp.getPublic();
@@ -29,8 +33,10 @@ public class RSAAlgorithm {
 
         String encodedPublicKey = Base64.getEncoder().encodeToString(publicKey.getEncoded());
         String encodedPrivate = Base64.getEncoder().encodeToString(privateKey.getEncoded());
+        String encodedForUrl = Base64.getUrlEncoder().encodeToString(publicKey.getModulus().toByteArray());
         System.out.println(convertToPublicKey(encodedPublicKey));
         System.out.println(convertToPrivateKey(encodedPrivate));
+        System.out.println(convertToPublicKey(encodedForUrl));
         String token = generateJwtToken(publicKey, privateKey);
         System.out.println("TOKEN:");
         System.out.println(token);
@@ -75,6 +81,25 @@ public class RSAAlgorithm {
         result.append(key);
         result.append("\n-----END PRIVATE KEY-----");
         return result.toString();
+    }
+
+
+    public static void somemethod() throws InvalidKeyException, NoSuchAlgorithmException, UnsupportedEncodingException, SignatureException {
+
+        String tempAccessToken = " something";
+        String header = Base64.getUrlEncoder().encodeToString(tempAccessToken.getBytes());
+        System.out.println("header=" + header);
+
+        Signature sign = Signature.getInstance("SHA256withRSA");
+//        sign.initSign(privatekey);
+        sign.update(tempAccessToken.getBytes("UTF-8"));
+        byte[] signatureBytes = sign.sign();
+//        sign.initVerify(publicKey);
+//        sign.update(tempAccessToken.getBytes("UTF-8"));
+
+        String jsonToken = Base64.getUrlEncoder().encodeToString(signatureBytes);
+        String JWTtoken = tempAccessToken + "." + jsonToken;
+        System.out.println("token=" + JWTtoken);
     }
 
 

@@ -3,6 +3,7 @@ package tests;
 import io.github.artsok.RepeatedIfExceptionsTest;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
+import org.springframework.test.annotation.Repeat;
 
 public class FailingTests {
 
@@ -42,5 +43,14 @@ public class FailingTests {
     @RepeatedIfExceptionsTest (repeats = 6)
     void testFive(){
         Assert.assertEquals(10, 10);
+    }
+
+
+    @Test
+    @Repeat(10)
+    void testSix(){
+        System.out.println("res="+ count);
+        count++;
+
     }
 }

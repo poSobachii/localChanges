@@ -43,10 +43,14 @@
         <option value="$PROJECT_DIR$/JWTS/pom.xml" />
         <option value="$PROJECT_DIR$/SpringRestQuoting/pom.xml" />
         <option value="$PROJECT_DIR$/LamdaExpression/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringJPAexamples/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMockitoSpy/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringPDFexample/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/MockitoSpyExample/pom.xml" />
         <option value="$PROJECT_DIR$/SpringSchedule/pom.xml" />
       </set>
     </option>

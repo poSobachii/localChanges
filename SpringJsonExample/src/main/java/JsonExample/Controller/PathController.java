@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 
 import javax.validation.Valid;
 import javax.ws.rs.Consumes;
+import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -12,9 +13,13 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static javax.ws.rs.core.MediaType.APPLICATION_FORM_URLENCODED;
+import static javax.ws.rs.core.MediaType.APPLICATION_FORM_URLENCODED_TYPE;
 import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 
 @Component
@@ -27,6 +32,13 @@ public class PathController {
     public Response getUser() {
         return Response.status(200).entity("getUser is called").build();
 
+    }
+
+    @GET
+    @Path("/redirect2")
+    public Response redirectUrl() throws URISyntaxException {
+        System.out.println("redirect triggered");
+        return Response.status(302).location(new URI("https://www.youtube.com")).build();
     }
 
     @GET
@@ -124,4 +136,21 @@ public class PathController {
         return json;
     }
 
+    @POST
+    @Path("/getUrlencoded")
+    @Produces(APPLICATION_FORM_URLENCODED)
+    public Response urlencodedBody(){
+        return Response.status(200)
+                .header("Some header", "value of header").entity("param1=data1&param2=data2&param3=data3").build();
+    }
+
+    @POST
+    @Path("/getUrlencodedParam")
+    @Consumes(APPLICATION_FORM_URLENCODED)
+    @Produces(APPLICATION_FORM_URLENCODED)
+    public Response urlencodedBodyWithParameters(@FormParam("name") String name){
+        System.out.println("Received parameter: " + name);
+        return Response.status(200)
+                .header("Some header", "value of header").entity("your parameter is = " + name).build();
+    }
 }

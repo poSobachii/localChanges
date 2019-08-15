@@ -24,10 +24,11 @@ import java.util.Base64;
 import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
+import java.util.UUID;
 
 public class RSAEncryptionFromFile {
 
-    PemUtils pemUtils = new PemUtils();
+//    PemUtils pemUtils = new PemUtils();
 
     static String publicKeyPath = "JWTS/KeyPair/publicK.pem";
     static String privateKeyPath = "JWTS/KeyPair/privateK.pem";
@@ -37,8 +38,6 @@ public class RSAEncryptionFromFile {
     static RSAPrivateKey privateKey;
 
     public static void main(String[] args) throws IOException, InvalidKeySpecException, NoSuchAlgorithmException {
-        publicStringedToken = getPublicToken();
-        privateStringedToken = getPrivateToken();
         decodeToken();
         String token = generateJwtToken(publicKey, privateKey);
         System.out.println("Token=" + token);
@@ -83,7 +82,11 @@ public class RSAEncryptionFromFile {
         return temp;
     }
 
-    public static void decodeToken() throws NoSuchAlgorithmException, InvalidKeySpecException {
+    public static void decodeToken() throws NoSuchAlgorithmException, InvalidKeySpecException, IOException {
+        publicStringedToken = getPublicToken();
+        privateStringedToken = getPrivateToken();
+
+
         KeyFactory kf = KeyFactory.getInstance("RSA");
 
         X509EncodedKeySpec keySpecX509 = new X509EncodedKeySpec(Base64.getDecoder().decode(publicStringedToken));
@@ -99,10 +102,18 @@ public class RSAEncryptionFromFile {
                 .withKeyId("payment-staging-2")
                 .withIssuer("https://identify.nordea.com")
                 .withAudience("vsGhBdS67eNBy1faRUBy")
-                .withExpiresAt(new Date())
-                .withJWTId("37e3b737-7c78-43f0-ba89-eac56fef2fg2")
+                .withExpiresAt(new Date(2020, 07, 24))
+                .withJWTId(UUID.randomUUID().toString())
                 .withSubject("payment-staging-2")
                 .sign(Algorithm.RSA256(publickey, privateKey));
         return token;
+    }
+
+    public static RSAPublicKey getPublicKey() {
+        return publicKey;
+    }
+
+    public static RSAPrivateKey getPrivateKey() {
+        return privateKey;
     }
 }

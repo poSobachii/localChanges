@@ -42,4 +42,8 @@ SELECT *, from_unixtime(updated/1000) FROM papi.paymentrequest where stamp = '9D
 
 UPDATE STATE_EXCHANGE SET STATE='91392088-79c2-4c66-b22f-47c5cafb1a60' WHERE STAMP='E6E6B82CAED24FD8AA10'
 
+---------------------------------------------
 
+SELECT archiveID, COUNT(*) c FROM papi.paymentrequest GROUP BY archiveID HAVING c > 1;
+
+// first column what value, second column how many times

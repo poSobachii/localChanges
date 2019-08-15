@@ -12,7 +12,7 @@ public class PostJson {
 
 //        PostClass.post();
 //        PostClass.postResponse();
-//        PostClass.postJson();
+        PostClass.postJson();
 
 
 //        SimplePostGetExecution.MyGETRequest();

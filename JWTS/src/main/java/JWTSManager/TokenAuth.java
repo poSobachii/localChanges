@@ -20,11 +20,14 @@ public class TokenAuth {
 
     public static String secret = "someString2";
     public static String token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhdXRoMCIsImVtYWlsIjoieW9AYWluYm94Lmx2In0.FKRIKSrQk8wlHyR8BttBDuaBAvU2WRppC0mElnus5gw";
+    public static String tokenUnsecured = "eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJpc3MiOiJhdXRoMCIsImVtYWlsIjoic29tZS5sdiJ9.";
 
     public static void main(String[] args) {
 //        createToken();
-        decodePart();
+//        decodePart();
 //        decodeToken();
+//        createUnsecured();
+//        decodeUnsecured();
 
     }
 
@@ -34,6 +37,27 @@ public class TokenAuth {
                 .withClaim("email", "yo@ainbox.lv")
                 .sign(Algorithm.HMAC256(secret));
         System.out.println("Token =" + temp);
+
+    }
+
+    public static void createUnsecured(){
+        String token = JWT.create()
+                .withClaim("email", "some.lv")
+                .withIssuer("auth0")
+                .sign(Algorithm.none());
+        System.out.println("Unsecured token: " + token);
+    }
+
+    public static void decodeUnsecured(){
+        JWTVerifier verifier = JWT.require(Algorithm.none())
+                .withIssuer("auth0")
+                .build();
+        DecodedJWT jwt = verifier.verify(tokenUnsecured);
+        String temp = jwt.getClaim("email").asString();
+        String temp2 = jwt.getHeader();
+        String temp3 = jwt.getPayload();
+        String temp4 = jwt.getSignature();
+        System.out.println("Decoded Part info: " + temp + " " + temp2 + " " + temp3 +" " + temp4);
 
     }
 

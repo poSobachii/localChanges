@@ -13,6 +13,8 @@
       <module fileurl="file://$PROJECT_DIR$/SpringJQueryDataTable/JQueryTable.iml" filepath="$PROJECT_DIR$/SpringJQueryDataTable/JQueryTable.iml" />
       <module fileurl="file://$PROJECT_DIR$/JWTS/JWTSManager.iml" filepath="$PROJECT_DIR$/JWTS/JWTSManager.iml" />
       <module fileurl="file://$PROJECT_DIR$/LamdaExpression/LamdaExpression.iml" filepath="$PROJECT_DIR$/LamdaExpression/LamdaExpression.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMockitoSpy/MockSpy.iml" filepath="$PROJECT_DIR$/SpringMockitoSpy/MockSpy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringJPAexamples/OneToOneToMany.iml" filepath="$PROJECT_DIR$/SpringJPAexamples/OneToOneToMany.iml" />
       <module fileurl="file://$PROJECT_DIR$/JUnitTestExample/Parametrizes Tests.iml" filepath="$PROJECT_DIR$/JUnitTestExample/Parametrizes Tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJsonExample/Path.Json.Log.Jersey.iml" filepath="$PROJECT_DIR$/SpringJsonExample/Path.Json.Log.Jersey.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringRestQuoting/QuotingSomeLinks.iml" filepath="$PROJECT_DIR$/SpringRestQuoting/QuotingSomeLinks.iml" />
@@ -27,6 +29,7 @@
       <module fileurl="file://$PROJECT_DIR$/HibernateTutorials/Some Hibernate Tutorials and Tests.iml" filepath="$PROJECT_DIR$/HibernateTutorials/Some Hibernate Tutorials and Tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringWebValidation/Some Input Validation.iml" filepath="$PROJECT_DIR$/SpringWebValidation/Some Input Validation.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJsonExample/SomeOutputExampleOfJson.iml" filepath="$PROJECT_DIR$/SpringJsonExample/SomeOutputExampleOfJson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringPDFexample/SpringPDFexample.iml" filepath="$PROJECT_DIR$/SpringPDFexample/SpringPDFexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringWebMockito/Testing Web Pages with Mockito.iml" filepath="$PROJECT_DIR$/SpringWebMockito/Testing Web Pages with Mockito.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringSimpleWebInputForm/Thymleaf.POST.GET.iml" filepath="$PROJECT_DIR$/SpringSimpleWebInputForm/Thymleaf.POST.GET.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringUploadingFiles/UploadAFile.iml" filepath="$PROJECT_DIR$/SpringUploadingFiles/UploadAFile.iml" />

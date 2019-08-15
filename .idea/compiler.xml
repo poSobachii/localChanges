@@ -19,8 +19,11 @@
         <module name="junit5-parallel" />
         <module name="JWTSManager" />
         <module name="LamdaExpression" />
+        <module name="MockSpy" />
+        <module name="OneToOneToMany" />
         <module name="Parametrizes Tests" />
         <module name="Path.Json.Log.Jersey" />
+        <module name="PDF.java/web" />
         <module name="QuotingSomeLinks" />
         <module name="Reading Data Copying into File" />
         <module name="Rest Hypermedia example" />
@@ -63,8 +66,12 @@
       <module name="junit5-parallel" target="1.8" />
       <module name="JWTSManager" target="1.8" />
       <module name="LamdaExpression" target="8" />
+      <module name="MockitoSpyExample" target="1.8" />
+      <module name="MockSpy" target="6" />
+      <module name="OneToOneToMany" target="1.8" />
       <module name="Parametrizes Tests" target="1.7" />
       <module name="Path.Json.Log.Jersey" target="1.8" />
+      <module name="PDF.java/web" target="1.8" />
       <module name="QuotingSomeLinks" target="1.8" />
       <module name="Reading Data Copying into File" target="1.8" />
       <module name="Rest Hypermedia example" target="1.8" />
@@ -101,8 +108,12 @@
       <module name="JMS example of sub and message" options="-parameters" />
       <module name="JPA example" options="-parameters" />
       <module name="JQueryTable" options="" />
-      <module name="JWTSManager" options="" />
+      <module name="JWTSManager" options="-parameters" />
       <module name="LamdaExpression" options="" />
+      <module name="MockSpy" options="" />
+      <module name="MockitoSpyExample" options="-parameters" />
+      <module name="OneToOneToMany" options="-parameters" />
+      <module name="PDF.java/web" options="-parameters" />
       <module name="Path.Json.Log.Jersey" options="-parameters" />
       <module name="QuotingSomeLinks" options="-parameters" />
       <module name="Reading Data Copying into File" options="-parameters" />

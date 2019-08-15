@@ -1,0 +1,29 @@
+drop database if exists dbo;
+create database dbo;
+use dbo;
+CREATE TABLE dbo.Person
+(
+Pk_Person_Id INT auto_increment PRIMARY KEY,
+Name VARCHAR(255),
+EmailId VARCHAR(255)
+);
+
+CREATE TABLE dbo.PassportDetails
+(
+Pk_Passport_Id INT PRIMARY KEY,
+Passport_Number VARCHAR(255),
+Person_summ INT,
+FOREIGN KEY (Person_summ) REFERENCES dbo.Person(Pk_Person_Id)
+);
+
+INSERT INTO dbo.Person VALUES (1, 'Niraj','v.a@emails.com');
+INSERT INTO dbo.Person VALUES (2, 'Vishwanath','v.v@emails.com');
+INSERT INTO dbo.Person VALUES (3, 'Chetan','c.v@emails.com');
+
+
+INSERT INTO dbo.PassportDetails VALUES (101, 'C3031R33', 1);
+INSERT INTO dbo.PassportDetails VALUES (102, 'VRDK5695', 2);
+INSERT INTO dbo.PassportDetails VALUES (103, 'A4DEK33D', 3);
+
+
+SELECT * FROM dbo.Person INNER JOIN dbo.PassportDetails ON Pk_Person_Id=Person_summ;

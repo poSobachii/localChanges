@@ -102,7 +102,7 @@ public class Encryption {
 
         if (new File("JWTS/KeyPair/text.txt").exists()) {
             ac.encryptFile(ac.getFileInBytes(new File("JWTS/KeyPair/text.txt")),
-                    new File("JWTS/KeyPair/text_encrypted.txt"),privateKey);
+                    new File("JWTS/KeyPair/text_encrypted.txt"), privateKey);
             ac.decryptFile(ac.getFileInBytes(new File("JWTS/KeyPair/text_encrypted.txt")),
                     new File("JWTS/KeyPair/text_decrypted.txt"), publicKey);
         } else {
