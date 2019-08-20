@@ -9,6 +9,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.IOException;
@@ -23,7 +25,7 @@ public class ChromeDriverExmpl {
 
         for (int i = 0; i < 2; i++) {
             FirefoxOptions options = new FirefoxOptions();
-            if ( i == 0) {
+            if (i == 0) {
                 driver = new FirefoxDriver();
                 System.out.println("driver 1 created");
 
@@ -53,17 +55,20 @@ public class ChromeDriverExmpl {
 
 //            WebDriver driver = new ChromeDriver(service.build(), ops);
 
-            driver.get("http://www.google.com/xhtml");
-            //        Thread.sleep(1000);  // Let the user actually see something!
-            WebElement searchBox = driver.findElement(By.name("q"));
-            searchBox.sendKeys("sheep");
-            searchBox.submit();
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("auth-form")));
+
+        driver.get("http://www.google.com/xhtml");
+        //        Thread.sleep(1000);  // Let the user actually see something!
+        WebElement searchBox = driver.findElement(By.name("q"));
+        searchBox.sendKeys("sheep");
+        searchBox.submit();
 //        Thread.sleep(1000);  // Let the user actually see something!
 
-            File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            FileUtils.copyFile(screenshot, new File("/Users/aleksandrs.grisanovs/Desktop/screenshot.png"));
-            driver.close();
+        File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(screenshot, new File("/Users/aleksandrs.grisanovs/Desktop/screenshot.png"));
+        driver.close();
 //        driver.quit();
-        }
     }
+}
 
