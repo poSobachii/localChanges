@@ -1,0 +1,100 @@
+Summary
+URL: https://identify.nordea.com/api/dbf/ca/demo-authentication-service-v1/authentications
+Status: 200 OK
+Source: Network
+Address: 194.255.75.130:443
+
+Request
+POST /api/dbf/ca/demo-authentication-service-v1/authentications HTTP/1.1
+Content-Type: application/json
+Accept: */*
+Host: identify.nordea.com
+Accept-Language: en
+Accept-Encoding: br, gzip, deflate
+Origin: https://identify.nordea.com
+Referer: https://identify.nordea.com/?client_id=NEIDDEMO&response_type=code&scope=openid+ftn_hetu+ftn_satu+ftn_personidentifier&redirect_uri=https%3A%2F%2Fe-identification-demo.nordea.fi%2Fcode&state=91392088-79c2-4c66-b22f-47c5cafb1a60&lang=en&nonce=9d8a53006da4f39f1e8628741bebe05b1c0cadb27864575a0e82905bebeee1d2&acr_values=http%3A%2F%2Fftn.ficora.fi%2F2017%2Floatest2
+Content-Length: 449
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.1.1 Safari/605.1.15
+Connection: keep-alive
+x-device-ec: 0
+x-platform-type: Web
+x-app-version: n/a -> 1.8.7
+x-device-model: n/a
+
+Response
+HTTP/1.1 200 OK
+Content-Type: application/json
+Pragma: no-cache
+Access-Control-Allow-Origin: https://identify.nordea.com
+X-XSS-Protection: 1; mode=block
+Access-Control-Allow-Methods: POST, GET, DELETE, PATCH, PUT
+Content-Encoding: gzip
+Transfer-Encoding: Identity
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: origin,x-requested-with,x-dbf-servicerequestcontext,x-authorization,x-since,x-until,content-type,authorization,accept,accept-encoding,accept-language,client-security-token
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Date: Fri, 14 Jun 2019 11:30:47 GMT
+Access-Control-Allow-Credentials: true
+X-Frame-Options: DENY
+X-Application-Context: nasf-demo-authentication-service:nasa-demo-clients-v1:6018
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+nnCoection: close
+X-Global-Transaction-ID: eaf52b955d0385670069f05f
+X-Backside-Transport: OK OK,OK OK
+
+Request Data
+MIME Type: application/json
+Request Data: 
+
+{
+    "client_id": "NEIDDEMO",
+    "code_challenge": null,
+    "code_challenge_method": null,
+    "redirect_uri": "https://e-identification-demo.nordea.fi/code",
+    "response_type": "code",
+    "scope": "openid ftn_hetu ftn_satu ftn_personidentifier offline_access",
+    "state": "91392088-79c2-4c66-b22f-47c5cafb1a60",
+    "nonce": "9d8a53006da4f39f1e8628741bebe05b1c0cadb27864575a0e82905bebeee1d2",
+    "acr_values": "http://ftn.ficora.fi/2017/loatest2",
+    "signing_order_id": null,
+    "user_id": "DEMOUSER1"
+}
+
+
+Response data:
+
+{
+  "access_token" : "fc12e9a3-cfdc-4ec3-b0b2-1643a13aaaa2",
+  "expires_in" : 180,
+  "token_type" : "Bearer",
+  "id_token" : "eyJ0dHlwIjoiaWRfdG9rZW4iLCJjdHkiOiJKV1QiLCJlbmMiOiJBMTI4R0NNIiwiYWxnIjoiUlNBLU9BRVAtMjU2In0.bKDMgj0vW-CWelTXqi8kPda2EA1W55d570pTMu0bGRsXyNAfhIZGv6EXBywViihYXJoHjONipaNEkuIUWMU_o3TsplLX5MVXjLtkJIihmZxXTsbGmAVGT15WzA8BZwdprtRiigy-hZr1_PMW2qSEiDI6U0li47Mph1d07F9x1ZXk5QV7qPpP3-9TwrnkT4vIoscNZxYh2J6ijR9bK9bL2D7eC9ETiNT_Fpzc2JnCZ0YZyD00drms7OZcSXYduF26see-zYf9aZB99R6Eyob6Uh7wg24jzuUpu2BRw_CVWZqP-Wm9b3bFj8TLp4brRpDAr7DdIDLSzBEWESbXLjzNfw.FjBKcLLwvfvNujYR.JI0K5MEZ5HC7yU0TDGgCxTFV-oVVjHweefqTTzXVOaeFtvCmKIeQRXHchBvU0BmEr9XvQdfVrCQwEwlMo_Mt5ysB5Poz73trX0_M3AIuEIWdYwBBUvz4jAI0Il3SWxgKMoF2EBvZuRsPSxZUtH5F5Og-TUfKTrSNPngWJ1XBkWXgcBy9CKT44dYxhbv8WqIGhdcDzuUZKcRa1boNofaWHguGQlF_-SF_yb4EtfSHTA_KncbPrO4Tbc-9--7BHixN7OsNDiwHsvFaVzvHuLjCdv5l5nuQxzPG-KLgQJMfoorpoIhIxceERMgM8d6k6s5uMqg1_RraVTdAEJWSqtLrWYMaN1zf458BbRmVUv6A6WukjtQCEkuP1jPUFjhTYjh2jM29ZF0GlS9_hbGmKLGw7wD3rakJnTuFu9d4Y5dO_w6GLPgZVpbnKrOZJs-ZgpVYX7j1kWbkLE4xUgDfGOuYq2iNmTys-wxipvz2H3a-B7uUL2uCrQrasv8rNsKuM_z-CUkII4kKu-c_nhhO7vNlOePagrYKRhNi_cRynfH3mAnB-X9aJ0rgcGLp_6e6hKRM5I68A5sNT-oezBL3t2SgEbnOkqIk3OvU9kPgxa2Gmk8lh9_WTYZATG2al63UiGBThF24C0yzC6aWDVCcldLiALwcwVo8ioWa0nnUyjxW7HWuHNxO6TZJLTc-YJOo82faVzDrCKEyCPT3T_lXcW0SJ_zwqj8k5Tu7yfTwMzYrIpA2XqSPTpIX341kyBpIXW90ZXLOMn5p8HNR9cDTurJiqWpZ9H4H6R8gpia7TvPkzJyn8rr7kYlVsMYcv9MEzwsNd34PWZF8MhvMO1F4m_JhrkL25gZhZVLomUic5ci2X2D_rRlVoADZlwxwj3tXlk5oE8axJ90aV0JJxTiYSJS2dUgdbBhBFAt-cFqty9EWtL8pQXCpAR8lBTpfT7pqdAm_drm_8sz9V3Ke2-jd335oU8seTkaoXPbVfPxNwufg2C_Xe-nNB2ZsT5PnhPwHUvCd0hlNBrRkqgH2Lrm0IaC5KPUAxv0KBTcxi2ebMhNiZ4TTGzahcK8i7DH8L-fs9JhwT53xqHEGf4toE1N2rAUu2x-Gi-r5_vATAKKBNMrQcxWdH4Xo9smsy0hxzF6zwhas6lmYtclPt2KgPVsTljAUjKZtYuLfFdJoKoSDcdXDmemV96qHoRnRM6pDt8xegR2wF8fUvgX7NIqaa1xq0_RRsYrykpYNgEqkZIXb_J2nl09GVgpc5IUfIxQlCpg0bsHoIbcoQU-WwMC5PZKslgxf3wdSXu_rZzQu_lylnlfCg8x-WPrNdRJgeQVP3E_mTS7-vzBtnMU_yzg6i1r84UYb8qRuy1UnbHFw-JCeBZniQnvIYGsqsRSG-V6o-aLY6uVeN5W7SmJ3Ift3yp_e2zvBatwXXoADXFq_97kTiQTbtQh0BGeR0NIQ2dCzM9y9UEKm7ySKQGs_5DtYIcPAXq1vOV0v2jE0Bnx8KQ-wMgOKzUsqYNt17-yJikqgU_fGkOl1kX4e0zDOuVC_YPptKZsYGI-yiwP7V-5nIazni1PmEwUvMdRYhl04jv33CgblaEH2UMH8bc5nuSCliehiN33-ag-I7FdsQYi54QwJtQyzV-DN7txwFvW0P4gHidSVD1yOYgp64X7ws4Fi4bbnT5W78wcVq4tz9J74v5MKaG9I52ycfL58g5xC9oOHfx_OFhHjmhPsQ3N7rAPH79v_7SoLCKwtjx8kJA8jl5OW9Ol3X10-JogIt0MrlRkodoO-cYASDftwOKXMZnO2C3WQsnh2EN-xVOIl6rlzoK9ptt6WksX9q-7_j0k2I1iNejHStRgNLWA_Y2ac_cPdc5wF4pBFXw1iAFQrM-TDeMNnzoApbBtwh6cQzXG5K-rad_eWZ9-o9jgmmArksFEFvpLLE5EYjPU1vDrRBAIvTh7G0KnPCYT1wdGIeZFApyQNDOIMg0h5sIG-cRMVK6R1cSep4C9rkGlyBWack4q9xJM-Kbyn0ULV9wDakgVXPHittywfTAFX7fgWg3Agiu6qX1QBmeFIEttKn6xCxkeF--8er9z2CLvjbcbYcrrHTYx5siAjteM9S8kxwe4crMXW4ORStk-tfAIl4S49xn3OGfAT5pSvNvyeoxTnu3HHrYonzTINS7nDr-9AxorbIeoKSjnMGJAMoPxz_9vLjtFFLXQhCmGkcdumfOG2zG_3tf8ivDtFj7mZm4bmq3PEU1YzyHrDvDXUFPmqGoGl9HXJT09ia6ApJmyu9sxg8pl8Kq66DkhqCVM.raBE5Gaak-8hIF2N-jF9jg",
+  "scope" : "ftn_personidentifier openid ftn_hetu ftn_satu"
+}
+
+
+This is your decrypted ID-token:
+sub	n/a
+urn:oid:1.3.6.1.5.5.7.9.1	2000-02-01
+urn:oid:1.3.6.1.5.5.7.9.2	Kittilä Finland
+amr	demo
+iss	https://identify.nordea.com
+client_id	NEIDDEMO
+urn:oid:1.2.246.575.1.18	true
+acr	http://ftn.ficora.fi/2017/loatest2
+urn:oid:1.2.246.575.1.16	{street_address=Itämerenkatu 3 A 75, country=FI, locality=Helsinki, postal_code=00180}
+urn:oid:1.2.246.575.1.15	male
+auth_time	1560511847
+urn:oid:2.5.4.4	Korhonen
+exp	1560512448
+urn:oid:1.2.246.575.1.14	Onni Juhani
+iat	1560511848
+jti	3cb5d272-ec41-4b3e-85aa-9f17dd13372c
+urn:oid:1.2.246.22	99999990A
+urn:oid:1.2.246.21	010200A9618
+urn:oid:1.2.246.575.1.4	Onni
+urn:oid:2.5.4.42	Onni
+nonce	9d8a53006da4f39f1e8628741bebe05b1c0cadb27864575a0e82905bebeee1d2
+http://eidas.europa.eu/attributes/naturalperson/PersonIdentifier	FI/FI/010200A9618
+aud	NEIDDEMO
+nbf	1560511838
+urn:oid:1.2.246.575.1.3	Korhonen

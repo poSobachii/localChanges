@@ -1,0 +1,56 @@
+1. JWT token encryption - added method from authorisation project
+2. Integrate client with APIs - Aleksandrs 1 task, should Nordea client be integrated with Aleksandrs KeyMapper?
+3. Test Nordea client somehow... - impossible without redirectUri and no info that they are applied our public key
+4. Fix pull request suggestions on arrive. - WAITING
+5. Check keys from §3.1, Nordea provided exponent and key value modulus not encoded
+6. Requires redirect url - WAITING
+7. Nordea client json to query param - DONE
+8. Few Nordea domain objects redundant? - NOT SURE
+
+§3.1 response object could be https://bitbucket.org/connect2id/nimbus-jose-jwt/src/master/src/main/java/com/nimbusds/jose/jwk/JWKSet.java
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+
+§4.4.3	https://openid.net/specs/openid-connect-core-1_0.html#TokenResponseValidation
+§4.4.3	Clients must verify that the nonce Claim Value is equal to the value of the nonce parameter sent in the Authentication Request.
+§4.3	client_assertion not String but something more complex
+
+https://openid.net/specs/openid-connect-core-1_0.html	- our case isn't Implicit flow but Authorization Code Flow (response_type=code)
+client must use TLS
+1. Are we provided Test public key to Nordea that they can update JWK key set URL?
+
+When testing the service, “acr_values” parameter can be set to value “http://ftn.ficora.fi/2017/loatest2”.
+§4.1 Are we have all required data for testing except redirect_uri? - seems that yes
+
+In demo UI example are used 'lang' authorise parameter instead of 'ui_locales'?
+Is token-service-host same as auth-server-url?
+Should we read all 300 pages of documentation from references?
+The keys MUST be cached in the service provider side and JWKS endpoint should only be called to refresh the cache. - Done
+
+https://confluence.sanoma.com/display/SNAPI/NewAuth+-+Debug+JWT+tokens
+https://medium.facilelogin.com/jwt-jws-and-jwe-for-not-so-dummies-b63310d201a3	- something about JWE
+https://jwt.io/introduction/ + free book
+Docs from references 300+ pages:
+https://openid.net/specs/openid-connect-core-1_0.html
+https://tools.ietf.org/html/rfc7517
+https://tools.ietf.org/html/rfc7519
+https://tools.ietf.org/html/rfc7515
+https://tools.ietf.org/html/rfc7516
+https://www.ietf.org/rfc/rfc3339.txt
+https://tools.ietf.org/html/rfc5246
+
+
+https://identify.nordea.com/?
+client_id=NEIDDEMO&
+response_type=code&
+scope=openid+ftn_hetu+ftn_satu+ftn_personidentifier&
+redirect_uri=https%3A%2F%2Fe-identification-demo.nordea.fi%2Fcode&
+state=91392088-79c2-4c66-b22f-47c5cafb1a60&
+lang=en&
+nonce=a9225202b38f99039363aae813d89bd457e0415c492fba7b5207f6f1e60fbce6&
+acr_values=http%3A%2F%2Fftn.ficora.fi%2F2017%2Floatest2
+
+https://e-identification-demo.nordea.fi/code?
+state=91392088-79c2-4c66-b22f-47c5cafb1a60&
+code=eyJ6aXAiOiJERUYiLCJ0dHlwIjoiYXV0aGVudGljYXRpb25fdG9rZW4iLCJ2ZXIiOiIyLjAuMyIsImtpZCI6Im5hc2YtYXV0aGVudGljYXRpb24tdG9rZW4tZW5jcnlwdGlvbi1wcm9kIiwiY3R5IjoiSldUIiwiZW5jIjoiQTEyOEdDTSIsImFsZyI6ImRpciJ9..OXhqUniNRHNRZ3HY.vJrGEPszoffQ8P5lcTcNdSkczEBve8xEcyCU4qlncy1OY7m73rdagYXAc3ZLlrKkWud2m7A7XhhvZTgpEB05jMgmSHg4jmwSLgk2XL2L04wazt3lT49qrm-2D5mgbaSRLBj1xJTNI39WqFIrxD2p0yMbtR9VUpZ_z9ZKzT74KFM7hHyPmLWFbz3pvGN8yDFMhcyFia-NqajlNh5kqt7peKFFeusJTn3JHsQapjKP8EfV1i9hy7I9PKY1Bo0pJ6Oc1frpAHwH4KPjhgN9SSAgIdHE2RBzTc4v1Q2zUxEYANWSNwgBscEezu90iKUpUnOOFVSlzHHRUnrWgMoNihk-FPoyi2unXd_A9AT6tZ6537VSsNZVkj0XaSrmkjQd3L6_gA7-D_mSCNu66xpJj5QMcROApYF4GaeVupuN-Ei7ehFzuNpSJ5Y_dKAC5f-TH2-NNBixJmRWNbo-G-Osx_FgrXOQFy-Ly_xHewLYef0c6FgalCn2uhcXF2gEwfHXaf_epR_h4gUHmCumnvD71KjxWKdLZS--xQznA4p_aXt-TRq4RvnPEr_oB4YoC90Laax6pzF4hQv_dAumGntmc9jHr6G-9XOrSqWTQlqWDY_oYIAg4IA0y0vVayqoTdB8wdZ92MA515lwtI4UWik3wKuBKYXVzme_nNAqvag6L5SJwmCpkX4dPtIzTfWatl7AMrI_RLyJPSbQR5ppKWaCU-WMB-YAgGYEeJsejvzMOyz1DZiP0KSXTWwKmocY5XiGjBaJN151ldTBodiXbVUepQJydNy_M0zAub1BdKzSBZ4RpcX6pCpV9-oPSSNder0meS8__bHAlSnGC0I1KoeBpJkYRuGhwSHuRhBlaZ3crBtu9S50AQIGY7mzxnUY6BeQqcEbeKXhzlcPf7ql0zhazLbT08vf-OCt3FY55RydN3nKa3-1Kw1Z0TkwfCEsX7nJh99l0cZcncp25jdUYEB5neCAFvD1D_PLxO7-ETJgqX9Hj9D0Vs5VEjdC-_-1TlRC4SomF2968_gFkDlTLhtteuG3qm84oDpJVCfioJHqN70WkS2Pp9ZHCQELp0S680Ou3blLiQvXLLaD7e7BBOpzjawMiWxJ9sdI9-f86P9nWWwb1r7611ZCTHjWijF5XCD0JUeVz243ifSWPFQsHtPht1r22cGXEho6lug3ddyDQNlTFl16P75hJKz4dfVHTZ_rASBfVNW3uOLqz0zQiXtB00TUiZiAnZbAENpvuS5dIJxTDlXtWv3zUHD3OMHM2i79xZbPQZA19-0BTXtGDLNgHlLvx-Cf526jsEtqnIqRMKTdlHwNcjEo0Eg.kMVr3UaAgRDhSU58XwxeGg
+
