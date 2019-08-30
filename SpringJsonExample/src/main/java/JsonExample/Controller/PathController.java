@@ -3,6 +3,7 @@ package JsonExample.Controller;
 import com.google.gson.Gson;
 import org.springframework.stereotype.Component;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.FormParam;
@@ -11,6 +12,7 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
+import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.net.URI;
@@ -27,6 +29,8 @@ import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 //@Produces({APPLICATION_JSON, APPLICATION_XML})
 public class PathController {
 
+    @Context
+    private HttpServletRequest httpServletRequest;
 
     @GET
     public Response getUser() {
@@ -152,5 +156,13 @@ public class PathController {
         System.out.println("Received parameter: " + name);
         return Response.status(200)
                 .header("Some header", "value of header").entity("your parameter is = " + name).build();
+    }
+
+    @GET
+    @Path("/servlet")
+    public Response servletTesting(){
+        System.out.println("/servlet requested");
+        System.out.println("res=" + httpServletRequest.getQueryString());
+        return Response.ok().build();
     }
 }

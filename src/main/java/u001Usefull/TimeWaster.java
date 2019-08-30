@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 public class TimeWaster {
     public static void main(String[] args) throws InterruptedException {
+        @SuppressWarnings({"PMD.ExcessiveMethodLength"})
         int delay = 1;
         System.out.println("Preparing your coffee...");
         TimeUnit.SECONDS.sleep(delay);

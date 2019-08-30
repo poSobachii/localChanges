@@ -97,7 +97,7 @@ public class RSAnimbusNORexample {
     static void nimbusDecode() throws ParseException, JOSEException, IOException {
         EncryptedJWT jwt;
         RSADecrypter decrypter = new RSADecrypter(privateKey);
-        jwt = EncryptedJWT.parse(token5);
+        jwt = EncryptedJWT.parse(token3);
         jwt.decrypt(decrypter);
         System.out.println("res2=" + jwt.getPayload());
         String finaltoken = jwt.getPayload().toString();
@@ -105,8 +105,8 @@ public class RSAnimbusNORexample {
 
         SignedJWT nordeaToken = SignedJWT.parse(finaltoken);
         System.out.println("Header=" + nordeaToken.getHeader().getKeyID());
-        RSAPublicKey nordeaKid = fetchNordeaPublic("demo-id-token");
-        RSASSAVerifier verifier = new RSASSAVerifier(publicKey);
+        RSAPublicKey nordeaKid = fetchNordeaPublic("nasf-access-token");
+        RSASSAVerifier verifier = new RSASSAVerifier(nordeaKid);
         nordeaToken.verify(verifier);
         System.out.println("payload=" + nordeaToken.getPayload());
         tokenObjectFormat objectFormat = mapper.readValue(nordeaToken.getPayload().toString(), tokenObjectFormat.class);

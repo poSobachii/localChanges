@@ -13,6 +13,7 @@
         <module name="Docker.JAR.SpringApp" />
         <module name="FBapi - DevelopersForFacebook" />
         <module name="H2" />
+        <module name="JaCoCo" />
         <module name="JMS example of sub and message" />
         <module name="JPA example" />
         <module name="JQueryTable" />
@@ -37,6 +38,7 @@
         <module name="Some Hibernate Tutorials and Tests" />
         <module name="Some Input Validation" />
         <module name="someSortOfWebPages" />
+        <module name="SpringPDFexample" />
         <module name="Testing Web Pages with Mockito" />
         <module name="thymeleaf examples" />
         <module name="Thymleaf.POST.GET" />
@@ -60,6 +62,7 @@
       <module name="Gemfire Accessing" target="1.8" />
       <module name="Gemfire Caching" target="1.8" />
       <module name="H2" target="1.8" />
+      <module name="JaCoCo" target="1.6" />
       <module name="JMS example of sub and message" target="1.8" />
       <module name="JPA example" target="1.8" />
       <module name="JQueryTable" target="1.8" />
@@ -85,6 +88,7 @@
       <module name="Some Hibernate Tutorials and Tests" target="1.5" />
       <module name="Some Input Validation" target="1.8" />
       <module name="someSortOfWebPages" target="1.8" />
+      <module name="SpringPDFexample" target="1.8" />
       <module name="SpringSchedule" target="1.8" />
       <module name="Testing Web Pages with Mockito" target="1.8" />
       <module name="thymeleaf examples" target="1.8" />
@@ -109,6 +113,7 @@
       <module name="JPA example" options="-parameters" />
       <module name="JQueryTable" options="" />
       <module name="JWTSManager" options="-parameters" />
+      <module name="JaCoCo" options="" />
       <module name="LamdaExpression" options="" />
       <module name="MockSpy" options="" />
       <module name="MockitoSpyExample" options="-parameters" />
@@ -125,6 +130,7 @@
       <module name="Simple DB example without queries" options="-parameters" />
       <module name="Simple Web hello with increment" options="-parameters" />
       <module name="Some Input Validation" options="-parameters" />
+      <module name="SpringPDFexample" options="-parameters" />
       <module name="SpringSchedule" options="-parameters" />
       <module name="Thymleaf.POST.GET" options="-parameters" />
       <module name="UploadAFile" options="-parameters" />

@@ -20,7 +20,7 @@ public class ApplicationController {
 
 
     @RequestMapping(value = "/home", method = RequestMethod.GET)
-    @ResponseBody
+//    @ResponseBody
     String home(){
         return "Hello moose!";
     }
