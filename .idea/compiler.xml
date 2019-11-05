@@ -11,6 +11,7 @@
         <module name="CURL examples" />
         <module name="Docker.Jar" />
         <module name="Docker.JAR.SpringApp" />
+        <module name="Email." />
         <module name="FBapi - DevelopersForFacebook" />
         <module name="H2" />
         <module name="JaCoCo" />
@@ -21,7 +22,7 @@
         <module name="JWTSManager" />
         <module name="LamdaExpression" />
         <module name="MockSpy" />
-        <module name="OneToOneToMany" />
+        <module name="OneToOneToMany , Exceptions" />
         <module name="Parametrizes Tests" />
         <module name="Path.Json.Log.Jersey" />
         <module name="PDF.java/web" />
@@ -58,6 +59,7 @@
       <module name="Docker.Jar" target="1.8" />
       <module name="Docker.JAR.SpringApp" target="1.8" />
       <module name="Dzigurda" target="8" />
+      <module name="Email." target="1.5" />
       <module name="FBapi - DevelopersForFacebook" target="1.8" />
       <module name="Gemfire Accessing" target="1.8" />
       <module name="Gemfire Caching" target="1.8" />
@@ -71,7 +73,7 @@
       <module name="LamdaExpression" target="8" />
       <module name="MockitoSpyExample" target="1.8" />
       <module name="MockSpy" target="6" />
-      <module name="OneToOneToMany" target="1.8" />
+      <module name="OneToOneToMany , Exceptions" target="1.8" />
       <module name="Parametrizes Tests" target="1.7" />
       <module name="Path.Json.Log.Jersey" target="1.8" />
       <module name="PDF.java/web" target="1.8" />
@@ -106,6 +108,7 @@
       <module name="Converting CSV adding to DB" options="-parameters" />
       <module name="Docker.JAR.SpringApp" options="-parameters" />
       <module name="Docker.Jar" options="-parameters" />
+      <module name="Email." options="" />
       <module name="Gemfire Accessing" options="-parameters" />
       <module name="Gemfire Caching" options="-parameters" />
       <module name="H2" options="-parameters" />
@@ -117,7 +120,7 @@
       <module name="LamdaExpression" options="" />
       <module name="MockSpy" options="" />
       <module name="MockitoSpyExample" options="-parameters" />
-      <module name="OneToOneToMany" options="-parameters" />
+      <module name="OneToOneToMany , Exceptions" options="-parameters" />
       <module name="PDF.java/web" options="-parameters" />
       <module name="Path.Json.Log.Jersey" options="-parameters" />
       <module name="QuotingSomeLinks" options="-parameters" />

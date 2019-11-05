@@ -38,12 +38,7 @@ public class PathController {
 
     }
 
-    @GET
-    @Path("/redirect2")
-    public Response redirectUrl() throws URISyntaxException {
-        System.out.println("redirect triggered");
-        return Response.status(302).location(new URI("https://www.youtube.com")).build();
-    }
+
 
     @GET
     @Path("/vip")
@@ -143,7 +138,7 @@ public class PathController {
     @POST
     @Path("/getUrlencoded")
     @Produces(APPLICATION_FORM_URLENCODED)
-    public Response urlencodedBody(){
+    public Response urlencodedBody() {
         return Response.status(200)
                 .header("Some header", "value of header").entity("param1=data1&param2=data2&param3=data3").build();
     }
@@ -152,7 +147,7 @@ public class PathController {
     @Path("/getUrlencodedParam")
     @Consumes(APPLICATION_FORM_URLENCODED)
     @Produces(APPLICATION_FORM_URLENCODED)
-    public Response urlencodedBodyWithParameters(@FormParam("name") String name){
+    public Response urlencodedBodyWithParameters(@FormParam("name") String name) {
         System.out.println("Received parameter: " + name);
         return Response.status(200)
                 .header("Some header", "value of header").entity("your parameter is = " + name).build();
@@ -160,9 +155,54 @@ public class PathController {
 
     @GET
     @Path("/servlet")
-    public Response servletTesting(){
+    public Response servletTesting() {
         System.out.println("/servlet requested");
         System.out.println("res=" + httpServletRequest.getQueryString());
         return Response.ok().build();
+    }
+
+    @GET
+    @Path("/redirect2")
+    public Response redirectUrl() throws URISyntaxException {
+        System.out.println("redirect triggered");
+        return Response.status(302).location(new URI("https://www.youtube.com")).build();
+    }
+
+    @GET
+    @Path("/relocate")
+    public Response relocatingTest() {
+        return Response.status(Response.Status.FOUND).location(getUriCorrect()).build();
+    }
+
+    @GET
+    @Path("/relocate2")
+    public Response relocatingTest2() {
+        return Response.status(302).header("Location", "https://youtube.com").build();
+    }
+
+    @GET
+    @Path("/relocate3")
+    public Response relocatingTest3() {
+        System.out.println("relocated2");
+        return Response.seeOther(getUriWrong()).build();
+    }
+
+
+    private URI getUriWrong() {
+        try {
+            return new URI("www.youtube.com");
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    private URI getUriCorrect() {
+        try {
+            return new URI("http://youtube.com");
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }

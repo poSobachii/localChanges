@@ -2,17 +2,24 @@ package JPAExample;
 
 import JPAExample.databaseS.DiffEntities.Book;
 import JPAExample.databaseS.DiffEntities.BookDetail;
+import JPAExample.databaseS.Exceptions.ExceptionHandling;
 import JPAExample.databaseS.Repos.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @SpringBootApplication
 public class StartUp implements CommandLineRunner {
+
+    @Bean
+    public ExceptionHandling inti(){
+        return new ExceptionHandling();
+    }
 
     @Autowired
     private BookRepository bookRepository;

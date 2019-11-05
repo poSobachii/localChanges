@@ -1,6 +1,7 @@
 package JPAExample.databaseS.Entities;
 
 import javax.persistence.CascadeType;
+import javax.persistence.CollectionTable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,6 +13,9 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import static javax.persistence.GenerationType.IDENTITY;
 
@@ -29,6 +33,10 @@ public class User {
 //    @OneToOne(cascade = CascadeType.ALL)
 //    @JoinColumn(name = "id", referencedColumnName = "id")
 //    private EmailAddres address;
+
+//    project example
+//    @CollectionTable(name = "paymentagreement_parameters", joinColumns = @JoinColumn(name = "id"))
+//    private final Map<String, String> parameters = new HashMap<>();
 
     public Long getId() {
         return id;

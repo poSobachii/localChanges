@@ -3,12 +3,16 @@ ps -ef | grep java     //to see all java processers
 sudo kill -9 <pid>           // to kill processor with ID
 history | grep variable         // to search for something in terminal
 
+mkdir   // to make folder
+touch filename.txt    // to make file
+
 cat > hello.txt         // to create a file
 mv hello.txt hello1.txt      //to rename a file
 vi hello.txt     // to edit file. press "i" for insert or "esc" for quiting insert mode
 ctrl + c , :x      // to save a file
 :q :q!          // to quit file, and quit unsaved
 nano hello.txt
+less hello.txt
 
 
 javac    // compile .java file into .class file
@@ -18,9 +22,12 @@ java -jar Chuchi.jar
 
 
 
-    docker run --name "yoyo" -d -p 4444:4444 selenium/standalone-chrome
+docker run --name "yoyo" -d -p 4444:4444 selenium/standalone-chrome
 
-docker ps - to see full list
+docker ps // - to see full list
+docker rm yoyo
+docker ps -a
+docker container prune
 To stop everything unused and delete: docker system prune
 
 To stop all contatiners: docker stop $(docker ps -a -q)
@@ -43,3 +50,5 @@ ssh-add ~/.ssh/id_rs
 sudo chmod 0755 /usr/local/bin/vpn.sh
 sudo vpn.sh nl
 sudo pkill openconnect
+
+

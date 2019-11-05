@@ -24,7 +24,7 @@ public class RSAAlgorithm {
 
     public static void main(String[] args) throws NoSuchAlgorithmException {
         KeyPairGenerator keyGenerator = KeyPairGenerator.getInstance("RSA");
-        keyGenerator.initialize(512);
+        keyGenerator.initialize(2048);
 
         KeyPair kp = keyGenerator.genKeyPair();
         RSAPublicKey publicKey = (RSAPublicKey) kp.getPublic();
@@ -36,6 +36,7 @@ public class RSAAlgorithm {
         String encodedForUrl = Base64.getUrlEncoder().encodeToString(publicKey.getModulus().toByteArray());
         System.out.println(convertToPublicKey(encodedPublicKey));
         System.out.println(convertToPrivateKey(encodedPrivate));
+        System.out.println("for url --->");
         System.out.println(convertToPublicKey(encodedForUrl));
         String token = generateJwtToken(publicKey, privateKey);
         System.out.println("TOKEN:");

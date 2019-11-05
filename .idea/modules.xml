@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/SpringConvertingBatch/Converting CSV adding to DB.iml" filepath="$PROJECT_DIR$/SpringConvertingBatch/Converting CSV adding to DB.iml" />
       <module fileurl="file://$PROJECT_DIR$/DockerExample/Docker.Jar.iml" filepath="$PROJECT_DIR$/DockerExample/Docker.Jar.iml" />
       <module fileurl="file://$PROJECT_DIR$/DockerExample/DockerSpringBootApp.iml" filepath="$PROJECT_DIR$/DockerExample/DockerSpringBootApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SendingEmail/Email..iml" filepath="$PROJECT_DIR$/SendingEmail/Email..iml" />
       <module fileurl="file://$PROJECT_DIR$/FacebookApi/FBapi - DevelopersForFacebook.iml" filepath="$PROJECT_DIR$/FacebookApi/FBapi - DevelopersForFacebook.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringDatabaseAccess/H2.iml" filepath="$PROJECT_DIR$/SpringDatabaseAccess/H2.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJMSmessaging/JMS example of sub and message.iml" filepath="$PROJECT_DIR$/SpringJMSmessaging/JMS example of sub and message.iml" />
@@ -15,7 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/SpringJacoco/JaCoCo.iml" filepath="$PROJECT_DIR$/SpringJacoco/JaCoCo.iml" />
       <module fileurl="file://$PROJECT_DIR$/LamdaExpression/LamdaExpression.iml" filepath="$PROJECT_DIR$/LamdaExpression/LamdaExpression.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringMockitoSpy/MockSpy.iml" filepath="$PROJECT_DIR$/SpringMockitoSpy/MockSpy.iml" />
-      <module fileurl="file://$PROJECT_DIR$/SpringJPAexamples/OneToOneToMany.iml" filepath="$PROJECT_DIR$/SpringJPAexamples/OneToOneToMany.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringJPAexamples/OneToOneToMany , Exceptions.iml" filepath="$PROJECT_DIR$/SpringJPAexamples/OneToOneToMany , Exceptions.iml" />
       <module fileurl="file://$PROJECT_DIR$/JUnitTestExample/Parametrizes Tests.iml" filepath="$PROJECT_DIR$/JUnitTestExample/Parametrizes Tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJsonExample/Path.Json.Log.Jersey.iml" filepath="$PROJECT_DIR$/SpringJsonExample/Path.Json.Log.Jersey.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringRestQuoting/QuotingSomeLinks.iml" filepath="$PROJECT_DIR$/SpringRestQuoting/QuotingSomeLinks.iml" />

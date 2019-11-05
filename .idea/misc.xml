@@ -48,6 +48,7 @@
         <option value="$PROJECT_DIR$/SpringPDFexample/pom.xml" />
         <option value="$PROJECT_DIR$/SpringJacoco/pom.xml" />
         <option value="$PROJECT_DIR$/SpringUploadingFiles/pom.xml" />
+        <option value="$PROJECT_DIR$/SendingEmail/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

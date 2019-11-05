@@ -43,8 +43,8 @@ public class FullLogic {
     public static void main(String[] args) throws InvalidKeySpecException, NoSuchAlgorithmException, JOSEException, IOException, ParseException {
         convertKeys();
         generateToken();
-        encryptToken();
-        decodeToken();
+//        encryptToken();
+//        decodeToken();
     }
 
 
@@ -56,14 +56,14 @@ public class FullLogic {
 
     public static void generateToken() throws JOSEException {
         JWTClaimsSet jwtClaims = new JWTClaimsSet.Builder()
-                .issuer("someone")
-                .subject("alice")
-                .audience("someoneAnother")
+                .issuer("Sanoma")
+                .subject("nordea")
+                .audience("nordea url")
                 .expirationTime(new Date(System.currentTimeMillis()))
                 .jwtID(UUID.randomUUID().toString())
                 .build();
         JWSSigner signer = new RSASSASigner(privateKey);
-        JWSObject jwsObject = new JWSObject(new JWSHeader.Builder(JWSAlgorithm.RS256).keyID("someId").build(), new Payload(jwtClaims.toJSONObject()));
+        JWSObject jwsObject = new JWSObject(new JWSHeader.Builder(JWSAlgorithm.RS256).keyID("payment-prod-01").build(), new Payload(jwtClaims.toJSONObject()));
         jwsObject.sign(signer);
         signedToken = jwsObject.serialize();
         System.out.println("signedToken=" + jwsObject.serialize());

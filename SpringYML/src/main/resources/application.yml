@@ -2,5 +2,9 @@ email: bdsm@hookups.com
 message: Hello Gay !
 thread-pool: 666
 message-are-wrong: some wrong message
-
-
+arrayOfStrings:
+  ymlString1,
+  ymlString2
+ignore:
+  email2: somemail
+stringList: listString1, listString2

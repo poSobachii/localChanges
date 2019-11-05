@@ -29,11 +29,11 @@ public class JWKgenerator {
 
         String some1 = Base64.getUrlEncoder().encodeToString(rsaPublicKey.getModulus().toByteArray());
         String some2 = Base64.getUrlEncoder().encodeToString(rsaPublicKey.getPublicExponent().toByteArray());
-        System.out.println("PUBLIC=" + encodedPublicKey);
-        System.out.println("URL=" + encodedPublicUrlKey);
-        System.out.println("PRIVATE=" + encodedPrivate);
-        System.out.println("Some1=" + some1);
-        System.out.println("Some2=" + some2);
+        System.out.println("\nPUBLIC=" + encodedPublicKey);
+        System.out.println("\nURL=" + encodedPublicUrlKey);
+        System.out.println("\nPRIVATE=" + encodedPrivate);
+//        System.out.println("\nSome1=" + some1);
+//        System.out.println("\nSome2=" + some2);
 
 
     }

@@ -43,18 +43,20 @@ public class RSAnimbusNORexample {
     static String token3 = "eyJ0dHlwIjoiaWRfdG9rZW4iLCJjdHkiOiJKV1QiLCJlbmMiOiJBMTI4R0NNIiwiYWxnIjoiUlNBLU9BRVAiLCJraWQiOiJwYXltZW50LXN0YWdpbmctNSJ9.GxZXlJL5xEaoe3uoc95yK1ZX1eY8rn09ppsbfaEoudEkWC7LOz5iSBemFAvtMzUbI81HzzQfNwSnMFj57MhpQAh0QKMpR6N1GTJrAdxivT8uQABvl2KIRkN5DQpWDLTXEHjRhmTIxSIZ0IOjjB8DKO74eOP4JsCW0d4Eop9nD_EUSzOznq8HfyjA1_KrrxruUpT7VCdR1PZPlzIXvrotKPa98tEcf7yVvimtqqXBo10ijCOqAOefi8LpzAUaZ3ASqwcwSsva91s7C09JpGjFV1pCOd5U3bvpOvujjQpmyy41gRv1wgccMVzS2iFbC1og8hWsNVJznf5lWtz3aUYTrw.baSzHSTsDx2hl5_Y.WT3iUkv0fEenXWW7zUAeUUh7-APMqXpHtBuveU8-2FiEIoJrfuPcEfOgl9OL2pEa4Xs4rq7Az0EYqNCT8LuAr12MRhLtCs33AxAzcsDdS4AHwXnzrJXKtHjG_sfZt_bbPIYBze7Cl7tjsiuvvsHH4xEL5luJ8q4t951Mta8gc_4x6Ij7ZREgvL4y5IA4F3iouMkauLYrfqkL5eOSE2qctvMjBeJ91PEZmWxtkdZkWV2ufqoPRGZSejgNef5NqUeYxPdAKveI2fwftsEIQ9dC-Yu00sF-7Wg4G0V8ATkT-pgWRtHX6VsHWYU4ueoAiZJsOeJjOrm3SMMrBJdcKT4JAwZN4vK1tjPx6_x594uvfnctRQu98M6D0SiiuVrErpooTfIqAcg5QYFVNkyT667VZpU99woIP04lJ35hK_diVmM1RBIfOvoJcPynlxLcgrWnCMrsLjRpmMgubrK1s84pRV-kbSdhZWkzFV-ze8G17kMHKtY4V-wa3r8HhyV1-AMkyelwUrVeK3XpqiIcGMzaBvd8uj1MtNSHFEEJhTx4Sc3hC6lE8DLmyZOTQwYYj9Qadxm3PT2OSCqGNSgl8UsFIGR6bVdUuN2I8vlokvbjT9cZMUPOof0qq5-4OmMJxsryjtOQEWtRwMZLHUmII5NMOC0ZWj1ROzPJyaZxbGZ2R5aOPJYG7Q0GIgtVK0yawI_bnuwWEaZd59gqVmB_mRXQ8gQ7MfnXh2PLYkHVLZXAJI4_vSLGnRZACWKArf5HKrTVOQC_btgHBPn1YvklCgH6sTdb_lny07I_ox04rVIG1K7Z1iZp7E36F69VUrlw0J2vqZuXukoK1INFoVdLhCzZq8hpWmBbv6F0MftgQExRDCH2kkZdv17O5LrXlT7Dw-XuVuj6au7ZIvpuZ860hiLtEx3XVOGqQIo6Ce6JQyUoR2yLaVFY5dxJZGwYiPoPxcbCCa86pLxnsCrnrmw9l0yZjw3U0wf-PIAyN0-52kPkraBQxVuK065HuU-EM4cKttea_C6w4__zHYjgEbAKaBlVrg2IZF7SsjN03bN2-wop8p-mXYoOuknGsAY9XBKOGUWZ6hW-MSx4bcU-y5OxsTZB1yVdzCjxZyyysQelctcs9C7wwXC3r-4fTvd_ipoTprd8ridFMe9xb0jatMd2hbJT5zM4XWiwH_ueWPdRSkACPFaMByMOTRumFICDJLCxTLeiHemVtlrG2Qvz6qz0W4ss47dlRH4SH3cGqPwXKa89E3GuFveg1lJdvp8In6awGm-zq0dX4VEeAyrEuaP6DnajRzalSYx894sxDWs-AAN3jSMM5JvFif5vcYz_WHCgqn0PrsfgS71hx2AI3emtNTVQd6x3RDHJmJ6PR3MVOXXnarxtN3QHQPjKDh-Sp_yMSEoYgtSa4xrVdnTk1rGKnOGag52gYqlR4fMl0nZXV4zQ8fKPEEpWT-_qHav9urvrjXFgsXPuq7OGXQhVTAzpnb1HHxFqocVCx6EusNk_lbmaFnW8Zjv6FyaZTL3SNPxUzQdmlv4XKveQ0bUh4gHOyCY98FzmQkOLkHaUFT6FBHunDvlJ1glz3uIOV8Ep7aFgPDsYp320VQTyOwzp3r3sunV43LkH3abf_431tM4QgKa0Rl58N8Kz6zk6mHoIew5YcUC_4jcoVzxAf_XWdggdOR3RQe6W9VyYU_V6Pxln5P9QUQkZ_8esnRpZ8tfbBOme3o_Ai5bVe-vmRU9pXklBvgcs2BvKNE47g4IZfvF9dTydb8ApUGS0QWxm_SmJajN7aRmmnqEQPvfWeIXCNJI-vjh9rlS0Zj1L3UeT8Qxamd8ywb7veZw9EM6TkyR6HlsZbVbUMOFHmD8tiDT_o50nFOFG9EjB0oxrPBIM4Kf7vXkA-RU1Tev6JkBkDSrOtbCgdVwbxSdkyqmbltLyY0DyA-TN7Rop61ld_AV6ULl-IG_3cdx7jHmEWZgEm7oYbP_QwGIp4QpLw7OGPTtf2As2xxvRrqJb3wOiY4dCwA1WcJvQ9-D1j1J_n7E4MszaTg93AoIrf1fv0T3v-k0TNZp2iALFtb5oiqqwXDkZiY02O-cjtTIxCRZj-SePqJ3JEFf8MljJi4WQQMU-znDfJQM7iy2GP3MFa5JlLe5ZT0s0DAU2kEpwxz3HHO7eLrJcTGYiA6_rnjQztr2NZewX-a2jxopzFeK9BnsXtS6qpKxqqUwRqQpvQjzMPbddfMO1F2DCd5P9ahlpteruYGwk1yS6gNnETN1dCcgxwCieeu8rTlc5UKOQj0aUlAjZgAjyqZRumPc06gTELolC5xEs6Sau1o4o-S6QUj2Zaq-aiKpN2kLZy6Kux5ygYBMrveayrk9qGwq63jcb-8s8if1BKgaRT0IMSs4jz6cPvFyEFDaZjWQIv-EJCbHApAiGLCoy_-EhPb_aG7fdvOnlXrth6W2t7em5EyIDLI-1jqe3ProM6xXXIc9flHIxWLpsvIKUxeNqbZqo_HHLQQSh.HMdDU0SzwtHWQk6o8SO0Pg";
     static String token4 = "eyJraWQiOiJzb21lSUQiLCJlbmMiOiJBMTI4R0NNIiwiYWxnIjoiUlNBLU9BRVAtMjU2In0.lCXv-RBdUWFeW4t1CAyDNLEft_RBqp5SEFI-dQSincFKqwtVVUVO5a20OEgg03S4Z2OcPLNYxE4p00-JmndNZa-4j9jmAihG8JuQD8Qm4AfpSK0nOHczshVEelLxJq-4S1ci0T8qLWt6coB9ymMTSHTM9ZPmmpiVwDDDyCWiIGc3AC-4hckIw6g09Lr0K6t9n7GsIzR-AHZJnlSH_UoSwdbNsNu4AmEQMOvXAkDCZz5YlzGol5koyU3yjOXaOYlwalB1ynK7tZtSngs48yrHcMNok_W4s_DK6TxwWbN5pnNJw2VEO2XYxCuUAezTxNyicOIE2y8XzZXEXuAmj7OuxA.Bs4uCEFFXVhufrjr.fstXFTEy3YQ.EwPNcbWMM4s1QJm8jUkl9g";
     static String token5 = "eyJraWQiOiJzb21lSUQiLCJlbmMiOiJBMTI4R0NNIiwiYWxnIjoiUlNBLU9BRVAtMjU2In0.PEepqhDKiQRFUO1HQQtbKJPKNNorIFBsbXZk8bgq61kEJyt01H4ltJWHV3VDbImsvq9c1bBXB2K02vj7Z89z2GcJPflAfOHmTDh9Zki2LsrPPBDwjljybtsH4ZCeDu7FMmod5TcL4Vc368Nf0i4kphc-mtEmOkBh5QwvhYUSGcdOaEShBi4FlzqSqLujWvo50k_LkBwqnMdvTZBobKC5RENlQKGDh3DjMBMgeao6z06fg9RGjN4X7GrLtqepdtY_LqNZtRCy37bkQ9y8ZqxIXT7Ua_ef0cNDnt1j4UTmUftvvTKOYWXgE3-2OX9IT0B1MjVHvsx4AMEb138x4y28ng.IR9GjIEOSD0GfiYx.FwDpPEvCsyo.Te8MEkeUz0jp7vtsflLKLw";
+    static String prodKeysToken1 = "eyJraWQiOiJzb21lSWQiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhbGljZSIsImF1ZCI6InNvbWVvbmVBbm90aGVyIiwiaXNzIjoic29tZW9uZSIsImV4cCI6MTU2ODI4Njg3NiwianRpIjoiZTE4OTBlNmEtZjMzOS00ODhmLWI3YjYtYzk4YzE5NjQ0YzBiIn0.KyTuvPfCZARNBivY6ejShqcWRn2aMVznvBjttkMIB48GrPUXY0lyqegnhQsSoTSL9pNPLnBFhPu6xTdQZSTtj9QZO0fePwVkKN_MYMTFO9kEqonVZEKIfW3KZIf5zAq1kJWQwGw86PHXhMgISmUOOFC-jZdd_pvDFQk0C2KS3Jd1KedhQYZ_7d3dpYU5pI5QZ6-orxgxRkrrcgJDwFHQfKSln9YOB8OagUJx9lhqQyn-LAFV-fnlSvVd1c_yj6oNp2AY1FetpcNl0kSQadPCdJd8WA5PhDRyL5g89CnixsB12EkzvtQxp4WDtjRXqCPVsOcVZT9c1P6fvtsYn74E3w";
     static RSAPublicKey publicKey;
     static RSAPrivateKey privateKey;
 
     public static void main(String[] args) throws JOSEException, ParseException, NoSuchAlgorithmException, IOException, InvalidKeySpecException {
         RSAEncryptionFromFile.decodeToken();
         privateKey = RSAEncryptionFromFile.getPrivateKey();
-//
-        publicKey = fetchByID("payment-staging-5");
+//        publicKey = RSAEncryptionFromFile.getPublicKey();
+        publicKey = fetchByID("payment-prod-01");
 //        fetchNordeaPublic("demo-id-token");
 //        nimbusEncodeEncrypted();
 //        nimbusEncode();
-        nimbusDecode();
+        verifyOnlyToken();
+//        nimbusDecode();
 
     }
 
@@ -123,7 +125,7 @@ public class RSAnimbusNORexample {
 
 
     public static RSAPublicKey fetchByID(String targetUrl) throws IOException, ParseException, JOSEException {
-        JWKSet jwkSet = JWKSet.load(new URL("https://papi-staging.sanomaservices.nl/payment/public/identification/keys"));
+        JWKSet jwkSet = JWKSet.load(new URL("https://papi.sanomaservices.nl/payment/public/identification/keys"));
         JWK jwk = jwkSet.getKeyByKeyId(targetUrl);
         RSAKey key = (RSAKey) jwkSet.getKeys().get(0);
         RSAPublicKey pubkey = (RSAPublicKey) key.toPublicKey();
@@ -169,6 +171,15 @@ public class RSAnimbusNORexample {
         return pubkey;
     }
 
+
+    public static void verifyOnlyToken() throws ParseException, JOSEException {
+        SignedJWT nordeaToken = SignedJWT.parse(prodKeysToken1);
+        System.out.println("Header=" + nordeaToken.getHeader().getKeyID());
+        RSASSAVerifier verifier = new RSASSAVerifier(publicKey);
+        nordeaToken.verify(verifier);
+        System.out.println("payload=" + nordeaToken.getPayload());
+        System.out.println("names=" + nordeaToken.getPayload().toString());
+    }
 
 }
 
