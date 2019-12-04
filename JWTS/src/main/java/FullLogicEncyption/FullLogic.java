@@ -1,7 +1,9 @@
 package FullLogicEncyption;
 
+import JWTSManager.FetchKeyByKid;
 import RSAencryption.RSAEncryptionFromFile;
 import RSAencryption.tokenObjectFormat;
+import com.auth0.jwk.JwkException;
 import com.nimbusds.jose.EncryptionMethod;
 import com.nimbusds.jose.JOSEException;
 import com.nimbusds.jose.JWEAlgorithm;
@@ -40,17 +42,18 @@ public class FullLogic {
     private static String signedToken;
     private static String encryptedToken;
 
-    public static void main(String[] args) throws InvalidKeySpecException, NoSuchAlgorithmException, JOSEException, IOException, ParseException {
+    public static void main(String[] args) throws InvalidKeySpecException, NoSuchAlgorithmException, JOSEException, IOException, ParseException, JwkException {
         convertKeys();
         generateToken();
-//        encryptToken();
-//        decodeToken();
+        encryptToken();
+        decodeToken();
     }
 
 
-    public static void convertKeys() throws NoSuchAlgorithmException, InvalidKeySpecException, IOException {
+    public static void convertKeys() throws NoSuchAlgorithmException, InvalidKeySpecException, IOException, JwkException {
         RSAEncryptionFromFile.decodeToken();
-        publicKey = RSAEncryptionFromFile.getPublicKey();
+//        publicKey = RSAEncryptionFromFile.getPublicKey();
+        publicKey = FetchKeyByKid.fetchByID();
         privateKey = RSAEncryptionFromFile.getPrivateKey();
     }
 
@@ -88,15 +91,19 @@ public class FullLogic {
     }
 
     public static void decodeToken() throws JOSEException, ParseException {
-        EncryptedJWT jwt;
-        RSADecrypter decrypter = new RSADecrypter(privateKey);
-        jwt = EncryptedJWT.parse(encryptedToken);
-        jwt.decrypt(decrypter);
-        JWTClaimsSet claimsSet = jwt.getJWTClaimsSet();
+        try {
+            EncryptedJWT jwt;
+            RSADecrypter decrypter = new RSADecrypter(privateKey);
+            jwt = EncryptedJWT.parse(encryptedToken);
+            jwt.decrypt(decrypter);
+            JWTClaimsSet claimsSet = jwt.getJWTClaimsSet();
 
-        SignedJWT nordeaToken = SignedJWT.parse(claimsSet.getClaim("id_token").toString());
-        RSASSAVerifier verifier = new RSASSAVerifier(publicKey);
-        nordeaToken.verify(verifier);
-        System.out.println("payload=" + nordeaToken.getPayload());
+            SignedJWT nordeaToken = SignedJWT.parse(claimsSet.getClaim("id_token").toString());
+            RSASSAVerifier verifier = new RSASSAVerifier(publicKey);
+            nordeaToken.verify(verifier);
+            System.out.println("payload=" + nordeaToken.getPayload());
+        } catch (JOSEException e){
+            System.out.println("error handled " + e);
+        }
     }
 }

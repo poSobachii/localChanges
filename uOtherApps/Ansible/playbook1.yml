@@ -1,0 +1,9 @@
+---
+- name: Test Connection to my Puppets
+  hosts: all
+  become: yes
+
+  tasks:
+
+    - name: Ping my servers
+      ping:

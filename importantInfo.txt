@@ -1,26 +1,22 @@
-?variable=input      //post form
-ps -ef | grep java     //to see all java processers
-sudo kill -9 <pid>           // to kill processor with ID
-history | grep variable         // to search for something in terminal
+?variable=input      //post form QUERY
 
-mkdir   // to make folder
-touch filename.txt    // to make file
+ps -ef | grep java     //to see all java processers MAC
+sudo kill -9 <pid>           // to kill processor with ID MAC
+history | grep variable         // to search for something in terminal  MAC
 
-cat > hello.txt         // to create a file
-mv hello.txt hello1.txt      //to rename a file
-vi hello.txt     // to edit file. press "i" for insert or "esc" for quiting insert mode
-ctrl + c , :x      // to save a file
-:q :q!          // to quit file, and quit unsaved
-nano hello.txt
-less hello.txt
-
-
-javac    // compile .java file into .class file
-java HelloWorld    // no .class needed to run a class
+javac               // compile .java file into .class file
+java HelloWorld     // no .class needed to run a class
 jar cfm HelloWorld.jar manifest.txt HelloWorld.class      // creating jar file
 java -jar Chuchi.jar
 
 
+ansible-vault decrypt --vault-password-file ~/.ansible_vault            // ansible decrypt
+ansible-vault encrypt --vault-password-file ~/.ansible_vault            // ansible encrypt
+
+git tag -a 2.64.1 -m "2.64.1" 69e07e88f499b53476c04a3193d239cfeb6f5297              // to add git tag
+git push origin 2.64.1
+
+==============================================================================================================================
 
 docker run --name "yoyo" -d -p 4444:4444 selenium/standalone-chrome
 
@@ -42,6 +38,23 @@ docker push posobachii/catstyle              // push into catstyle repository
 
 http://localhost:4444/wd/hub/
 
+==============================================================================================================================
+//some linux usefull
+
+mkdir   // to make folder
+rmdir   // to delete empty folder
+touch filename.txt    // to make file
+
+cat > hello.txt         // to create a file
+mv hello.txt hello1.txt      //to rename a file
+vi hello.txt     // to edit file. press "i" for insert or "esc" for quiting insert mode
+ctrl + c , :x      // to save a file
+:q :q!          // to quit file, and quit unsaved
+nano hello.txt
+less hello.txt
+rm hello.txt            // to delete file
+rm -r folder1           // to delete folder with conntent
+rm -rf folder1          // delete folder without annoying spam
 
 
 ssh-add -l
@@ -50,5 +63,45 @@ ssh-add ~/.ssh/id_rs
 sudo chmod 0755 /usr/local/bin/vpn.sh
 sudo vpn.sh nl
 sudo pkill openconnect
+sudo su - root                  // to change to root user
+sudo chown ec2-user ansible/        // to change onwership
+
+sudo nano /etc/environment       // locale issue fix
+LANG=en_US.UTF-8
+LC_ALL=en_US.UTF-8
+
+scp ansiblePuppetKeys.pem ec2-user@13.48.85.115:/var/ansible       // to copy to remote server
+
+==============================================================================================================================
+// some linux instance commands
+
+sudo yum install ansible
+sudo yum install httpd      // to install apache server HTML website
+sudo service httpd start    // to make available website
+sudo vi index.html          // to create file
+
+ansible -i hosts.txt all -m ping        // ansible to ping servers
 
 
+
+==============================================================================================================================
+// ansible AD-HOC commands
+
+ansible -i hosts.txt all -m ping     // to ping with inventory
+ansible some_other_hosts -m setup       // all info from server
+ansible all -m shell -a "sudo mkdir /var/ansible"   // shell bash command
+ansible all -m copy -a "src=hosts.txt dest=/var/ansible"        // to copy files from ansible machine to hosts
+ansible all -m copy -a "src=hosts.txt dest=/var/ansible2/hotst2.txt" -b     // to become sudo on puppet machine
+ansible all -m file -a "path=/var/ansible/hotst2.txt state=absent"          // to delete some file
+ansible all -m get_url -a "url=https://www.petmd.com/sites/default/files/Acute-Dog-Diarrhea-47066074.jpg dest=/var/ansible/"        // to download image
+ansible all -m yum -a "name=httpd state=installed" -b           // install apache httpd on a server
+ansible all -m yum -a "name=httpd state=removed" -b           // remove apache httpd on a server
+ansible all -m shell -a "sudo service httpd start"              // start all apaches servers
+ansible all -m uri -a "url=https://www.facebook.com"            // connection availability
+ansible all -m uri -a "url=https://www.facebook.com return_content=yes"     // with content
+ansible all -m service -a "name=httpd state=started enabled=yes" -b         // start apache  + always start
+ansible]$ ansible some_other_hosts -m command  -a "ls /var" -vvvvv          // some other info from servers
+
+ansible-inventory --list                    // to see all vars belong to what hosts
+
+==============================================================================================================================

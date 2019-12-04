@@ -1,0 +1,13 @@
+---
+-
+  file:
+    mode: 493
+    path: /var/ansible/folder1
+    state: directory
+  name: "Create folder1"
+-
+  file:
+    mode: 493
+    path: /var/ansible/folder2
+    state: directory
+  name: "Create folder2"

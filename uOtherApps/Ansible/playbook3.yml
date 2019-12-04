@@ -1,0 +1,23 @@
+---
+  - name: Install apache start it and upload Web Page
+    hosts: all
+    become: yes
+
+    vars:
+      source_file: ./index.html
+      destin_file: /var/www/html
+
+    tasks:
+    - name: Install Server
+      yum: name=httpd state=latest
+
+    - name: Copy webpage to puppets
+      copy: src={{ source_file }} dest={{ destin_file }} mode=0555
+      notify : Restart Apache
+
+    - name: Start server and enable it
+      service: name=httpd state=started enabled=yes
+
+    handlers:
+    - name: Restart Apache
+      service: name=httpd state=restarted

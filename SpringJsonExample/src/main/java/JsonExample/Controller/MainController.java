@@ -29,7 +29,10 @@ public class MainController {
     @RequestMapping("/test")
     public Keys printKeysV2()  {
         List<Key> to = new ArrayList<>();
-        Key ks = new Key("alpha", "bravo", "charlie", "delta");
+        Key ks = new Key("RSA",
+                "AQAB",
+                "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoxhHxSzTTD05J40Pxfxpc50fx2OUWnkUa1kWkFzsp64LZqIwzXCMHljeFM9LEtvT9S0scHXYaKxeIdyKbrT7CBwzc5Rv66FTrrQMpi+FhnElOnmJPR75/pIZiqWfI4ZgjUGw2sewov0a/YZ7tEBaZxjJyO56kI1Ji57znET5pbLnKXzp7qoNnmPwmHc3UfrGE2uPVFMWJImx+LMteR1WiBox1XD5MHBiDA2S2GZ8ZSYc3TpHmy+tMhmWLdGYF2USejLwhxeBY/9EuS3spoUySeUSz6YPu4UluMwFK+6DwHCXnOY6ZGg4lFE4ANU7ue51SNEx3ZfSPKPXE9/2aSoy5QIDAQAB",
+                "SOME_ID");
         to.add(ks);
         Keys ks2 = new Keys(to);
         return ks2;

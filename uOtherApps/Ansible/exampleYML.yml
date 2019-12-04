@@ -1,0 +1,29 @@
+#example yml
+---
+  - fruits:
+     - apple
+     - mango
+     - banana
+  - vegetables:
+      - carrot
+      - potato
+
+  - vasya:
+      nick: vasek
+      position: developer
+      skills:
+        - python
+        - perl
+        - php
+
+  - petya:
+      nick: "petyia: krutoi"
+      position: manager
+      skills:
+        - manage
+        - make_noise
+
+  - kolya: { nick: kolyan, position: administrator, skills: ['killer', 'cleaner']}
+
+  fruits: ['apple', 'orange', 'banana']
+...

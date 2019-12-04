@@ -1,0 +1,17 @@
+---
+-
+  become: true
+  hosts: some_other_hosts
+  name: "Playbook with Playbook"
+  tasks:
+    -
+      name: "Ping test"
+      ping: ~
+    -
+      include: mini_playbook1.yml
+      name: "Create Folder"
+    -
+      include: mini_playbook2.yml
+      name: "Create Files"
+  vars:
+    mytext: "“hello fucking world !!”"

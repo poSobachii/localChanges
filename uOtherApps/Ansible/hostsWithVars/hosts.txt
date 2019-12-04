@@ -1,0 +1,32 @@
+[STAGING_SERVERS_WEB]
+linux1		ansible_host=00.11.22.33
+linux2		ansible_host=00.11.22.44 	password=mysecret
+
+[STAGING_SERVERS_WEB:vars]
+ansible_user=ec2-user
+ansible_ssh_private_key_file=/home/destination/somekey.pem
+
+[PROD_SERVERS_WEB]
+linuxX1 	    ansible_host=99.99.99.01
+linuxX2		ansible_host=99.99.99.02
+
+[PROD_SERVERS_WEB:vars]
+ansible_user=ec2-user
+ansible_ssh_private_key_file=/home/destination/somekey.pem
+
+[STAGING_SERVERS_DB]
+33.06.1.1
+33.07.1.1
+
+[PROD_SERVERS_DB]
+33.06.1.1
+33.07.1.1
+
+[ALL_SERVERS_DB:children]
+STAGING_SERVERS_DB
+PROD_SERVERS_DB
+
+[ALL_SERVERS_DB:vars]
+db_endpoint=xxxxxx.yyyyy.com:4151
+owner=vasya
+location=“Huston, TX”

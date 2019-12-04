@@ -21,19 +21,19 @@ ALTER TABLE BOOKSHELF AUTO_INCREMENT=1001;
 insert into BOOKSHELF(BOOKNAME, BOOKAUTHOR, BOOKPUB, PUBDATE) values ('English','Vocabulary', 'PrintUK', '2010');
 insert into BOOKSHELF(BOOKNAME, BOOKAUTHOR, BOOKPUB, PUBDATE) values ('Thriller','St.King','California Inc', '2005');
 
-CREATE INDEX state ON state_exchange(state);
+CREATE INDEX externalId ON state_exchange(externalId);
 ---------------------------------------------
 CREATE TABLE state_exchange (
 	id MEDIUMINT NOT NULL AUTO_INCREMENT,
-	state varchar(255),
+	externalId varchar(255),
     stamp varchar(255),
-    index(stamp, state),
-    index(state, stamp),
+    index(stamp, externalId),
+    index(externalId, stamp),
     primary key (id)
     );
 ---------------------------------------------
-SELECT stamp FROM state_exchange WHERE state = '11' ;
-SELECT * FROM state_exchange WHERE state = '11' ;
+SELECT stamp FROM state_exchange WHERE externalId = '11' ;
+SELECT * FROM state_exchange WHERE externalId = '11' ;
 SELECT *, from_unixtime(updated/1000) FROM papi.paymentrequest where stamp = '9D2604C1CD4D462787CC';
 ---------------------------------------------
     //update smth
@@ -64,7 +64,7 @@ SELECT * FROM papi.paymentrequest WHERE provider = 'st-c' order by updated desc;
 SELECT * FROM papi.paymentagreement where id in ('D8181B80EA074B8EA817','DF41EF6B14DC42778923');
 ---------------------------------------------
     // new column in result tables
-SELECT id, created, 23 as state FROM papi.paymentagreement;
+SELECT id, created, 23 as externalId FROM papi.paymentagreement;
 ---------------------------------------------
     // select with if statament
 SELECT id, provider, created, (case when (provider = 'p-mas')

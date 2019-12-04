@@ -5,7 +5,7 @@ import java.util.Map;
 public class FixCheck {
 
     public static void main(String[] args) {
-        iftest(5);
+        addZero();
     }
 
 
@@ -53,5 +53,46 @@ public class FixCheck {
         } else {
             System.out.println("If NOT done !!");
         }
+    }
+
+    static void divideZEro(){
+        int x = 0;
+        int y = 10/x;
+        System.out.println(y);
+    }
+
+    static void divideByPercent(){
+        System.out.println(30%100);
+        System.out.println(65%100);
+        System.out.println(100%100);
+        System.out.println(135%100);
+        System.out.println(170%100);
+        System.out.println(200%100);
+    }
+
+    static void replaceSmth(){
+        String before = "eeac8037-e860-496b-9a7a-03a092bf253e";
+        String after = before.replaceAll("-", "");
+        System.out.println("before = " + before);
+        System.out.println("after = " + after);
+    }
+
+    static void addString (){
+        String digits = "4522";
+        System.out.println("************" + digits);
+    }
+
+    static void atCharPlace(){
+        String digits = "4525";
+        System.out.println(digits.charAt(2) + "" + digits.charAt(3));
+    }
+
+    static void addZero(){
+        String year = "2020";
+        String month = "7";
+        if (month.length() < 2) {
+            month = "0" + month;
+        }
+        System.out.println(year.charAt(2) + "" + year.charAt(3) + "/" + month);
     }
 }

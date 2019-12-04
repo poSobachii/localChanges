@@ -1,0 +1,79 @@
+---
+  - name: Create folders and files
+    hosts: all
+    become: yes
+
+    vars:
+      mytext: “hello fucking world !!”
+
+    tasks:
+     - name: Ping test
+       ping:
+
+     - name: Create folder1
+       file:
+        path: /var/ansible/folder1
+        state: directory
+        mode: 0755
+
+     - name: Create folder2
+       file:
+        path: /var/ansible/folder2
+        state: directory
+        mode: 0755
+
+     - name: Create file1
+       copy:
+        dest: /var/ansible/folder1/text1.txt
+        content: |
+          Text Line1, in text1
+          Text Line2, in text1
+          Text Line3, {{ mytext }}
+
+     - name: Create file2
+       copy:
+        dest: /var/ansible/folder2/text2.txt
+        content: |
+          Text Line1, in text2
+          Text Line2, in text2
+          Text Line3, {{ mytext }}
+
+#---
+#-
+#  become: true
+#  hosts: all
+#  name: "Create folders and files"
+#  tasks:
+#    -
+#      name: "Ping test"
+#      ping: ~
+#    -
+#      file:
+#        mode: 493
+#        path: /var/ansible/folder1
+#        state: directory
+#      name: "Create folder1"
+#    -
+#      file:
+#        mode: 493
+#        path: /var/ansible/folder2
+#        state: directory
+#      name: "Create folder2"
+#    -
+#      copy:
+#        content: |
+#          Text Line1, in text1
+#          Text Line2, in text1
+#          Text Line3, {{ mytext }}
+#        dest: /var/ansible/folder1/text1.txt
+#      name: "Create file1"
+#    -
+#      copy:
+#        content: |-
+#          Text Line1, in text2
+#          Text Line2, in text2
+#          Text Line3, {{ mytext }}
+#        dest: /var/ansible/folder2/text2.txt
+#      name: "Create file2"
+#  vars:
+#    mytext: "“hello fucking world !!”"

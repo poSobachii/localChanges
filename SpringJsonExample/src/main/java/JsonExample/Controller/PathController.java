@@ -114,6 +114,15 @@ public class PathController {
     }
 
     @POST
+    @Path("/getRandomJson")
+    @Consumes(APPLICATION_JSON)
+    @Produces(APPLICATION_JSON)
+    public Response getRandomJson(){
+        return Response.status(200)
+                .entity(generateRandomJson()).build();
+    }
+
+    @POST
     @Path("/getPlain")
     @Consumes("text/plain")
     @Produces("text/plain")
@@ -126,6 +135,9 @@ public class PathController {
                 .header("Another header", "Another blablabla").entity(convertToJson(code1, code2, code3)).build();
     }
 
+    public String generateRandomJson(){
+        return "{\"somerandomthing\":{\"value1\":\"Yo\",\"list2\":{\"listvalue1\":\"Hello Kitty\", \"listvalue2\":\"Hello Santa\"}}}";
+    }
 
     public String convertToJson(String value1, String value2, String value3) {
         SomeDiffObjectRandom converter = new SomeDiffObjectRandom(value1, value2, value3);

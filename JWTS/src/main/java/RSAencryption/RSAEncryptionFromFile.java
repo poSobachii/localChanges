@@ -44,20 +44,6 @@ public class RSAEncryptionFromFile {
 
     }
 
-//    public static String getPublicToken() throws FileNotFoundException {
-//        List<String> inputStrings= new ArrayList<>();
-//        File file = new File(publicKeyPath);
-//        Scanner sc = new Scanner(file);
-//        while (sc.hasNextLine())
-//            inputStrings.add(sc.nextLine());
-//        return inputStrings.get(1);
-//    }
-//    public static void readOnlyOneString() throws IOException {
-//        String data = "";
-//        data = new String(Files.readAllBytes(Paths.get(privateKeyPath)));
-//        System.out.println(data);
-//    }
-
     public static String getPublicToken() throws IOException {
         StringBuilder stringBuffer = new StringBuilder();
         BufferedReader br = new BufferedReader(new FileReader(publicKeyPath));

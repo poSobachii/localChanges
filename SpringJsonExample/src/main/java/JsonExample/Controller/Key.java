@@ -6,14 +6,14 @@ import java.util.List;
 
 public class Key {
 
-    @JsonProperty("one")
+//    @JsonProperty("one")
     private String kty;
 
     private String e;
 
     private String n;
 
-    @JsonProperty("four")
+//    @JsonProperty("four")
     private String kid;
 
     public Key(String kty, String e, String n, String kid){

@@ -29,13 +29,13 @@ public class PostClass {
             System.out.println("Request: " + httpPost.toString());
             System.out.println("Executed !");
             httpClient.getConnectionManager().shutdown();
-        } catch (Exception e ){
+        } catch (Exception e) {
             System.out.println("error" + e);
         }
         System.out.println("Finished !");
     }
 
-    public static void postResponse(){
+    public static void postResponse() {
         try {
             HttpClient httpClient = new DefaultHttpClient();
             URIBuilder builder = new URIBuilder();
@@ -51,13 +51,13 @@ public class PostClass {
             System.out.println("Request: " + httpPost.toString());
             System.out.println("Executed !");
             httpClient.getConnectionManager().shutdown();
-        } catch (Exception e ){
+        } catch (Exception e) {
             System.out.println("error" + e);
         }
         System.out.println("Finished !");
     }
 
-    public static void postJson(){
+    public static void postJson() {
         try {
             HttpClient httpClient = new DefaultHttpClient();
             URIBuilder builder = new URIBuilder();
@@ -81,11 +81,23 @@ public class PostClass {
             System.out.println("Request: " + httpPost.toString());
             System.out.println("Executed !");
             httpClient.getConnectionManager().shutdown();
-        } catch (Exception e ){
+        } catch (Exception e) {
             System.out.println("error" + e);
         }
         System.out.println("Finished !");
     }
 
+
+    public static void getRandomJson() {
+        try {
+            HttpClient httpClient = new DefaultHttpClient();
+            HttpPost httpPost = new HttpPost("http://localhost:8080/namepath/yo/getRandomJson/");
+            HttpResponse response = httpClient.execute(httpPost);
+            HttpEntity incoming = response.getEntity();
+            String entityString = EntityUtils.toString(incoming);
+        } catch (Exception e) {
+            System.out.println("error" + e);
+        }
+    }
 
 }

@@ -38,10 +38,10 @@ public class RSAAlgorithm {
         System.out.println(convertToPrivateKey(encodedPrivate));
         System.out.println("for url --->");
         System.out.println(convertToPublicKey(encodedForUrl));
-        String token = generateJwtToken(publicKey, privateKey);
-        System.out.println("TOKEN:");
-        System.out.println(token);
-        printStructure(token, publicKey, privateKey);
+//        String token = generateJwtToken(publicKey, privateKey);
+//        System.out.println("TOKEN:");
+//        System.out.println(token);
+//        printStructure(token, publicKey, privateKey);
     }
 
     public static String generateJwtToken(RSAPublicKey publickey, RSAPrivateKey privateKey) {
