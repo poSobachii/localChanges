@@ -1,3 +1,31 @@
+drop database if exists dbo;
+create database dbo;
+use dbo;
+
+CREATE TABLE customers (
+    customer_id INT AUTO_INCREMENT PRIMARY KEY,
+    customer_name VARCHAR(100)
+);
+
+CREATE TABLE orders (
+    order_id INT AUTO_INCREMENT PRIMARY KEY,
+    customer_id INT,
+    amount DOUBLE,
+    FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
+);
+
+INSERT INTO `customers` (`customer_id`, `customer_name`) VALUES
+(1, 'Adam'),
+(2, 'Andy'),
+(3, 'Joe'),
+(4, 'Sandy');
+
+INSERT INTO `orders` (`order_id`, `customer_id`, `amount`) VALUES
+(1, 1, 19.99),
+(2, 1, 35.15),
+(3, 3, 17.56),
+(4, 4, 12.34);
+---------------------------------------------
 create database if not exists bookAplication;
 
 use bookAplication;
@@ -79,7 +107,7 @@ SELECT id, provider, created, (case when (provider = 'p-mas')
  ;
 
  INSERT INTO Tablename
- 	(`ID`, `name`, `email`)
+ 	(ID, name, email)
  VALUES
  	(1, 'john', 'abc@abc.com'),
  	(2, 'john', 'abc@abc.com'),
@@ -136,3 +164,20 @@ and (a.accountid, a.panId)  not in (
 ---------------------------------------------
     // convert
 SELECT * , from_unixtime(created/1000) as times FROM papi.paymentagreement where panid = '000081b9-f3a2-4098-8fc8-7146b0188acf';
+---------------------------------------------
+    // count table names or table rows
+SELECT
+    table_name,
+    table_rows
+FROM
+    information_schema.tables
+WHERE
+    table_schema = 'papi'
+        AND table_type = 'BASE TABLE';
+
+SELECT table_name
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_SCHEMA = 'papi';
+---------------------------------------------
+    // contains part of value
+SELECT * FROM papi.request where uriTemplate like '%sahkovertailu.fi%';

@@ -1,8 +1,0 @@
-
---------------------BEAN INITIALISATION--------------------
-
-@Inject
-private AbstractAutowireCapableBeanFactory factory;
-
-factory.autowireBean(Object);
-factory.initializeBean(Object, Object.getClass().getSimpleName());

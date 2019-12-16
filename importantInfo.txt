@@ -105,3 +105,12 @@ ansible]$ ansible some_other_hosts -m command  -a "ls /var" -vvvvv          // s
 ansible-inventory --list                    // to see all vars belong to what hosts
 
 ==============================================================================================================================
+--------------------BEAN INITIALISATION--------------------
+
+@Inject
+private AbstractAutowireCapableBeanFactory factory;
+
+factory.autowireBean(Object);
+factory.initializeBean(Object, Object.getClass().getSimpleName());
+
+==============================================================================================================================

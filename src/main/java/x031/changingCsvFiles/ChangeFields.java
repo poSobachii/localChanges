@@ -67,14 +67,17 @@ public class ChangeFields {
     }
 
     static void readFile(){
-
         String jsonFile = "/Users/aleksandrs.grisanovs/Desktop/Migration/import_customers_acct_1EmILKCmHoRdeuFT_all.json";
+        separateFile(jsonFile);
+    }
+
+    static void separateFile(String filePath){
         String line = "";
         String previousLine = "";
         int x = 1;
         boolean save = false;
         StringBuffer stringBuffer = new StringBuffer();
-        try (BufferedReader br = new BufferedReader(new FileReader(jsonFile))){
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))){
             while ((line = br.readLine()) != null) {
 
                 if (!line.contains("}") || line.contains("},")) {
@@ -106,7 +109,6 @@ public class ChangeFields {
             e.printStackTrace();
         }
     }
-
     static void saveJson(String toSave, int number){
         try (PrintWriter writer = new PrintWriter("/Users/aleksandrs.grisanovs/Desktop/Migration/part" + number + ".json", "UTF-8");) {
             writer.println(toSave);
