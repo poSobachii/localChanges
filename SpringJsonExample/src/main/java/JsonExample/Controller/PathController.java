@@ -2,6 +2,7 @@ package JsonExample.Controller;
 
 import com.google.gson.Gson;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
@@ -24,7 +25,7 @@ import static javax.ws.rs.core.MediaType.APPLICATION_FORM_URLENCODED;
 import static javax.ws.rs.core.MediaType.APPLICATION_FORM_URLENCODED_TYPE;
 import static javax.ws.rs.core.MediaType.APPLICATION_JSON;
 
-@Component
+@Controller
 @Path("/yo")
 //@Produces({APPLICATION_JSON, APPLICATION_XML})
 public class PathController {
@@ -37,8 +38,6 @@ public class PathController {
         return Response.status(200).entity("getUser is called").build();
 
     }
-
-
 
     @GET
     @Path("/vip")

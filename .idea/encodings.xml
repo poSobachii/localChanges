@@ -3,6 +3,7 @@
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/DockerExample" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ExtractingWebPage" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Facebook" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/FacebookApi" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/HibernateTutorials" charset="UTF-8" />
@@ -20,6 +21,7 @@
     <file url="file://$PROJECT_DIR$/SpringJacoco" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringJsonExample" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringManagingTransactions" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringMicrometer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringMockitoSpy" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringPDFexample" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringRest" charset="UTF-8" />
@@ -30,6 +32,7 @@
     <file url="file://$PROJECT_DIR$/SpringSheduler" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringSimpleJPAdatabase" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringSimpleWebInputForm" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringSwagger" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringThymeleaf" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringUploadingFiles" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringWebExample" charset="UTF-8" />

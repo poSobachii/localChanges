@@ -1,0 +1,21 @@
+- hosts: all
+  become: yes
+  vars:
+    mytext: "“hello fucking world !!”"
+
+  tasks:
+
+    - name: "Create file1"
+      copy:
+        content: |
+          Text Line1, in text1
+          Text Line2, in text1
+          Text Line3, {{ mytext }}
+        dest: /var/ansible/folder1/text1.txt
+    - name: "Create file2"
+      copy:
+        content: |-
+          Text Line1, in text2
+          Text Line2, in text2
+          Text Line3, {{ mytext }}
+        dest: /var/ansible/folder2/text2.txt

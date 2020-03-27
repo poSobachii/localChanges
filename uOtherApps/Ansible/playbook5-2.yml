@@ -1,0 +1,15 @@
+---
+-
+  become: true
+  hosts: all
+  name: "Playbook with Playbook"
+  tasks:
+    -
+      name: "Ping test"
+      ping: ~
+
+- name: "Create Folder"
+  import_playbook: mini_playbook1-2.yml
+
+- name: "Create Files"
+  import_playbook: mini_playbook2-2.yml

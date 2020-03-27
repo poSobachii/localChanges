@@ -8,6 +8,6 @@
       name: Ping test
       ping:
 
-- name: "Create Folder"
+- name: "mini pinging"
   import_playbook: mini_ping.yml
 

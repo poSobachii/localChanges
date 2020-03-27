@@ -1,7 +1,7 @@
 ---
 -
   become: true
-  hosts: some_other_hosts
+  hosts: all
   name: "Playbook with Playbook"
   tasks:
     -

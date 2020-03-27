@@ -1,0 +1,720 @@
+/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/bin/java "-javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=52429:/Applications/IntelliJ IDEA CE.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath /Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/ext/jaccess.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/lib/packager.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/lib/tools.jar:/Users/aleksandrs.grisanovs/IdeaProjects/AccentureBootcamp/ExtractingWebPage/target/classes:/Users/aleksandrs.grisanovs/.m2/repository/org/jsoup/jsoup/1.10.2/jsoup-1.10.2.jar SomeRealShit
+<!doctype html>
+<html lang="lv">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="verify-paysera" content="66e0c76206555d73822e04cdc8849472">
+  <meta name="Content-Language" content="lv">
+  <meta name="google" content="notranslate">
+  <meta name="description" content="Plašākā sporta likmju izvēle basketbolā, futbolā un tenisā! Īpaši jauno klientu bonusi. Sadarbībā ar Olympic Casino.">
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon-180x180.png">
+  <link rel="shortcut icon" href="/icon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/icon/safari-pinned-tab.svg" color="#ed1c24">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
+  <meta name="msapplication-config" content="/browserconfig.xml">
+  <meta name="theme-color" content="#ed1c24">
+  <title>
+                          Totalizators un sporta likmes | OlyBet
+                    </title>
+  <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=8bc3631e-3108-4db1-ae63-5758f4adf9fe"></script>
+  <script>
+      window.zESettings = {
+          webWidget: {
+              chat: {
+                  tags: ['LV-brand', 'LATVIAN-language'],
+                  departments: {
+                      enabled: []
+                  },
+              },
+                      }
+      };
+  </script>
+  <script>
+      zE('webWidget', 'setLocale', 'lv');
+
+            zE('webWidget', 'logout');
+      </script>
+  <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=latin,cyrillic-ext,latin-ext,cyrillic" rel="stylesheet" type="text/css">
+  <link href="/build/olybet_eu.css?id=9e8ae95fea2bdee608c1" rel="stylesheet">
+  <link rel="alternate" href="https://m.olybet.lv/sports?lang=lv">
+ </head>
+ <body>
+  <script>
+    var dataLayer = [];
+        </script>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+   <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKRDPHJ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-- Google Tag Manager -->
+  <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-TKRDPHJ');
+    </script>
+  <!-- End Google Tag Manager -->
+  <noscript>
+   <iframe src="//www.googletagmanager.com/ns.html?id=GTM-T9ZD9V" height="0" width="0" style="display:none;visibility:hidden"> </iframe>
+  </noscript>
+  <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-T9ZD9V');
+      </script>
+  <script>
+    window.mt=window.mt||function(){(mt.q=mt.q||[]).push(arguments)};mt.l=+new Date;
+    mt('create', 3190);
+      </script>
+  <script async src="//cdn.mxapis.com/mt.js"></script>
+  <form target="_top" method="post" action="https://www.olybet.lv/auth/register" id="olybet-form"></form>
+  <script>
+    document.addEventListener('afterShow', function () {
+      var form = document.getElementById("olybet-form");
+      var c = parent.document.getElementsByClassName("creative-container")
+      if (c.length > 0) {
+        var inputs = parent.document.getElementsByTagName('input');
+        for (var i = 0; i< inputs.length; i++) {
+          var input = document.createElement('input');
+          input.type = "text";
+          input.name = inputs[i].name;
+          input.value = inputs[i].value;
+          form.appendChild(input);
+        }
+      }
+      form.submit();
+    });
+  </script>
+  <div class="ora-fade">
+   <div class="animation"></div>
+  </div>
+  <div class="ora-modal-fade">
+   <div class="animation"></div>
+  </div>
+  <div id="preloader"></div>
+  <div class="submenu-overlay"></div>
+  <div class="template" id="message-template">
+   <li class="message" id="small-message-[[message_id]]"> <a href="https://www.olybet.lv/messages/index?per_page=12&amp;page=[[ page ]]#message-[[message_id]]">
+     <div>
+      <div class="message-date">
+       <span>[[created_at]]</span>
+      </div>
+      <div class="message-text">
+       [[subject]]
+      </div>
+     </div> </a> </li>
+  </div>
+  <div class="template" id="redirect-template">
+   <div>
+    Redirecting. Please wait...
+   </div>
+  </div>
+  <div class="ora-popup" data-default="&quot;1&quot;">
+   <div class="icons-block absolute close">
+    <div class="icons other icon-other-close absolute-icon"></div>
+   </div>
+   <div class="title"></div>
+   <div class="filter"></div>
+   <div class="container">
+    <div class="content"></div>
+   </div>
+  </div>
+  <div id="ora-modal" class="popup-box-overlay">
+   <div class="popup-box cntr">
+    <div class="popup-box-header">
+     <div class="popup-box-close ora-modal-close">
+      <span class="ico-close"></span>
+     </div>
+     <span class="popup-box-title title"></span>
+    </div>
+    <hr class="popup-box-separator">
+    <div id="ora-modal-content" class="popup-box-content content">
+    </div>
+   </div>
+  </div>
+  <div class="template" id="stats-template">
+   <table>
+    <tbody>
+     <tr>
+      <th>Informācija par likmēm</th>
+     </tr>
+     <tr>
+      <td>Sesija no</td>
+      <td class="text-right">[[last_login]]</td>
+     </tr>
+     <tr>
+      <td>All Bets</td>
+      <td class="text-right">[[countAll]] ([[stake]])</td>
+     </tr>
+     <tr>
+      <td>Gaida rezultātu</td>
+      <td class="text-right">[[countWaiting]] ([[stakeWaiting]])</td>
+     </tr>
+     <tr>
+      <td>Laimēts</td>
+      <td class="text-right">[[payout]]</td>
+     </tr>
+     <tr>
+      <td>Rezultāts</td>
+      <td class="text-right">[[revenue]]</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <div class="template" id="bonus-template">
+   <table>
+    <tbody>
+     <tr>
+      <th>Informācija par bonusiem</th>
+      <td style="padding-right: 150px"></td>
+     </tr>
+     <tr>
+      <td>Sports</td>
+      <td class="text-right">[[sport]]</td>
+     </tr>
+     <tr>
+      <td>Kazino</td>
+      <td class="text-right">[[casino]]</td>
+     </tr>
+     <tr>
+      <td>Pokers</td>
+      <td class="text-right">[[poker]]</td>
+     </tr>
+    </tbody>
+   </table>
+  </div>
+  <div class="campaign-layout no-active" id="campaign-result-success" style="display: none;">
+   <div class="ico-success" style="color: #78b428; font-size: 40px;" align="center"></div>
+   <div class="campaign-no-active">
+    Tu esi veiksmīgi reģistrējies izvēlētajam piedāvājumam!
+   </div>
+  </div>
+  <div class="campaign-layout no-active" id="campaign-result-failure" style="display: none;">
+   <div class="ico-information" style="color: #78b428; font-size: 40px;" align="center"></div>
+   <div class="campaign-no-active">
+    We are sorry, but you can't participate in this campaign
+   </div>
+  </div>
+  <div id="page" class="  full-width
+">
+   <div id="header">
+    <header class="header-wrapper">
+     <div class="header-body">
+      <div class="menu-wrapper">
+       <div class="top-menu">
+        <ul class="header-half-menu pull-right clearfix">
+         <li class="item-register element-with-icon"> <a href="https://www.olybet.lv/register"> <span class="icons-block"> <span class="ico-user-stroke ico-top-menu" style="margin-right: 5px;"></span> </span>Reģistrēties! </a> </li>
+         <li class="has-submenu item-login">
+          <div class="item-text element-with-icon">
+           <span class="icons-block"> <span class="ico-login ico"></span> </span>Pieslēgšanās
+           <span class="ico-right down"></span>
+          </div>
+          <div class="submenu position-left user-login-block">
+           <div id="user-login-block">
+            <section id="login-options">
+             <div id="option-username" class="option-username">
+              <div class="pad">
+               <div class="container">
+                <div class="row type-tittle">
+                 Ienākt, izmantojot lietotājvārdu
+                </div>
+                <form onsubmit="return User.login(); return false;" method="post" name="login_form" id="login_form" action="login" class="row form-elements light-blue">
+                 <div class="login first-block" id="form-login">
+                  <div>
+                   <div class="field">
+                    <input id="user_login_username" type="text" name="username" class="required" value="" placeholder="E-pasta adrese / Lietotājvārds">
+                   </div>
+                   <div class="field" style="position: relative">
+                    <input id="user_login_password" type="password" name="password" class="required" placeholder="Parole">
+                    <a class="forgot link" href="javascript:void(0);" onclick="User.resetPassword()"> Aizmirsāt paroli? </a>
+                   </div>
+                   <div class="field">
+                    <div class="checkbox-wrapper">
+                     <input class="oly-checkbox" id="login-remember" name="rememberme" type="checkbox">
+                     <label for="login-remember">Atcerēties mani</label>
+                    </div>
+                   </div>
+                  </div>
+                  <div>
+                   <button class="button width-100 primary main g-recaptcha" data-sitekey="6Le_P5UUAAAAAB0SJMbBAZ58UvVQ8JKcw12-9HGk" data-callback="captchaLoginSubmit"> Pieslēgšanās </button>
+                  </div>
+                 </div>
+                 <div class="clearfix"></div>
+                 <input name="_token" type="hidden" value="ZQPgL7ZEy10r5ND4oig2L4KVCCA0qQm9u3OIVcEn">
+                </form>
+               </div>
+              </div>
+             </div>
+             <div id="option-mobile-id" class="option-mobile-id hidden">
+              <div class="pad">
+               <div class="container">
+                <div class="row type-tittle">
+                 Login with Mobile-ID
+                </div>
+                <form id="mobile-id-form" onsubmit="Login.mobileID(); return false;" method="post" class="row form-elements light-blue">
+                 <div class="login first-block" id="form-login">
+                  <div>
+                   <div class="field phone_wrapper">
+                    <div class="prefix">
+                     +372
+                    </div>
+                    <input type="text" name="phone" placeholder="Phone">
+                   </div>
+                   <div class="field" style="position: relative">
+                    <input type="text" name="personal_code" placeholder="Personal code">
+                   </div>
+                   <div class="field">
+                    <div class="checkbox-wrapper">
+                     <input id="mobile-id-remember" class="oly-checkbox" name="rememberme" type="checkbox">
+                     <label for="mobile-id-remember">Atcerēties mani</label>
+                    </div>
+                   </div>
+                  </div>
+                  <div>
+                   <input type="submit" class="button width-100 primary main" value="Pieslēgšanās">
+                  </div>
+                 </div>
+                 <div class="clearfix"></div>
+                 <input name="_token" type="hidden" value="ZQPgL7ZEy10r5ND4oig2L4KVCCA0qQm9u3OIVcEn">
+                </form>
+               </div>
+              </div>
+              <div class="switch-login">
+               <a class="link" href="javascript:void(0);" onclick="Login.switch(this)"> Ienākt, izmantojot lietotājvārdu </a>
+              </div>
+             </div>
+            </section>
+            <section id="login-response">
+            </section>
+           </div>
+          </div> </li>
+         <!-- Clock/Timezone select -->
+         <li class="has-submenu">
+          <div id="clock" class="item-text">
+           &nbsp;
+          </div> <span class="ico-right"></span>
+          <div class="submenu timezone-submenu-block position-right">
+           <div id="timezone-search-block" class="form-elements red-transparent">
+            <form action="https://www.olybet.lv/user/set-timezone" method="GET">
+             <input name="timezone" id="search-timezone" type="text" placeholder="Meklēt">
+            </form>
+            <div id="timezone-autocomplete-block"></div>
+           </div>
+          </div> </li>
+         <!-- Language select -->
+         <li class="has-submenu">
+          <div class="item-text element-with-icon">
+           <span class="icons-block icon-flag"> <span class="icons header-footer icon-header-flags-lv"></span> </span>
+           <span class="ico-right"></span>
+          </div>
+          <ul class="submenu submenu-list languages-submenu position-right">
+           <li> <a href="https://www.olybet.lv/sports?competition=1732&amp;game=15952519&amp;region=50002&amp;type=0&amp;sport=2&amp;lang=en"> <span class="icons-block">
+              <div class="icons header-footer icon-flag icon-header-flags-en"></div> </span> </a> </li>
+           <li> <a href="https://www.olybet.lv/sports?competition=1732&amp;game=15952519&amp;region=50002&amp;type=0&amp;sport=2&amp;lang=ru"> <span class="icons-block">
+              <div class="icons header-footer icon-flag icon-header-flags-ru"></div> </span> </a> </li>
+          </ul> </li>
+        </ul>
+        <div class="clearfix"></div>
+       </div>
+       <div class="clearfix"></div>
+       <div class="bottom-menu">
+        <div class="header-logo">
+         <a href="/" id="logo-link"></a>
+        </div>
+        <ul class="header-half-menu clearfix">
+         <li class="item-sport element-with-icon active"> <a href="#" id="header-sport"> <span class="icons-block"> <span class="ico-big ico-sports"></span> </span>Sports </a> </li>
+         <li class="item-betlive element-with-icon "> <a href="#" id="header-live"> <span class="icons-block"> <span class="ico-in-play ico-big"></span> </span> <span>Live likmes</span> </a> </li>
+         <li class="item-betgames element-with-icon "> <a href="https://www.olybet.lv/games" id="header-betgames"> <span class="icons-block"> <span class="ico-big ico-casino"></span> </span> Kazino </a> </li>
+         <li class="item-betgames element-with-icon "> <a href="/games/bet-games/1" id="header-betgames-tv"> <span class="icons-block"> <span class="ico-big ico-betgames"></span> </span>Likmju spēles </a> </li>
+         <li class="item-live-dealer element-with-icon "> <a href="https://www.olybet.lv/live-dealer" id="header-live-dealer"> <span class="icons-block"> <span class="ico-big ico-livedealer"></span> </span> Live Kazino </a> </li>
+         <li class="item-promo element-with-icon"> <a href="https://www.olybet.lv/virtual-games"> <span class="icons-block"><span class="ico-big ico-virtual-games"></span></span> Virtuālais sports </a> </li>
+         <li class="item-poker element-with-icon "> <a href="https://www.olybet.lv/poker/poker" id="header-poker"> <span class="icons-block"> <span class="ico-big ico-poker"></span> </span> Pokers </a> </li>
+         <li class="item-promo element-with-icon"> <a href="https://promo.olybet.lv"> <span class="icons-block"><span class="ico-big ico-campaigns"></span></span>Piedāvājumi </a> </li>
+         <li class="item-promo element-with-icon"> <a href="https://www.olybet.lv/shops"> <span class="icons-block"> <span class="ico-big ico-betting-shops"> </span> </span>Likmju punkti </a> </li>
+        </ul>
+        <div class="clearfix"></div>
+       </div>
+      </div>
+      <div class="clearfix"></div>
+     </div>
+    </header>
+   </div>
+   <style type="text/css">
+  #prematch > iframe {
+    height: calc(100vh - 155px);
+    border: 0;
+  }
+  </style>
+   <div id="prematch"></div>
+   <script>
+    var iframe_bc = null;
+    var userId = "anonymous";
+
+    function isObject(obj) {
+      return Object.prototype.toString.call(obj).indexOf("Object") > -1;
+    }
+
+    function postMessageBC(message) {
+      if (iframe_bc) {
+        // console.log('postMessage', message);
+        iframe_bc.postMessage(message, '*');
+      }
+    }
+
+    function goToUrl(url, type) {
+      // console.log('goToUrl', url);
+
+      if (url == 'sports' || url.match(/\/sports(\?|\#)/g)) {
+        document.getElementById("header-live").parentElement.classList.remove("active");
+        document.getElementById("header-sport").parentElement.classList.add("active");
+        postMessageBC({action: 'setGamesType', type: 'prematch'});
+      } else if (url == 'live' || url.match(/\/live(\?|\#)/g)) {
+        document.getElementById("header-sport").parentElement.classList.remove("active");
+        document.getElementById("header-live").parentElement.classList.add("active");
+        postMessageBC({action: 'setGamesType', type: 'live'});
+      }
+
+      if (url != '' && type == 'push') {
+        // console.log('push url', url);
+        history.pushState({url: url}, null, url);
+      }
+    }
+
+    function handleMessage(event, data) {
+      var locationSearch = window.location.search;
+
+      if (event == 'gameInfo' && typeof data.type !== 'undefined') {
+        if (data.type == 0) {
+          goToUrl('sports', 'push');
+        } else if (data.type == 1) {
+          goToUrl('live', 'push');
+        }
+
+      } else if (event == 'login') {
+        Header.trigger('login-menu');
+
+      } else if (event == 'register') {
+        window.location.href = window.location.origin + '/register';
+
+      } else if (event == 'deposit') {
+        window.location.href = window.location.origin + '/billing/deposit';
+
+      } else if (event == 'routeUpdate') {
+        var url = window.location.origin + window.location.pathname + '?';
+        var search = '';
+
+        ['competition', 'game', 'region', 'type', 'sport', 'stake', 'event'].forEach(function (param) {
+          if (param in data) {
+            search += param + '=' + data[param] + '&';
+          }
+        });
+
+        if (locationSearch.indexOf('?') === 0) {
+          var params = locationSearch.split('?')[1].split('&');
+
+          params.forEach(function (param) {
+            if (param.startsWith('utm_')) {
+              search += param + '&';
+            }
+          });
+        }
+
+        if (search.length > 1) {
+          url += search;
+          history.pushState({url: url}, null, url);
+        }
+
+      } else if (event == 'applicationReady') {
+        iframe_bc = document.getElementById('bcsportsbookiframe').contentWindow;
+        // console.log({type: 'applicationUser', value: userId});
+        postMessageBC({type: 'applicationUser', value: userId}, '*');
+      } else if (event == 'betSlipEventsChange') {
+        // console.log({type: 'betSlipEventsChange', value: data});
+        postMessageBC({type: 'betSlipEventsChange', value: data}, '*');
+      }
+    }
+
+    window.addEventListener('popstate', function(e) {
+      // console.log('popstate', e);
+
+      if (isObject(e.state) && 'url' in e.state) {
+        goToUrl(e.state.url, 'pop');
+      }
+    });
+
+    window.addEventListener('message', function (e) {
+      if (e.origin.endsWith('orakulas.lt') && isObject(e.data)) {
+        // console.log('message', e);
+
+        if ('type' in e.data && 'value' in e.data) {
+          handleMessage(e.data.type, e.data.value);
+        }
+      }
+    });
+
+    document.getElementById('header-sport').addEventListener('click', function () {
+      goToUrl('sports', 'push');
+    });
+
+    document.getElementById('header-live').addEventListener('click', function () {
+      goToUrl('live', 'push');
+    });
+
+    goToUrl(window.location.href.split('/').reverse()[0]);
+  </script>
+   <script id="bcsportsbook" src="//sportsbook-lv.orakulas.lt/js/partnerinit.js?containerID=prematch&amp;callbackName=bettingCB&amp;oddsType=decimal&amp;type=prematch&amp;lang=lav&amp;AuthToken=anonymous&amp;sport=2&amp;region=50002&amp;competition=1732&amp;game=15952519"></script>
+   <script type="text/javascript">
+        </script>
+   <div class="clearfix"></div>
+   <div id="footer">
+    <footer>
+     <div class="footer-wrapper">
+      <div class="footer-first-row">
+       <div class="footer-content">
+        <iframe id="footer-iframe" scrolling="no" width="100%" frameborder="0" height="405px" onpageready="https://promo.olybet.lv/sitepartlv/footer"> </iframe>
+       </div>
+      </div>
+      <div class="footer-second-row">
+       <div>
+        <span>Servera laiks:</span>
+        <span class="nowrap"> <span id="server-time">2020-01-14 13:58:20</span> <span>(UTC)</span> </span>
+       </div>
+       <div>
+        Pieslēguma IP adrese: 144.36.114.113
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <script type="text/javascript">
+    var debug               = false;
+
+    var currency            = 'EUR';
+    var currency_id         = '102';
+    var brand_id            = '4';
+
+    var user                =  false;
+    var user_id             = '';
+    var user_name           = ' ';
+    var csrf                = 'ZQPgL7ZEy10r5ND4oig2L4KVCCA0qQm9u3OIVcEn';
+    var lang                = 'lv';
+    var serverTimeOffset    = +2;
+    var BOOKING             = false;
+    var PRINT_AFTER_BOOK    = true;
+    var SOCKET_SERVER       = 'https://socket.orakulas.lt';
+    var URI                 = '/sports';
+    var OLYBET              = true;
+    var SOURCE_ID           = 1;
+    var SESSION_ID          = 'N5rxy39d9cPQzDCohH9WTakwesUfBh4h953LfLmW';
+    var MERCHANT_ID         = '100061000';
+    var CASHIER_API         = 'https://api.paymentiq.io/paymentiq/api/';
+
+    var SHOW_LOGIN_FORM     = '';
+    var SHOW_POKER_REDIRECT = '';
+    var WEB_POKER           = 0;
+
+    var RESPONSIBLE_CONFIG  = {
+      enabled: true,
+      url: "http://www.iaui.gov.lv/",
+      timeout: parseInt(120, 10),
+      switch_timer: parseInt(10, 10),
+      hidden: false
+    };
+
+    var modals = {
+      in_pep_verification: false,
+      risk: false,
+      sow: false,
+      sow_unclosable: false,
+    };
+
+</script>
+  <script type="text/javascript">
+    var tr = {
+        // Betslips
+        outcome: "izvēle",
+        error: "Kļūda",
+        bad_login: "Lietotājvārds vai parole ievadīti nepareizi.",
+        system_error: "Sistēmas kļūda. Nepareiza atbilde no servera.",
+        empty_cart: "Likmju kartīte ir tukša",
+        too_many_event: "Maksimālais notikumu skaits grozā ir",
+        empty_stake: "Likmes summai jābūt lielākai par nulli.",
+        must_login: "Lai veiktu likmi, pieslēdzies sistēmai.",
+        bid_failed: "Likme netika pieņemta",
+        live_rules: "Live likmju noteikumi",
+        choose_banker: "Click this button to choose banker",
+        combination: "Kombinācijas",
+        win: "Laimesti",
+        coef: "Koef.",
+        no_systems: "Nav iespējamu sistēmu",
+        system_choose: "Izvēlieties likmes veidu",
+        must_select_combination: "Please select combination type",
+        one_bid_amount: "Vienas likmes summa",
+        diff: "Difference",
+        refresh_page: "Lūdzu, pārlādē lapu",
+        flash_required_for_netent: "Please enable flash in your browser in order to start this game. If you need any help please contact support.",
+        max_onscreen_games: "At one time you can only play 4 games. Please close one and choose a new one.",
+        title_warning: "Brīdinājums!",
+        validator: {
+            missing_google_birthday: "Lai veiktu reģistrāciju ar Google+ kontu Jūsu dzimšanas datumam jābūt publiski pieejamam. Lūdzu, nomainiet Jūsu Google+ profila iestatījumus vai izveidojiet Olybet kontu.",
+            file_size: "Faila izmēram jābūt mazākam par 5 MB"
+        },
+
+        user: {
+            profile_updated: "Profile update was successful"
+        },
+
+        billing: {
+            deposit: "Iemaksa",
+            amount: "Ievadiet summu, kuru vēlaties pārskaitīt",
+            enter_personal_data: "Lūdzu, ievadi savus personas datus.",
+            success: "Nauda izmaksāta veiksmīgi.",
+        },
+
+        // Live chat
+        live_support: "Live support",
+        leave_feedback: "Leave us a message",
+
+        // Other
+        reset_password: "Paroles atgādināšana",
+        gourmet_explain: "Mazākais apvienoto notikumu skaits biļetē - 4",
+        no_new_messages: "Jaunu ziņu nav",
+        correct_form_errors: "Lūdzu, izlabojiet ar sarkanu iezīmētās kļūdas. Ja kļūdaini ir norādīts bankas konts, dodaties uz lietotāja izvēlni &quot;Mans profils&quot;, lai apstiprinātu bankas kontu. <br>Klientu atbalsta dienests: support@olybet.com",
+
+        favorites: {
+            title: "Favorīti",
+            login: "Lai izmantotu favorītu sarakstu, ir nepieciešams pieslēgties sistēmai.",
+            participants: "Komandas/Sportisti",
+            add: "Add league to favorites",
+            added: "Team or player added to your favorite list",
+            remove: "Remove league from favorites"
+        },
+
+        anchor: {
+            show: "Floating bet slip",
+            hide: "Anchor bet slip"
+        },
+
+        finish_registration: {
+            title: "Tev ir jāpabeidz verifikācija",
+            title_force: "Identitātes verifikācija",
+            title_force_doc: "Document update",
+            content: "Lai veiktu iemaksas un likmes, Tev ir jāpabeidz verifikācija. <br>",
+            content_force: "Mēs esam uzlabojuši verifikācijas procesu. Lūdzu, turpini un veic dažus papildus verifikācijas soļus. <br>",
+            content_force_doc: "We are required to hold a current valid document of you for customer identification procedures. Please provide your current valid identification document by clicking below.",
+            button: "Turpināt",
+            button_force: "Turpināt",
+            button_force_doc: "Upload document"
+        },
+        poker: {
+            have_to_login: "Pieslēdzies, lai varētu spēlēt pokeru",
+            cant_play_because: "You can&#039;t play poker.",
+            poker_relog: "There seems to have been a problem finding your token. Please reauthenticate."
+        },
+        profile: {
+            change_email: "Mainīt e-pasta adresi",
+            email_confirmed: "E-pasta adreses maiņa tika veiksmīgi apstiprināta!"
+        }
+    };
+</script>
+  <script type="text/javascript">
+
+    var url = {
+        user: {
+            login: 'https://www.olybet.lv/auth/login',
+            risk_modal: 'https://www.olybet.lv/user/risk-modal',
+            sow_modal: 'https://www.olybet.lv/user/sow-modal',
+            create_sow: 'https://www.olybet.lv/user/create-sow',
+            // Mobile-ID login
+            mSignLogin: 'https://www.olybet.lv/auth/mobile-sign',
+            logout: 'https://www.olybet.lv/auth/logout',
+            update: 'https://www.olybet.lv/auth/update',
+            getBalance: 'https://www.olybet.lv/user/balance',
+            getStatus: 'https://www.olybet.lv/user/status',
+            deleteMessage: 'https://www.olybet.lv/messages/delete',
+            deleteCheckedMessages: 'https://www.olybet.lv/messages/delete-checked',
+            readMessage: 'https://www.olybet.lv/messages/read',
+            readCheckedMessages: 'https://www.olybet.lv/messages/read-checked',
+            messagesPopup: 'https://www.olybet.lv/messages/delete-all-popup',
+            deleteAllMessages: 'https://www.olybet.lv/messages/delete-all',
+            changePassword: 'https://www.olybet.lv/auth/change-password',
+            changeLostPassword: 'https://www.olybet.lv/auth/change-lost-password',
+            resetPassword: 'https://www.olybet.lv/auth/reset-password',
+            changePhone: 'https://www.olybet.lv/auth/change-phone',
+            changeEmail: 'https://www.olybet.lv/user/change-email',
+            verifyPhone: 'https://www.olybet.lv/auth/verify-phone',
+            verifyResetPasswordPhone: 'https://www.olybet.lv/auth/verify-reset-password-phone',
+            stats: 'https://www.olybet.lv/user/stats',
+            saveLimit: 'https://www.olybet.lv/user/limits',
+            removePendingLimit: 'https://www.olybet.lv/user/remove-pending-limit',
+            acceptPendingLimit: 'https://www.olybet.lv/user/accept-pending-limit',
+            savePromotionalCode: 'https://www.olybet.lv/user/promotional-code',
+            bonusStats: 'https://www.olybet.lv/user/bonus-stats',
+            document_upload: 'https://www.olybet.lv/user/document-upload',
+            document_upload_upload: 'https://www.olybet.lv/user/document-upload',
+            promotions: 'https://www.olybet.lv/user/promotions',
+            pep_notification: 'https://www.olybet.lv/user/pep-notification',
+            self_excluded: 'https://www.olybet.lv/user/self-limited',
+        },
+        contacts: 'https://www.olybet.lv/contacts',
+        billing: {
+            deposit: 'https://www.olybet.lv/billing/deposit',
+            deposit_popup_data: 'https://www.olybet.lv/billing/deposit-popup-data',
+            withdraw: 'https://www.olybet.lv/billing/withdraw',
+            withdraw_history: 'https://www.olybet.lv/billing/withdraw-history',
+            withdraw_cancel: 'https://www.olybet.lv/billing/withdraw-cancel',
+            mismatched_deposits: 'https://www.olybet.lv/billing/mismatched-deposits',
+            withdraw_confirm: 'https://www.olybet.lv/billing/withdraw-confirm',
+            deposit_statement_upload: 'https://www.olybet.lv/billing/deposit-statement-upload',
+            reject_deposit: 'https://www.olybet.lv/billing/reject-deposit',
+            bank_accounts: {
+                remove: 'https://www.olybet.lv/billing/bank-account',
+                add_from_deposit: 'https://www.olybet.lv/billing/account-from-deposit',
+                get: 'https://www.olybet.lv/billing/bank-accounts',
+            }
+        },
+        utils: {
+            timezones: 'https://www.olybet.lv/utils/timezones',
+            server_time: 'https://www.olybet.lv/utils/server-time',
+            set_timezone: 'https://www.olybet.lv/user/set-timezone?timezone='
+        },
+        poker: {
+            link: 'https://www.olybet.lv/poker/link',
+            redirect_popup: 'https://www.olybet.lv/poker/poker-redirect-popup'
+        },
+        responsibleGaming: {
+            show: 'https://www.olybet.lv/user/responsible-show',
+            hide: 'https://www.olybet.lv/user/responsible-hide'
+        },
+    };
+</script>
+  <script src="/js/dist/vendor.min.js?=86d7e3b"></script>
+  <script src="/js/dist/app.min.js?=86d7e3b"></script>
+  <script src="https://www.google.com/recaptcha/api.js?hl=lv"></script>
+  <script>
+        function captchaLoginSubmit() {
+            $("#login_form").trigger('submit');
+            grecaptcha.reset();
+        }
+        </script>
+ </body>
+</html>
+
+Process finished with exit code 0

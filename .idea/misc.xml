@@ -49,6 +49,9 @@
         <option value="$PROJECT_DIR$/SpringJacoco/pom.xml" />
         <option value="$PROJECT_DIR$/SpringUploadingFiles/pom.xml" />
         <option value="$PROJECT_DIR$/SendingEmail/pom.xml" />
+        <option value="$PROJECT_DIR$/ExtractingWebPage/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringSwagger/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringMicrometer/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

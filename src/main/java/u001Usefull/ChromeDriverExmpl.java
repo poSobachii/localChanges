@@ -26,11 +26,11 @@ public class ChromeDriverExmpl {
         for (int i = 0; i < 2; i++) {
             FirefoxOptions options = new FirefoxOptions();
             if (i == 0) {
-                driver = new FirefoxDriver();
+                driver = new ChromeDriver();
                 System.out.println("driver 1 created");
 
             } else {
-                driver2 = new FirefoxDriver();
+                driver2 = new ChromeDriver();
                 System.out.println("driver 2 created");
             }
         }

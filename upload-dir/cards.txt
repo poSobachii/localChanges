@@ -1,0 +1,41 @@
+{
+  "66a8f2f8ecb541c6850552a7016599e3": {
+    "id": "cus_GDWDh8WFrLVLZa",
+    "cards": {
+      "5858eb31-b818-4c37-a887-1269354b1179": {
+        "id": "card_1Fh5BKCmHoRdeuFTScO4HFAK",
+        "fingerprint": "z8pL6zqCgj8nA1Sn",
+        "last4": "6595",
+        "exp_month": 3,
+        "exp_year": 2020,
+        "brand": "Visa"
+      }
+    }
+  },
+  "a994f6013c0248aa84cd8dd9f60e0bfe": {
+    "id": "cus_GDWDTWg0lmYzWQ",
+    "cards": {
+      "7e655c27-1ffc-4ef8-ac63-d4aa0ab739a7": {
+        "id": "card_1Fh5BNCmHoRdeuFTUSL11lGH",
+        "fingerprint": "fGvYSlEhEJtBH7Qd",
+        "last4": "3752",
+        "exp_month": 2,
+        "exp_year": 2021,
+        "brand": "Visa"
+      }
+    }
+  },
+  "f932d3862e254af290adf14f23420ebf": {
+    "id": "cus_GDWDpmf82AkCjM",
+    "cards": {
+      "eeac8037-e860-496b-9a7a-03a092bf253e": {
+        "id": "card_1Fh5BQCmHoRdeuFTS3kvGkJQ",
+        "fingerprint": "LBfM4AOiQXG8coaf",
+        "last4": "8519",
+        "exp_month": 2,
+        "exp_year": 2020,
+        "brand": "Visa"
+      }
+    }
+  }
+}

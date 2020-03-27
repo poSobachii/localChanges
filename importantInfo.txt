@@ -2,15 +2,38 @@
 
 ps -ef | grep java     //to see all java processers MAC
 sudo kill -9 <pid>           // to kill processor with ID MAC
-history | grep variable         // to search for something in terminal  MAC
+history | grep 'variable'         // to search for something in terminal  MAC
 
 javac               // compile .java file into .class file
 java HelloWorld     // no .class needed to run a class
 jar cfm HelloWorld.jar manifest.txt HelloWorld.class      // creating jar file
 java -jar Chuchi.jar
+/usr/libexec/java_home -V               // to check java versions
+ls -a                                   // list all files
+ls -l                                   // list in long desc.
+
+==============================================================================================================================
+
+JAVA versions
+
+Type "cd ~/" to go to your home folder
+Type "touch .bash_profile" to create your new file.
+Edit .bash_profile with your favorite editor (or you can just type "open -e .bash_profile" to open it in TextEdit).
+Type ". ~/.bash_profile" to reload .bash_profile and update any functions you add.
+
+export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
+export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
+
+alias java8='export JAVA_HOME=$JAVA_8_HOME'
+alias java11='export JAVA_HOME=$JAVA_11_HOME'
+
+# default to Java 11
+java11
+
+==============================================================================================================================
 
 
-ansible-vault decrypt --vault-password-file ~/.ansible_vault            // ansible decrypt
+ansible-vault decrypt --vault-password-file ~/.ansible_vault            // ansible decrypt pass is written in 1 lane with no other characters
 ansible-vault encrypt --vault-password-file ~/.ansible_vault            // ansible encrypt
 
 git tag -a 2.64.1 -m "2.64.1" 69e07e88f499b53476c04a3193d239cfeb6f5297              // to add git tag
@@ -41,12 +64,14 @@ http://localhost:4444/wd/hub/
 ==============================================================================================================================
 //some linux usefull
 
+pwd     // to show path
 mkdir   // to make folder
 rmdir   // to delete empty folder
 touch filename.txt    // to make file
 
 cat > hello.txt         // to create a file
 mv hello.txt hello1.txt      //to rename a file
+cp                           // to copy file
 vi hello.txt     // to edit file. press "i" for insert or "esc" for quiting insert mode
 ctrl + c , :x      // to save a file
 :q :q!          // to quit file, and quit unsaved
@@ -58,7 +83,7 @@ rm -rf folder1          // delete folder without annoying spam
 
 
 ssh-add -l
-ssh-add ~/.ssh/id_rs
+ssh-add ~/.ssh/id_rs            // your private public key
 
 sudo chmod 0755 /usr/local/bin/vpn.sh
 sudo vpn.sh nl
@@ -101,8 +126,31 @@ ansible all -m uri -a "url=https://www.facebook.com"            // connection av
 ansible all -m uri -a "url=https://www.facebook.com return_content=yes"     // with content
 ansible all -m service -a "name=httpd state=started enabled=yes" -b         // start apache  + always start
 ansible]$ ansible some_other_hosts -m command  -a "ls /var" -vvvvv          // some other info from servers
+ansible-playbook playbook.yml                                           // to play some playbook
+
 
 ansible-inventory --list                    // to see all vars belong to what hosts
+
+==============================================================================================================================
+// terraform commands
+
+/usr/local/keys             // keys to store usually
+terraform init              // to initialize like git
+terraform plan              // to see what tf will do
+terraform apply             // to make a .tf plan
+==============================================================================================================================
+// terrible commands
+
+terrible preflight core-services/payment-api/staging-payment-api $(git rev-parse HEAD)
+terrible plan core-services/payment-api/staging-payment-api $(git rev-parse HEAD)
+terrible acknowledge core-services/payment-api/staging-payment-api 44527
+terrible apply core-services/payment-api/staging-payment-api 44527
+terrible ansible --vault-password-file ~/ansible-vault-copy.txt core-services/payment-api/staging-payment-api
+==============================================================================================================================
+//  instance commands
+
+cd /usr/                    // for linux
+cd /etc                     // another proper location
 
 ==============================================================================================================================
 --------------------BEAN INITIALISATION--------------------

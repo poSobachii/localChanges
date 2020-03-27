@@ -1,6 +1,7 @@
 package RestWebApplication.H2database;
 
 import RestWebApplication.Entity.Book;
+import org.hibernate.annotations.NamedNativeQuery;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

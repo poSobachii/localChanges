@@ -1,4 +1,3 @@
-
 #welcome.message: Hello welcome 1 message
 #available conn.props jdbc/h2/hibernate
 
@@ -17,17 +16,17 @@ spring:
     active: h2
   jpa:
     hibernate:
-      ddl-auto: none
-#      ddl-auto: create        # turn off for custom schema.sql
+#      ddl-auto: none
+      ddl-auto: create        # turn off for custom schema.sql
   datasource:
-    url: jdbc:h2:mem:MyWebDatabase;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     platform: h2
     username: sa
     password:
     driverClassName: org.h2.Driver
-    initialize=true:
+    initialization-mode: always
     jpa:
-#      database-platform: org.hibernate.dialect.H2Dialect
+      #      database-platform: org.hibernate.dialect.H2Dialect
       database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
       hibernate:
         ddl-auto: update

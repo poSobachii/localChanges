@@ -5,7 +5,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "Ansible_master" {
-  ami = "ami-0c947472aff72870d"
+  ami = "ami-006cda581cf39451b"
   instance_type = "t3.micro"
   vpc_security_group_ids = ["${aws_security_group.fullServerSecurity.id}"]
   key_name = "ansible1"
@@ -17,7 +17,7 @@ resource "aws_instance" "Ansible_master" {
 
 resource "aws_instance" "Full_Server_WithOut_Script" {
   count = 3
-  ami = "ami-0c947472aff72870d"
+  ami = "ami-006cda581cf39451b"
   instance_type = "t3.micro"
   vpc_security_group_ids = ["${aws_security_group.fullServerSecurity.id}"]
   key_name = "ansible2"

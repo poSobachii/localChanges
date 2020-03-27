@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/DockerExample/DockerSpringBootApp.iml" filepath="$PROJECT_DIR$/DockerExample/DockerSpringBootApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/SendingEmail/Email..iml" filepath="$PROJECT_DIR$/SendingEmail/Email..iml" />
       <module fileurl="file://$PROJECT_DIR$/FacebookApi/FBapi - DevelopersForFacebook.iml" filepath="$PROJECT_DIR$/FacebookApi/FBapi - DevelopersForFacebook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExtractingWebPage/Get Info from page.iml" filepath="$PROJECT_DIR$/ExtractingWebPage/Get Info from page.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringDatabaseAccess/H2.iml" filepath="$PROJECT_DIR$/SpringDatabaseAccess/H2.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJMSmessaging/JMS example of sub and message.iml" filepath="$PROJECT_DIR$/SpringJMSmessaging/JMS example of sub and message.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringSimpleJPAdatabase/JPA example.iml" filepath="$PROJECT_DIR$/SpringSimpleJPAdatabase/JPA example.iml" />
@@ -15,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/JWTS/JWTSManager.iml" filepath="$PROJECT_DIR$/JWTS/JWTSManager.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJacoco/JaCoCo.iml" filepath="$PROJECT_DIR$/SpringJacoco/JaCoCo.iml" />
       <module fileurl="file://$PROJECT_DIR$/LamdaExpression/LamdaExpression.iml" filepath="$PROJECT_DIR$/LamdaExpression/LamdaExpression.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMicrometer/Micrometer.Path.Context.iml" filepath="$PROJECT_DIR$/SpringMicrometer/Micrometer.Path.Context.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringMockitoSpy/MockSpy.iml" filepath="$PROJECT_DIR$/SpringMockitoSpy/MockSpy.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJPAexamples/OneToOneToMany , Exceptions.iml" filepath="$PROJECT_DIR$/SpringJPAexamples/OneToOneToMany , Exceptions.iml" />
       <module fileurl="file://$PROJECT_DIR$/JUnitTestExample/Parametrizes Tests.iml" filepath="$PROJECT_DIR$/JUnitTestExample/Parametrizes Tests.iml" />
@@ -32,6 +34,8 @@
       <module fileurl="file://$PROJECT_DIR$/SpringWebValidation/Some Input Validation.iml" filepath="$PROJECT_DIR$/SpringWebValidation/Some Input Validation.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJsonExample/SomeOutputExampleOfJson.iml" filepath="$PROJECT_DIR$/SpringJsonExample/SomeOutputExampleOfJson.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringPDFexample/SpringPDFexample.iml" filepath="$PROJECT_DIR$/SpringPDFexample/SpringPDFexample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringSwagger/SpringSwaggerExample.iml" filepath="$PROJECT_DIR$/SpringSwagger/SpringSwaggerExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringSwagger/Swagger.iml" filepath="$PROJECT_DIR$/SpringSwagger/Swagger.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringWebMockito/Testing Web Pages with Mockito.iml" filepath="$PROJECT_DIR$/SpringWebMockito/Testing Web Pages with Mockito.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringSimpleWebInputForm/Thymleaf.POST.GET.iml" filepath="$PROJECT_DIR$/SpringSimpleWebInputForm/Thymleaf.POST.GET.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringUploadingFiles/UploadAFile.iml" filepath="$PROJECT_DIR$/SpringUploadingFiles/UploadAFile.iml" />
