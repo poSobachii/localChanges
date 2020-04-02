@@ -6,51 +6,53 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="@path, Json examples" />
-        <module name="Converting CSV adding to DB" />
-        <module name="CURL examples" />
-        <module name="Docker.Jar" />
-        <module name="Docker.JAR.SpringApp" />
-        <module name="Email." />
-        <module name="FBapi - DevelopersForFacebook" />
-        <module name="Get Info from page" />
-        <module name="H2" />
-        <module name="JaCoCo" />
-        <module name="JMS example of sub and message" />
-        <module name="JPA example" />
-        <module name="JQueryTable" />
-        <module name="junit5-parallel" />
-        <module name="JWTSManager" />
-        <module name="LamdaExpression" />
-        <module name="Micrometer.Path.Context" />
-        <module name="MockSpy" />
-        <module name="OneToOneToMany , Exceptions" />
-        <module name="Parametrizes Tests" />
-        <module name="Path.Json.Log.Jersey" />
-        <module name="PDF.java/web" />
-        <module name="QuotingSomeLinks" />
-        <module name="Reading Data Copying into File" />
-        <module name="Rest Hypermedia example" />
-        <module name="Rest With 3 Databases" />
-        <module name="Schedulling" />
-        <module name="Security Hard Example" />
-        <module name="Security Simple Example" />
-        <module name="SeleniumTests" />
-        <module name="Simple DB example without queries" />
-        <module name="Simple Web hello with increment" />
-        <module name="Some Hibernate Tutorials and Tests" />
-        <module name="Some Input Validation" />
-        <module name="someSortOfWebPages" />
-        <module name="SpringPDFexample" />
-        <module name="SpringSwaggerExample" />
-        <module name="Swagger.RestHeaders" />
-        <module name="Testing Web Pages with Mockito" />
         <module name="thymeleaf examples" />
+        <module name="LamdaExpression" />
+        <module name="QuotingSomeLinks" />
+        <module name="Get Info from page" />
+        <module name="x024.REF" />
+        <module name="H2" />
+        <module name="Converting CSV adding to DB" />
+        <module name="Rest Hypermedia example" />
+        <module name="SpringPDFexample" />
+        <module name="MockSpy" />
+        <module name="WarTomcat" />
+        <module name="Parametrizes Tests" />
+        <module name="someSortOfWebPages" />
+        <module name="JPA example" />
+        <module name="Simple Web hello with increment" />
+        <module name="Rest With 3 Databases" />
+        <module name="Reading Data Copying into File" />
+        <module name="CURL examples" />
+        <module name="Swagger.RestHeaders" />
+        <module name="Security Hard Example" />
+        <module name="Docker.Jar" />
+        <module name="PDF.java/web" />
+        <module name="Some Hibernate Tutorials and Tests" />
+        <module name="SpringSwaggerExample" />
+        <module name="spring boot basics app with SWAGGER/h2" />
+        <module name="@path, Json examples" />
         <module name="Thymleaf.POST.GET" />
         <module name="UploadAFile" />
-        <module name="WarTomcat" />
-        <module name="x024.REF" />
+        <module name="Path.Json.Log.Jersey" />
+        <module name="Micrometer.Path.Context" />
+        <module name="JaCoCo" />
+        <module name="java Basics, spring context , spring boot basics" />
         <module name="YML" />
+        <module name="OneToOneToMany , Exceptions" />
+        <module name="JQueryTable" />
+        <module name="Testing Web Pages with Mockito" />
+        <module name="Docker.JAR.SpringApp" />
+        <module name="Security Simple Example" />
+        <module name="FBapi - DevelopersForFacebook" />
+        <module name="JWTSManager" />
+        <module name="Simple DB example without queries" />
+        <module name="Email." />
+        <module name="JMS example of sub and message" />
+        <module name="Some Input Validation" />
+        <module name="junit5-parallel" />
+        <module name="Schedulling" />
+        <module name="SeleniumTests" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -70,6 +72,7 @@
       <module name="Get Info from page" target="8" />
       <module name="H2" target="1.8" />
       <module name="JaCoCo" target="1.6" />
+      <module name="java Basics, spring context , spring boot basics" target="1.8" />
       <module name="JMS example of sub and message" target="1.8" />
       <module name="JPA example" target="1.8" />
       <module name="JQueryTable" target="1.8" />
@@ -96,6 +99,7 @@
       <module name="Some Hibernate Tutorials and Tests" target="1.5" />
       <module name="Some Input Validation" target="1.8" />
       <module name="someSortOfWebPages" target="1.8" />
+      <module name="spring boot basics app with SWAGGER/h2" target="1.8" />
       <module name="SpringPDFexample" target="1.8" />
       <module name="SpringSchedule" target="1.8" />
       <module name="SpringSwaggerExample" target="1.8" />
@@ -152,6 +156,8 @@
       <module name="WarTomcat" options="" />
       <module name="YML" options="-parameters" />
       <module name="demo" options="-parameters" />
+      <module name="java Basics, spring context , spring boot basics" options="-parameters" />
+      <module name="spring boot basics app with SWAGGER/h2" options="-parameters" />
       <module name="thymeleaf examples" options="-parameters" />
       <module name="x024.REF" options="-parameters" />
     </option>

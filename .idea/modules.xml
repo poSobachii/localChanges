@@ -45,8 +45,10 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.auth0.auth0-servlet.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.auth0.auth0-servlet.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.auth0.auth0-servlet.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.auth0.auth0-servlet.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo.iml" filepath="$PROJECT_DIR$/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBasics/java Basics, spring context , spring boot basics.iml" filepath="$PROJECT_DIR$/JavaBasics/java Basics, spring context , spring boot basics.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJunit5Tests/junit5-parallel.iml" filepath="$PROJECT_DIR$/SpringJunit5Tests/junit5-parallel.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringWebExample/someSortOfWebPages.iml" filepath="$PROJECT_DIR$/SpringWebExample/someSortOfWebPages.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBasics2/JavaBasics2.iml" filepath="$PROJECT_DIR$/JavaBasics2/JavaBasics2.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringThymeleaf/thymeleaf examples.iml" filepath="$PROJECT_DIR$/SpringThymeleaf/thymeleaf examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/SomeWebTests/x024.REF.iml" filepath="$PROJECT_DIR$/SomeWebTests/x024.REF.iml" />
     </modules>

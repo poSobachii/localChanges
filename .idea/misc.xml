@@ -55,6 +55,8 @@
         <option value="$PROJECT_DIR$/ExtractingWebPage/pom.xml" />
         <option value="$PROJECT_DIR$/SpringSwagger/pom.xml" />
         <option value="$PROJECT_DIR$/SpringMicrometer/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaBasics/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaBasics2/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -67,7 +69,7 @@
   <component name="ProjectPlainTextFileTypeManager">
     <file url="file://$PROJECT_DIR$/src/main/resources/client9.properties" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="false" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/classes" />
   </component>
 </project>

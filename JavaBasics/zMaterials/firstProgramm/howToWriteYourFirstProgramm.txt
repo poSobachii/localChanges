@@ -1,0 +1,31 @@
+1) создаем текстовый файл Hello.java
+2) прописывает следующий код ->
+                public class Hello{
+                    public static void main(String[] args) {
+                        System.out.println("Hello world");
+                    }
+                }
+название класса должно совпадать с название файла  .java (в данном случае "Hello")
+главный метод с чего джава начинает читать код всегда будет "public static void main(String...args)"
+3) сохраняем файл. открываем терминал и нашу папку где был создал файл
+4) вызываем компилятор и компилируем наш .java файл командой:
+    javac Hello.java
+5) в папке должен появится файл Hello.class
+6) запускаем файл .class командой:
+    java Hello
+!!! обратите внимание что расширение класса указыват не нужно !
+7) ваш первый рабочий код готов.
+
+8) для работы с аргументами создаем другой файл HelloWithArguments.java
+9) изпользуем код ->
+                public class HelloWithArguments{
+                    public static void main(String[] args) {
+                        System.out.println("Hello " + args[0] + " !");
+                    }
+                }
+10) компилируем файл -> javac HelloWithArguments.java
+11) т.к. мы в нашем коде используем один аргумент ( без него наша программа выдаст ошибку) , запускаем наш .class файл следующей командой:
+    java HelloWithArguments world
+12) код с одним аргументов готов и работает.
+
+все примеры файлов прикрепленны в данной папке.
