@@ -42,16 +42,20 @@ git push origin 2.64.1
 ==============================================================================================================================
 
 docker run --name "yoyo" -d -p 4444:4444 selenium/standalone-chrome
-
+docker:
+-d              // run with logs
+-e              // pass environment argument
+-p              // use port
+-it             //interactive regime, turns the terminal of docker
 docker ps // - to see full list
 docker rm yoyo
 docker ps -a
 docker container prune
-To stop everything unused and delete: docker system prune
+docker system prune               // to stop everything unused and delete
 
-To stop all contatiners: docker stop $(docker ps -a -q)
-To delete all contatier: docker rm $(docker ps -a -q)
-To kill image: docker rmi <IMAGE ID>
+docker stop $(docker ps -a -q)                 // stopp all containers
+docker rm $(docker ps -a -q)           // delete all containers
+docker rmi <IMAGE ID>               // kill docker image
 docker rmi $(docker images -a -q)          // to remove all images
 docker image prune -a
 docker build -t helloworld .      // to build a docker image with this name. Must be a Dockerfile.withnoextension in a folder.
@@ -60,6 +64,10 @@ docker tag dogstyle posobachii/catstyle     // image dogstyle is merged with ur 
 docker push posobachii/catstyle              // push into catstyle repository
 
 http://localhost:4444/wd/hub/
+
+docker cp eudemo3_20200102_1558.bak mssql:/var/opt/mssql/backup                     // copy to docker inventory
+docker exec -it container id /name ls -al                     // to check docker inventory
+docker exec mssql ls var/opt/
 
 ==============================================================================================================================
 //some linux usefull
@@ -106,8 +114,6 @@ sudo service httpd start    // to make available website
 sudo vi index.html          // to create file
 
 ansible -i hosts.txt all -m ping        // ansible to ping servers
-
-
 
 ==============================================================================================================================
 // ansible AD-HOC commands
@@ -162,3 +168,33 @@ factory.autowireBean(Object);
 factory.initializeBean(Object, Object.getClass().getSimpleName());
 
 ==============================================================================================================================
+--------------------JAVASCRIPT & ANGULAR--------------------    https://angular.io/tutorial
+
+ng new someNaming               // to create default angular project
+ng serve            --open                    // to start project
+ng generate component heroes                    // to generate components
+ng generate service hero                            // to generate service
+npm install angular-in-memory-web-api --save            // install inbuilt memory
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

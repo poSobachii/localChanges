@@ -1,0 +1,55 @@
+<!-- {{someHeroVar}}
+<h3>{{anotherHeroVar.name | uppercase}} Details</h3>
+<div><span>id: </span>{{anotherHeroVar.id}}</div>
+<div><span>name: </span>{{anotherHeroVar.name}}</div>
+
+<div>
+    <label>name:
+        <input [(ngModel)]="anotherHeroVar.name" placeholder="name" />
+    </label>
+</div> -->
+
+
+<!-- with onSelect-->
+<!-- <h2>My Heroes</h2>
+<ul class="heroesLists">
+    <li *ngFor="let difHerovar of heroesLists" [class.selected]="difHerovar === selectedHero" (click)="onSelect(difHerovar)">
+        
+        <span class="badge">{{difHerovar.id}}</span> {{difHerovar.name}}
+    </li>
+</ul> -->
+
+<!-- with links-->
+<h2>My Heroes</h2>
+<ul class="heroesLists">
+    <li *ngFor="let difHerovar of heroesLists">
+        <a routerLink="/detail/{{difHerovar.id}}">
+            <span class="badge">{{difHerovar.id}}</span> {{difHerovar.name}}
+        </a>
+        <button class="delete" title="delete hero" (click)="delete(difHerovar)">x</button>
+    </li>
+</ul>
+
+<div>
+    <label>Hero name:
+        <input #heroName />
+    </label>
+    <!-- (click) passes input value to add() and then clears the input -->
+    <button (click)="add(heroName.value); heroName.value=''"> add</button>
+</div>
+
+
+<!-- <app-hero-detail [heroDetailedVar]="selectedHero"></app-hero-detail> -->
+
+
+
+
+<!-- <div *ngIf="selectedHero">
+    <h2>{{selectedHero.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{selectedHero.id}}</div>
+    <div>
+        <label>name:
+            <input [(ngModel)]="selectedHero.name" placeholder="name" />
+        </label>
+    </div>
+</div> -->

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.github.artsok:rerunner-jupiter:2.1.7-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/io/github/artsok/rerunner-jupiter/2.1.7-SNAPSHOT/rerunner-jupiter-2.1.7-20200119.192939-2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/io/github/artsok/rerunner-jupiter/2.1.7-SNAPSHOT/rerunner-jupiter-2.1.7-20200119.192939-2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/io/github/artsok/rerunner-jupiter/2.1.7-SNAPSHOT/rerunner-jupiter-2.1.7-20200119.192939-2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,45 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+  <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/DockerExample" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DockerExample/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ExtractingWebPage" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Facebook" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Facebook/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Facebook/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/FacebookApi" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FacebookApi/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/HibernateTutorials" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HibernateTutorials/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HibernateTutorials/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/JUnitTestExample" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JUnitTestExample/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/JWTS" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JWTS/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/LamdaExpression" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/LamdaExpression/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SendingEmail" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SomeWebTests" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SomeWebTests/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringConvertingBatch" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringConvertingBatch/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringDatabaseAccess" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringDatabaseAccess/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringIntegratedData" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringIntegratedData/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringJMSmessaging" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringJMSmessaging/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringJPAexamples" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringJPAexamples/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringJQueryDataTable" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringJQueryDataTable/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringJacoco" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringJacoco/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringJsonExample" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringJsonExample/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringManagingTransactions" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringManagingTransactions/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringMicrometer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringMicrometer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringMockitoSpy" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringPDFexample" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringPDFexample/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringRest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringRest/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringRestApp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringRestApp/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringRestQuoting" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringRestQuoting/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringSecurity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringSecurity/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringSecurityV2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringSecurityV2/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringSheduler" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringSimpleJPAdatabase" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringSimpleJPAdatabase/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringSimpleWebInputForm" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringSimpleWebInputForm/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringSwagger" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringSwagger/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringThymeleaf" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringThymeleaf/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringUploadingFiles" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringUploadingFiles/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringWebExample" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringWebExample/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringWebHypermedia" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringWebHypermedia/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringWebMockito" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringWebMockito/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringWebValidation" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringWebValidation/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringYML" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringYML/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-app" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-app/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
 </project>
