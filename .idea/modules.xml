@@ -15,7 +15,6 @@
       <module fileurl="file://$PROJECT_DIR$/SpringJQueryDataTable/JQueryTable.iml" filepath="$PROJECT_DIR$/SpringJQueryDataTable/JQueryTable.iml" />
       <module fileurl="file://$PROJECT_DIR$/JWTS/JWTSManager.iml" filepath="$PROJECT_DIR$/JWTS/JWTSManager.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJacoco/JaCoCo.iml" filepath="$PROJECT_DIR$/SpringJacoco/JaCoCo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/LamdaExpression/LamdaExpression.iml" filepath="$PROJECT_DIR$/LamdaExpression/LamdaExpression.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringMicrometer/Micrometer.Path.Context.iml" filepath="$PROJECT_DIR$/SpringMicrometer/Micrometer.Path.Context.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringMockitoSpy/MockSpy.iml" filepath="$PROJECT_DIR$/SpringMockitoSpy/MockSpy.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJPAexamples/OneToOneToMany , Exceptions.iml" filepath="$PROJECT_DIR$/SpringJPAexamples/OneToOneToMany , Exceptions.iml" />

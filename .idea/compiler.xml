@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="thymeleaf examples" />
-        <module name="LamdaExpression" />
         <module name="QuotingSomeLinks" />
         <module name="Get Info from page" />
         <module name="x024.REF" />

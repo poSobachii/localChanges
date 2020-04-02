@@ -1,5 +1,0 @@
-this is
-some text
-to parse
-from file
-to code !
