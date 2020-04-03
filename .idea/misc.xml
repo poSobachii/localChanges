@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/spring-boot-app" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringTomcatServer" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -56,6 +56,7 @@
         <option value="$PROJECT_DIR$/SpringMicrometer/pom.xml" />
         <option value="$PROJECT_DIR$/JavaBasics/pom.xml" />
         <option value="$PROJECT_DIR$/JavaBasics2/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringJavaArchUnit/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
