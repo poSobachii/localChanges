@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+<module type="JAVA_MODULE" version="4">
   <component name="FacetManager">
     <facet type="jpa" name="JPA">
       <configuration>
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
+          <factory-entry name="Entities" />
           <factory-entry name="entityManagerFactory" />
         </datasource-mapping>
         <naming-strategy-map />
@@ -19,10 +20,6 @@
         <webroots>
           <root url="file://$MODULE_DIR$/../spring-boot-app/WebContent" relative="/" />
         </webroots>
-        <sourceRoots>
-          <root url="file://$MODULE_DIR$/../spring-boot-app/src/main/java" />
-          <root url="file://$MODULE_DIR$/../spring-boot-app/src/main/resources" />
-        </sourceRoots>
       </configuration>
     </facet>
   </component>

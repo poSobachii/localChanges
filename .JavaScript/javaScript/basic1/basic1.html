@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<script src="srcipts1.js"></script>
+<!-- <script src="https://www.w3schools.com/js/myScript1.js"></script> -->
+
+<body>
+
+    <h2 id="title"></h2>
+    <p id="anotherTitle"></p>
+
+
+    <p id="demo">
+        <font color="red">JavaScript can change HTML content.</font>
+    </p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>replace text
+    </button>
+
+    <br>
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+    <br>
+    <p id="demo2">JavaScript can change the style of an HTML element.</p>
+    <button type="button" onclick="document.getElementById('demo2').style.fontSize='35px'">change style</button>
+
+    <br>
+    <p id="demo3">JavaScript can hide HTML elements.</p>
+    <button type="button" onclick="document.getElementById('demo3').style.display='none'">hide text</button>
+
+    <br>
+    <p>JavaScript can show hidden HTML elements.</p>
+    <p id="demo4" style="display:none">Hello JavaScript!</p>
+    <button type="button" onclick="document.getElementById('demo4').style.display='block'">show text</button>
+
+    <br>
+    <p id="paragraph">A Paragraph.</p>
+    <button type="button" onclick="myFunction()">change parag.</button>
+    <button type="button" onclick="myFunction2()">reset parag.</button>
+
+    <br>
+    <button type="button" onclick="document.write('Delete all entity')">OverWrite everything</button>
+    <button type="button" onclick="document.write(9 + 90)">OverPay everything</button>
+
+    <br>
+    <p>to see log output press F12 and check console panel</p>
+    <button type="button" onclick="console.log('this will go to log from button')" ;>Log smth</button>
+
+    <br>
+    <p>Click the button to print the current page.</p>
+    <button onclick="window.print()">Print this page</button>
+
+    <br>
+    <p id="demo5">Calculate sum of hardcoded variables x = 5, y =10</p>
+    <button type="button"
+        onclick="document.getElementById('demo5').innerHTML = 'The summ is ' + z + '.'">calculate</button>
+
+    <br>
+    <p id="diffStringNum"></p>
+
+    <br>
+    <p id="demo6">Calculate 4 * 5 =</p>
+    <button type="button" onclick="myFunction2(4, 5)">times summ.</button>
+
+    <br>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+
+    <br>
+    <p id="demo10">The time now is - > </p>
+    <button onclick="document.getElementById('demo10').innerHTML=Date()">The time is?</button>
+    <br>
+    <button onclick="this.innerHTML=Date()">The time as button ?</button>
+    <br>
+    <button onclick="displayDate()">Show time !</button>
+    <p id="demo11"></p>
+
+    <br>
+    <p id="demo12"></p>
+
+    <br>
+    <button onclick="displayArray()">Show array!</button>
+    <button onclick="displayArray2()">Show array another way!</button>
+    <p id="demo13"></p>
+
+    <br>
+    <p id="demo14"></p>
+    <button onclick="deleteFront()">Delete first element</button>
+    <button onclick="deleteBack()">Delete last element</button>
+    <button onclick="delete10()">Delete the 10th element</button>
+    <br>
+    <button onclick="addFront()">add to the beggining</button>
+    <button onclick="addBack()">add to the back</button>
+
+    <br>
+    <p id="demo15"></p>
+    <button onclick="sortAsc()">sort ascending</button>
+    <button onclick="sortDsc()">sort descending</button>
+    <button onclick="sortAlphabetically()">sort Alphabetically</button>
+    <button onclick="sortRandom()">sort random</button>
+
+
+
+
+
+
+
+
+    <script>
+
+        var stringNum = "5" + 2 + 3;
+        var numString = 2 + 3 + "5";
+        var car = { type: "Fiat", model: "500", color: "white" };
+        var person = { firstName: "John", lastName: "Doe", age: 50, eyeColor: "blue" };
+        var apple1 = 100 / "Apple";
+        var arrayOfNumbers = [1, 100, 3, 25, 5, 34, 7, 10006, 9, 342, 11, 999, 13, 287, 15]
+
+
+        var person2 = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+            fullName: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        var x, y, z; x = 5; y = 10;
+        z = x + y;
+
+        // window.alert('this was stupid alert');
+        console.log("this will go to log from \"global\" script");
+        document.getElementById("title").innerHTML = "What Can JavaScript Do?";
+        document.getElementById("anotherTitle").innerHTML = "What Can JavaScript Do else ?";
+        document.getElementById("diffStringNum").innerHTML = "result for \"5\" + 2 + 3 = " + stringNum + " and result for 2 + 3 + \"5\" = " + numString;
+        document.getElementById("demo7").innerHTML = "The car type is " + car.type;
+        document.getElementById("demo8").innerHTML = person.firstName + " is " + person.age + " years old.";
+        document.getElementById("demo9").innerHTML = person2.fullName();
+        document.getElementById("demo12").innerHTML = isNaN(apple1);
+        document.getElementById("demo14").innerHTML = arrayOfNumbers;
+        document.getElementById("demo15").innerHTML = arrayOfNumbers;
+
+        function deleteFront() {
+            arrayOfNumbers.shift();
+            document.getElementById("demo14").innerHTML = arrayOfNumbers;
+        }
+
+        function deleteBack() {
+            arrayOfNumbers.pop();
+            document.getElementById("demo14").innerHTML = arrayOfNumbers;
+        }
+
+        function addBack() {
+            arrayOfNumbers.push(0);
+            document.getElementById("demo14").innerHTML = arrayOfNumbers;
+        }
+
+        function addFront() {
+            arrayOfNumbers.unshift(0);
+            document.getElementById("demo14").innerHTML = arrayOfNumbers;
+        }
+
+        function delete10() {
+            arrayOfNumbers.splice(10, 1);
+            document.getElementById("demo14").innerHTML = arrayOfNumbers;
+        }
+
+        function sortAsc() {
+            arrayOfNumbers.sort(function (a, b) { return a - b })
+            document.getElementById("demo15").innerHTML = arrayOfNumbers;
+        }
+
+        function sortDsc() {
+            arrayOfNumbers.sort(function (a, b) { return b - a })
+            document.getElementById("demo15").innerHTML = arrayOfNumbers;
+        }
+
+        function sortAlphabetically() {
+            arrayOfNumbers.sort();
+            document.getElementById("demo15").innerHTML = arrayOfNumbers;
+        }
+
+        function sortRandom() {
+            arrayOfNumbers.sort(function (a, b) { return 0.5 - Math.random() });
+            document.getElementById("demo15").innerHTML = arrayOfNumbers;
+        }
+
+    </script>
+</body>
+
+<script>
+    function myFunction() {
+        document.getElementById("paragraph").innerHTML = "Paragraph changed.";
+    }
+
+    function myFunction2(p1, p2) {
+        document.getElementById("demo6").innerHTML = p1 * p2
+    }
+
+    function displayDate() {
+        document.getElementById("demo11").innerHTML = Date();
+    }
+
+    function displayArray() {
+        var fruits, text, fLen, i;
+        fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fLen = fruits.length;
+
+        text = "<ul>";
+        for (i = 0; i < fLen; i++) {
+            text += "<li>" + fruits[i] + "</li>";
+        }
+        text += "</ul>";
+
+        document.getElementById("demo13").innerHTML = text;
+    }
+
+    function displayArray2() {
+        var fruits, text;
+        fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        text = "<ul>";
+        fruits.forEach(myFunction);
+        text += "</ul>";
+        document.getElementById("demo").innerHTML = text;
+
+        function myFunction(value) {
+            text += "<li>" + value + "</li>";
+        }
+    }
+</script>
+
+</html>

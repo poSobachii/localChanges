@@ -57,6 +57,7 @@
         <option value="$PROJECT_DIR$/JavaBasics/pom.xml" />
         <option value="$PROJECT_DIR$/JavaBasics2/pom.xml" />
         <option value="$PROJECT_DIR$/SpringJavaArchUnit/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringSomeWebTests/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

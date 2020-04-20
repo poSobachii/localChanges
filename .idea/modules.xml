@@ -16,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/SpringJWTS/JWTSManager.iml" filepath="$PROJECT_DIR$/SpringJWTS/JWTSManager.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJacoco/JaCoCo.iml" filepath="$PROJECT_DIR$/SpringJacoco/JaCoCo.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJavaArchUnit/JavaArchUnit.iml" filepath="$PROJECT_DIR$/SpringJavaArchUnit/JavaArchUnit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBasics2/JavaBasics2.iml" filepath="$PROJECT_DIR$/JavaBasics2/JavaBasics2.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringMicrometer/Micrometer.Path.Context.iml" filepath="$PROJECT_DIR$/SpringMicrometer/Micrometer.Path.Context.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringMockitoSpy/MockSpy.iml" filepath="$PROJECT_DIR$/SpringMockitoSpy/MockSpy.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJPAexamples/OneToOneToMany , Exceptions.iml" filepath="$PROJECT_DIR$/SpringJPAexamples/OneToOneToMany , Exceptions.iml" />
@@ -47,7 +48,7 @@
       <module fileurl="file://$PROJECT_DIR$/demo.iml" filepath="$PROJECT_DIR$/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaBasics/java Basics, spring context , spring boot basics.iml" filepath="$PROJECT_DIR$/JavaBasics/java Basics, spring context , spring boot basics.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJunit5Tests/junit5-parallel.iml" filepath="$PROJECT_DIR$/SpringJunit5Tests/junit5-parallel.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JavaBasics2/JavaBasics2.iml" filepath="$PROJECT_DIR$/JavaBasics2/JavaBasics2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringSomeWebTests/myproject.iml" filepath="$PROJECT_DIR$/SpringSomeWebTests/myproject.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringWebExample/someSortOfWebPages.iml" filepath="$PROJECT_DIR$/SpringWebExample/someSortOfWebPages.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringThymeleaf/thymeleaf examples.iml" filepath="$PROJECT_DIR$/SpringThymeleaf/thymeleaf examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringSomeWebTests/x024.REF.iml" filepath="$PROJECT_DIR$/SpringSomeWebTests/x024.REF.iml" />
