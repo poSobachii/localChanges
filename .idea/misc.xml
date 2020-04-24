@@ -58,12 +58,18 @@
         <option value="$PROJECT_DIR$/JavaBasics2/pom.xml" />
         <option value="$PROJECT_DIR$/SpringJavaArchUnit/pom.xml" />
         <option value="$PROJECT_DIR$/SpringSomeWebTests/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaModuleDepenencies/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaModuleDepenencies/Module1/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaModuleDepenencies/MainModule/Module2/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaModuleDepenencies/MainModule/Module1/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaModuleDepenencies/Module3/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/MockitoSpyExample/pom.xml" />
         <option value="$PROJECT_DIR$/SpringSchedule/pom.xml" />
+        <option value="$PROJECT_DIR$/testModule/pom.xml" />
       </set>
     </option>
   </component>

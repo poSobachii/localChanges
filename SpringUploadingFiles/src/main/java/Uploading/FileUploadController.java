@@ -7,7 +7,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
+import java.nio.file.Path;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
@@ -27,6 +31,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBuilder;
@@ -53,33 +58,54 @@ public class FileUploadController {
 
     @GetMapping("/")
     public String listUploadedFiles(Model model) throws IOException {
-
-        model.addAttribute("files", storageService.loadAll().map(
+        model.addAttribute("filesFG", storageService.loadAll().map(
                 path -> MvcUriComponentsBuilder.fromMethodName(FileUploadController.class,
-                        "serveFile", path.getFileName().toString()).build().toString())
+                        "serveFileH", path.getFileName().toString()).build().toString())
                 .collect(Collectors.toList()));
 
         return "uploadForm";
     }
 
-    @GetMapping("/files/{filename:.+}")
+    @GetMapping("/filesG/{filename:.+}")
     @ResponseBody
-    public ResponseEntity<Resource> serveFile(@PathVariable String filename) {
-
+    public ResponseEntity<Resource> serveFileH(@PathVariable String filename) {
         Resource file = storageService.loadAsResource(filename);
         return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION,
                 "attachment; filename=\"" + file.getFilename() + "\"").body(file);
     }
 
     @PostMapping("/")
-    public String handleFileUpload(@RequestParam("file") MultipartFile file,
-                                   RedirectAttributes redirectAttributes) {
-
+    public String handleFileUpload(@RequestParam("file") MultipartFile file, RedirectAttributes redirectAttributes) {
         storageService.store(file);
         redirectAttributes.addFlashAttribute("message",
                 "You successfully uploaded " + file.getOriginalFilename() + "!");
-
         return "redirect:/";
+    }
+
+    @PostMapping("/uploadWOfile")
+    public String uploadWithoutForm(@RequestPart MultipartFile someFile) {
+        storageService.store(someFile);
+        return "redirect:/";
+    }
+
+    @GetMapping("/nativeList")
+    @ResponseBody
+    public List<?> listAllFiles() {
+        List<Path> pathList = storageService.loadSpecificRoot();
+        List<String> stringList = new ArrayList<>();
+        for (Path e: pathList) {
+            System.out.println(e);
+            System.out.println(e.toString());
+        }
+
+        for ( String e: storageService.loadSpecificRoot().stream().map(Path::toString).collect(Collectors.toList())){
+            e = e.replace("\\", "/");
+            String[] parts = e.split("/attachment");
+            stringList.add("/attachment" + parts[1]);
+        }
+//        return stringList;
+        return storageService.loadSpecificRoot();
+//        return storageService.loadSpecificRoot().stream().map(Path::toString).collect(Collectors.toList());
     }
 
     @ExceptionHandler(StorageFileNotFoundException.class)
@@ -121,14 +147,14 @@ public class FileUploadController {
 //            System.out.println("key2: " + mapObject.getDetails().keySet().toArray()[0]);
 //            System.out.println("content= " + mapObject.getDetails());
 //            System.out.println("results=============:");
-            for (String key : mapObject.getDetails().keySet()){
+            for (String key : mapObject.getDetails().keySet()) {
 //                System.out.println("===WOrking with key: " + key);
                 CustomerMapper firstObj = mapObject.getDetails().get(key);
 //                System.out.println("result: " + firstObj.getCards().size());
 //                System.out.println("results2: " + firstObj.getId());
 //                accountCustomerMapper.put(key, firstObj.getId());
 
-                for (String key2 : firstObj.getCards().keySet()){
+                for (String key2 : firstObj.getCards().keySet()) {
 //                    System.out.println("'" + translateExternal(key2) + "'");
                     CardsMapper cardObject = firstObj.getCards().get(key2);
 //                    System.out.println("Card id: " + cardObject.getId());
@@ -147,18 +173,18 @@ public class FileUploadController {
         return "redirect:/v2";
     }
 
-    String translateExternal(String externalId){
+    String translateExternal(String externalId) {
         return externalId.replaceAll("-", "");
     }
 
-    void separateQuery(Map<String, String> toSave){
+    void separateQuery(Map<String, String> toSave) {
         int x = 1;
         StringBuilder stringTosave = new StringBuilder();
-        for (String key : toSave.keySet()){
+        for (String key : toSave.keySet()) {
             x++;
-            stringTosave.append("('" + key + "', '" + toSave.get(key) + "'),\n" );
+            stringTosave.append("('" + key + "', '" + toSave.get(key) + "'),\n");
 
-            if (x%30000 == 0){
+            if (x % 30000 == 0) {
                 saveQuery(stringTosave.toString(), x);
                 stringTosave.delete(0, stringTosave.length());
             }
@@ -167,7 +193,7 @@ public class FileUploadController {
 
     }
 
-    void saveQuery(String toSave, int number){
+    void saveQuery(String toSave, int number) {
         String header = "use papi;\n" +
                 "insert into papi.external_account_mapping\n" +
                 " \t(`accountId`, `externalAccountId`)\n" +
@@ -175,7 +201,7 @@ public class FileUploadController {
         StringBuilder stringTosave = new StringBuilder();
         stringTosave.append(header);
         stringTosave.append(toSave);
-        stringTosave.replace((stringTosave.length() -2), stringTosave.length(), ";");
+        stringTosave.replace((stringTosave.length() - 2), stringTosave.length(), ";");
         try (PrintWriter writer = new PrintWriter("/Users/aleksandrs.grisanovs/Desktop/Migration/querry" + number + ".txt", "UTF-8");) {
             writer.println(stringTosave);
         } catch (FileNotFoundException | UnsupportedEncodingException e) {
@@ -184,7 +210,7 @@ public class FileUploadController {
 
     }
 
-    Map<String, AgreementObject> readFile(){
+    Map<String, AgreementObject> readFile() {
         Map<String, AgreementObject> agreementObjectMap = new HashMap<>();
         String filePath = "/Users/aleksandrs.grisanovs/Desktop/Migration/agreementsForMigrationNo.csv";
         String line = "";
@@ -201,10 +227,10 @@ public class FileUploadController {
         return agreementObjectMap;
     }
 
-    void separateMigrationQuery(Map<String, String> cardIdMap, Map<String, AgreementObject> agreementMap, Map<String, String> fingerPrints){      // 470440
+    void separateMigrationQuery(Map<String, String> cardIdMap, Map<String, AgreementObject> agreementMap, Map<String, String> fingerPrints) {      // 470440
         int x = 1;
         StringBuilder stringTosave = new StringBuilder();
-        for (Map.Entry<String, String> entry : cardIdMap.entrySet()){
+        for (Map.Entry<String, String> entry : cardIdMap.entrySet()) {
             x++;
 //            System.out.println("currentKey: " + entry.getKey());
 //            System.out.println("current agreementId: " +  agreementMap.get(entry.getKey()).agreementId);
@@ -216,7 +242,7 @@ public class FileUploadController {
                     + agreementMap.get(entry.getKey()).panId + "', '"
                     + fingerPrints.get(entry.getKey()) + "'),\n");
 
-            if (x%20000 == 0){
+            if (x % 20000 == 0) {
                 saveMigrationQuery(stringTosave.toString(), x);
                 stringTosave.delete(0, stringTosave.length());
             }
@@ -225,14 +251,14 @@ public class FileUploadController {
 
     }
 
-    void saveMigrationQuery(String toSave, int number){
+    void saveMigrationQuery(String toSave, int number) {
         String header = "insert into papi.provider_migration_table\n" +
                 " \t(agreementId, originalReference, newReference, originalProviderCode, newProviderCode, migrationTime, oldFingerPrint, newFingerPrint)\n" +
                 " VALUES\n";
         StringBuilder stringTosave = new StringBuilder();
         stringTosave.append(header);
         stringTosave.append(toSave);
-        stringTosave.replace((stringTosave.length() -2), stringTosave.length(), ";");
+        stringTosave.replace((stringTosave.length() - 2), stringTosave.length(), ";");
         try (PrintWriter writer = new PrintWriter("/Users/aleksandrs.grisanovs/Desktop/Migration/migrationQuery" + number + ".txt", "UTF-8");) {
             writer.println(stringTosave);
         } catch (FileNotFoundException | UnsupportedEncodingException e) {

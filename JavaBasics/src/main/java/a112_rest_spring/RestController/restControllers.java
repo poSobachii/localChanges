@@ -1,5 +1,6 @@
 package a112_rest_spring.RestController;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -16,12 +17,15 @@ import java.util.Map;
 
 @RestController
 @RequestMapping(value = {"/", "/home"})
-public class restController {
+public class restControllers {
 
     @Value("${some.value}")
     String valueExample;
     @Value("${some.value2}")
     String valueExample2;
+
+    @Autowired
+    smartMap superMap;
 
     @GetMapping("/string")
     String printString() {
@@ -52,6 +56,15 @@ public class restController {
         return stringList;
     }
 
+    @GetMapping("/listObj")
+    List<SomeObject> printListOfObjects() {
+        List<SomeObject> stringList = new ArrayList<>();
+        stringList.add(new SomeObject());
+        stringList.add(new SomeObject());
+        stringList.add(new SomeObject());
+        return stringList;
+    }
+
     @GetMapping("/map")
     Map<Integer, String> printMap() {
         Map<Integer, String> newMap = new HashMap<>();
@@ -59,6 +72,12 @@ public class restController {
         newMap.put(2, "John");
         newMap.put(3, "Mike");
         return newMap;
+    }
+
+    @GetMapping("/superMap")
+    Map<String, List<?>> printSuperMap(){
+        return superMap.generateSuperMap();
+
     }
 
     @PostMapping("/poststring")

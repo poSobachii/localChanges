@@ -3,6 +3,7 @@ package a111_spring;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Description;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
 
 import javax.annotation.PostConstruct;
@@ -22,6 +23,7 @@ public class AnnotationConfig {
 
     @Bean(name = "helloSingleton")
     @Scope("singleton")
+    @Lazy
     public BeanUniqueness methodNameDoesntMatter() {
         return new BeanUniqueness();
     }

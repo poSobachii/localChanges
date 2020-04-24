@@ -7,6 +7,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
+import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -61,6 +63,20 @@ public class FileSystemStorageService implements StorageService {
             throw new StorageException("Failed to read stored files", e);
         }
 
+    }
+
+    @Override
+    public List<Path> loadSpecificRoot() {
+        String localTempo = "C:/temp/";
+        try {
+            return Files.walk(Paths.get(localTempo))
+                    .filter(path -> path.toString().contains("attachment"))
+                    .filter(Files::isRegularFile)
+                    .collect(Collectors.toList());
+        }
+        catch (IOException e) {
+            throw new StorageException("Failed to read stored files", e);
+        }
     }
 
     @Override
