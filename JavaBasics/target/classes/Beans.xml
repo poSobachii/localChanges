@@ -1,0 +1,53 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id = "helloWorld" class = "a111_spring.XmlHelloWorld">
+        <property name = "message" value = "Hello World!"/>
+    </bean>
+
+    <bean id = "helloWorld2" class = "a111_spring.XmlHelloWorld">
+        <property name = "message" value = "Goodbye Hell!"/>
+    </bean>
+
+
+
+    <bean id = "helloWorld31" class = "a111_spring.XmlHelloWorld">
+        <constructor-arg  index="0" value = "Hello Constructor"/>
+    </bean>
+    <bean id = "helloWorld32" class = "a111_spring.XmlHelloWorld">
+        <constructor-arg  value = "Hello Constructor"/>
+    </bean>
+    <bean id = "helloWorld33" class = "a111_spring.XmlHelloWorld">
+        <constructor-arg  value = "Hello Constructor"/>
+        <property name = "message" value = "Goodbye Hell!"/>
+    </bean>
+
+
+
+
+    <bean id = "helloWorld41" class = "a111_spring.XmlHelloWorld">
+        <constructor-arg  index="0" value = "Hello Constructor"/>
+        <constructor-arg  index="1" value = "Some random message"/>
+    </bean>
+
+
+
+
+    <bean id = "helloWorld51" class = "a111_spring.XmlHelloWorld" scope="singleton">
+        <property name = "message" value = "I am singleton!"/>
+    </bean>
+    <bean id = "helloWorld52" class = "a111_spring.XmlHelloWorld" scope="prototype">
+        <property name = "message" value = "I am prototype!"/>
+    </bean>
+
+
+
+    <bean id = "uniqueBean1" class = "a111_spring.BeanUniqueness" scope="singleton"></bean>
+    <!--<bean id = "uniqueBean1" class = "a111_spring.BeanUniqueness" scope="singleton" lazy-init="true"></bean>-->
+    <bean id = "uniqueBean2" class = "a111_spring.BeanUniqueness" scope="prototype"></bean>
+
+</beans>
