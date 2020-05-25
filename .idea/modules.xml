@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaExcelTricks/Apache.iml" filepath="$PROJECT_DIR$/JavaExcelTricks/Apache.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringRestApp/CURL examples.iml" filepath="$PROJECT_DIR$/SpringRestApp/CURL examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringConvertingBatch/Converting CSV adding to DB.iml" filepath="$PROJECT_DIR$/SpringConvertingBatch/Converting CSV adding to DB.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaDockerExample/Docker.Jar.iml" filepath="$PROJECT_DIR$/JavaDockerExample/Docker.Jar.iml" />

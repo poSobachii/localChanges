@@ -6,64 +6,66 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="@path, Json examples" />
-        <module name="Schedulling" />
+        <module name="x024.REF" />
         <module name="Get Info from page" />
         <module name="JavaBasics2" />
-        <module name="SpringSwaggerExample" />
+        <module name="Converting CSV adding to DB" />
         <module name="Module1" />
-        <module name="Rest Hypermedia example" />
+        <module name="Thymleaf.POST.GET" />
         <module name="WarTomcat" />
         <module name="MockSpy" />
+        <module name="junit5-parallel" />
         <module name="CURL examples" />
-        <module name="someSortOfWebPages" />
+        <module name="testModule" />
+        <module name="Rest Hypermedia example" />
         <module name="JPA example" />
         <module name="thymeleaf examples" />
         <module name="Rest With 3 Databases" />
         <module name="Reading Data Copying into File" />
-        <module name="testModule" />
-        <module name="ModuleDepenencyBetween" />
-        <module name="Converting CSV adding to DB" />
+        <module name="Testing Web Pages with Mockito" />
+        <module name="Security Simple Example" />
+        <module name="Email." />
         <module name="myproject" />
-        <module name="Module3" />
         <module name="QuotingSomeLinks" />
         <module name="Swagger.RestHeaders" />
-        <module name="Security Hard Example" />
+        <module name="Path.Json.Log.Jersey" />
         <module name="Docker.Jar" />
         <module name="PDF.java/web" />
         <module name="Some Hibernate Tutorials and Tests" />
+        <module name="SpringSwaggerExample" />
         <module name="spring boot basics app with SWAGGER/h2" />
-        <module name="JavaArchUnit" />
+        <module name="Module3" />
         <module name="Simple Web hello with increment" />
-        <module name="Thymleaf.POST.GET" />
+        <module name="JavaArchUnit" />
         <module name="simple swagger with arrayList as DB / with h2 DB" />
         <module name="UploadAFile" />
-        <module name="Path.Json.Log.Jersey" />
+        <module name="Security Hard Example" />
         <module name="Micrometer.Path.Context" />
         <module name="JaCoCo" />
-        <module name="java Basics, spring context , spring boot basics" />
         <module name="YML" />
         <module name="OneToOneToMany , Exceptions" />
         <module name="JQueryTable" />
+        <module name="Apache" />
         <module name="H2" />
-        <module name="Some Input Validation" />
         <module name="Parametrizes Tests" />
-        <module name="Docker.JAR.SpringApp" />
+        <module name="Schedulling" />
         <module name="SpringPDFexample" />
-        <module name="Security Simple Example" />
+        <module name="Docker.JAR.SpringApp" />
         <module name="FBapi - DevelopersForFacebook" />
         <module name="JWTSManager" />
-        <module name="Simple DB example without queries" />
-        <module name="Email." />
-        <module name="Testing Web Pages with Mockito" />
         <module name="Simple swagger exam with array as DB / or h2 as DB" />
+        <module name="Simple DB example without queries" />
+        <module name="someSortOfWebPages" />
+        <module name="@path, Json examples" />
+        <module name="Some Input Validation" />
+        <module name="ModuleDepenencyBetween" />
+        <module name="java Basics, spring context , spring boot basics" />
         <module name="JMS example of sub and message" />
-        <module name="junit5-parallel" />
-        <module name="x024.REF" />
         <module name="SeleniumTests" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Apache" target="11" />
       <module name="com.auth0.auth0-servlet.main" target="1.8" />
       <module name="com.auth0.auth0-servlet.test" target="1.8" />
       <module name="Converting CSV adding to DB" target="1.8" />
@@ -120,6 +122,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Apache" options="" />
       <module name="CURL examples" options="-parameters" />
       <module name="Converting CSV adding to DB" options="-parameters" />
       <module name="Docker.Jar" options="-parameters" />

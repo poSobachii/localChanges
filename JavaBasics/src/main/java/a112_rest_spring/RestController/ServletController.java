@@ -47,6 +47,12 @@ public class ServletController {
         return ResponseEntity.status(403).body(1000);
     }
 
+    @GetMapping("/exception")
+    String returnException(){
+        SomeObject obj = new SomeObject();
+        return obj.doSomething(true);
+    }
+
 
 
 

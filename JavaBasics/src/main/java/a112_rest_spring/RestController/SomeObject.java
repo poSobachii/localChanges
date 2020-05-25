@@ -29,4 +29,11 @@ public class SomeObject {
     public void setAge(int age) {
         this.age = age;
     }
+
+    public String doSomething(boolean decision){
+        if (decision){
+            throw new RuntimeException("exception from if");
+        } return "Everything is OK";
+    }
+
 }
