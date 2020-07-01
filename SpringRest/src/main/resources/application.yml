@@ -16,8 +16,12 @@ spring:
     active: h2
   jpa:
     hibernate:
-#      ddl-auto: none
-      ddl-auto: create        # turn off for custom schema.sql
+      ddl-auto: none
+#      ddl-auto: create        # turn off for custom schema.sql
+    show-sql: true
+#    properties:
+#      hibernate:
+#        format_sql: true       # to show SQL query beautiful
   datasource:
     url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     platform: h2
@@ -25,16 +29,7 @@ spring:
     password:
     driverClassName: org.h2.Driver
     initialization-mode: always
-    jpa:
-      #      database-platform: org.hibernate.dialect.H2Dialect
-      database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
-      hibernate:
-        ddl-auto: update
-      properties:
-        hibernate:
-          show_sql: false
-          use_sql_comments: false
-          format_sql: false
+
   h2:
     console:
       enabled: true
@@ -48,6 +43,20 @@ spring:
       prefix: /webPages/
       suffix: .jsp
 
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
+      springframework:
+        jdbc:
+          core:
+            JdbcTemplate: DEBUG
+            StatementCreatorUtils: TRACE
 
 ---
 spring:
@@ -75,3 +84,17 @@ conn:
   prop: hibernate
 
 ---
+
+
+    # outdated info for H2 settings
+
+#jpa:
+#  #            database-platform: org.hibernate.dialect.H2Dialect
+#  database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+#  hibernate:
+#    ddl-auto: update
+#  properties:
+#    hibernate:
+#      show_sql: true
+#      use_sql_comments: false
+#      format_sql: true

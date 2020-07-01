@@ -16,6 +16,7 @@
       <module fileurl="file://$PROJECT_DIR$/SpringJQueryDataTable/JQueryTable.iml" filepath="$PROJECT_DIR$/SpringJQueryDataTable/JQueryTable.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJWTS/JWTSManager.iml" filepath="$PROJECT_DIR$/SpringJWTS/JWTSManager.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJacoco/JaCoCo.iml" filepath="$PROJECT_DIR$/SpringJacoco/JaCoCo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaMavenExample/JarPackaging.iml" filepath="$PROJECT_DIR$/JavaMavenExample/JarPackaging.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJavaArchUnit/JavaArchUnit.iml" filepath="$PROJECT_DIR$/SpringJavaArchUnit/JavaArchUnit.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaBasics2/JavaBasics2.iml" filepath="$PROJECT_DIR$/JavaBasics2/JavaBasics2.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringMicrometer/Micrometer.Path.Context.iml" filepath="$PROJECT_DIR$/SpringMicrometer/Micrometer.Path.Context.iml" />
@@ -38,6 +39,7 @@
       <module fileurl="file://$PROJECT_DIR$/JavaHibernateTutorials/Some Hibernate Tutorials and Tests.iml" filepath="$PROJECT_DIR$/JavaHibernateTutorials/Some Hibernate Tutorials and Tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringWebValidation/Some Input Validation.iml" filepath="$PROJECT_DIR$/SpringWebValidation/Some Input Validation.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJsonExample/SomeOutputExampleOfJson.iml" filepath="$PROJECT_DIR$/SpringJsonExample/SomeOutputExampleOfJson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringJmeter/SpringJmeter.iml" filepath="$PROJECT_DIR$/SpringJmeter/SpringJmeter.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringPDFexample/SpringPDFexample.iml" filepath="$PROJECT_DIR$/SpringPDFexample/SpringPDFexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringSwagger/SpringSwaggerExample.iml" filepath="$PROJECT_DIR$/SpringSwagger/SpringSwaggerExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringSwagger/Swagger.iml" filepath="$PROJECT_DIR$/SpringSwagger/Swagger.iml" />

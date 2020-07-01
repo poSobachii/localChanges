@@ -25,6 +25,7 @@ public class Collections {
         list.add("Green");
         list.add("Red");
         list.add("Blue");
+        list.add("Green");
 
         System.out.println(list);
 
@@ -38,6 +39,7 @@ public class Collections {
         set.add("Green");
         set.add("Red");
         set.add("Blue");
+        set.add("Green");
 
         System.out.println("дупликаты не допустимы: " + set);
     }

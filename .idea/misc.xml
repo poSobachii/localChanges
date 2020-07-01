@@ -66,6 +66,8 @@
         <option value="$PROJECT_DIR$/SpringJWTS/pom.xml" />
         <option value="$PROJECT_DIR$/JavaJunitTests/pom.xml" />
         <option value="$PROJECT_DIR$/JavaExcelTricks/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringJmeter/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaMavenExample/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

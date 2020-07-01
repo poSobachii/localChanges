@@ -29,7 +29,6 @@ alias java11='export JAVA_HOME=$JAVA_11_HOME'
 
 # default to Java 11
 java11
-
 ==============================================================================================================================
 
 
@@ -66,8 +65,10 @@ docker push posobachii/catstyle              // push into catstyle repository
 http://localhost:4444/wd/hub/
 
 docker cp eudemo3_20200102_1558.bak mssql:/var/opt/mssql/backup                     // copy to docker inventory
-docker exec -it container id /name ls -al                     // to check docker inventory
+docker exec -it container id /name ls -all                     // to check docker inventory
 docker exec mssql ls var/opt/
+docker exec -it jnks cat var/jenkins_home/secrets/initialAdminPassword                                  // read file on docker server
+docker exec -it jmtr sh                         // enter docker container console
 
 ==============================================================================================================================
 //some linux usefull

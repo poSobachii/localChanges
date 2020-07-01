@@ -1,15 +1,47 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 public class FixCheck {
 
     public static void main(String[] args) {
-        definVariables();
+        listTypes(List.of(1L, 2L));
     }
 
+
+    static void listTypes(List<Long> listToCheck){
+        System.out.println(listToCheck);
+    }
+
+    static void setContains(){
+        Set<SomeSetObject> setToTest = new HashSet<>();
+        SomeSetObject someSetObject = new SomeSetObject(1, "Jhon", "Snow");
+        setToTest.add(someSetObject);
+        setToTest.add(new SomeSetObject(2, "Khal", "Drogo"));
+        setToTest.add(new SomeSetObject(3, "queen", "Elizabeth"));
+
+        Set<SomeSetObject> setToTest2 = new HashSet<>();
+        setToTest2.add(new SomeSetObject(10, "Jakob", "Snow"));
+        setToTest2.add(new SomeSetObject(11, "Peeza", "Drogo"));
+        setToTest2.add(new SomeSetObject(12, "Hulio", "Elizabeth"));
+
+        List<SomeAnotherSetObject> anotherSetToTest = new ArrayList<>();
+        anotherSetToTest.add( new SomeAnotherSetObject(1L, setToTest));
+        anotherSetToTest.add( new SomeAnotherSetObject(2L, setToTest2));
+
+        List<SomeAnotherSetObject> yoyoyo = anotherSetToTest.stream()
+                .filter(x -> x.getSomeSet().contains(someSetObject))
+                .collect(Collectors.toList());
+
+        System.out.println(yoyoyo.get(0).getSomeSet());
+        System.out.println(yoyoyo.get(1).getSomeSet());
+    }
 
     static void definVariables() {
         long lon = 10L;
@@ -187,5 +219,68 @@ public class FixCheck {
             month = "0" + month;
         }
         System.out.println(year.charAt(2) + "" + year.charAt(3) + "/" + month);
+    }
+}
+
+
+class SomeSetObject {
+                int nubmer;
+                String name;
+                String surname;
+
+    public SomeSetObject(int nubmer, String name, String surname) {
+        this.nubmer = nubmer;
+        this.name = name;
+        this.surname = surname;
+    }
+
+    public int getNubmer() {
+        return nubmer;
+    }
+
+    public void setNubmer(int nubmer) {
+        this.nubmer = nubmer;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+}
+
+class SomeAnotherSetObject {
+    Long id;
+    Set<SomeSetObject> someSet;
+
+    public SomeAnotherSetObject(Long id, Set<SomeSetObject> someSet) {
+        this.id = id;
+        this.someSet = someSet;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Set<SomeSetObject> getSomeSet() {
+        return someSet;
+    }
+
+    public void setSomeSet(Set<SomeSetObject> someSet) {
+        this.someSet = someSet;
     }
 }
