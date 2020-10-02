@@ -1,6 +1,18 @@
 package u001Usefull;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+import java.util.Set;
+import java.util.Stack;
+import java.util.TreeSet;
 
 public class SetArrayMap {
 
@@ -14,6 +26,16 @@ public class SetArrayMap {
         mySet1.add("A");
         mySet1.add("B");
         System.out.println("mySet1: " + mySet1);
+
+        boolean delete = false;
+        if (delete) {
+            for (Iterator<String> iterator = mySet1.iterator(); iterator.hasNext(); ) {
+                String s = iterator.next();
+                if (s.length() % 2 == 0) {
+                    iterator.remove();
+                }
+            }
+        }
 
         List list = new ArrayList();
         list.add("D");
@@ -98,7 +120,7 @@ public class SetArrayMap {
             System.out.print(element + " ");
 
 
-            //      -----------------------------------------------------------------------------
+        //      -----------------------------------------------------------------------------
         System.out.println(" ");
         System.out.println(" ");
         System.out.println("LinkedSet EXAMPLE: ");

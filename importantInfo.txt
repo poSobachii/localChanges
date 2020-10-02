@@ -39,6 +39,7 @@ git tag -a 2.64.1 -m "2.64.1" 69e07e88f499b53476c04a3193d239cfeb6f5297          
 git push origin 2.64.1
 
 ==============================================================================================================================
+docker run --name "mssql2" -p 1433:1433  574048536853.dkr.ecr.us-east-1.amazonaws.com/weissr/mssql-server:eutest-cs-04082020-0911
 
 docker run --name "yoyo" -d -p 4444:4444 selenium/standalone-chrome
 docker:
@@ -51,6 +52,7 @@ docker rm yoyo
 docker ps -a
 docker container prune
 docker system prune               // to stop everything unused and delete
+docker system prune -a               // delete all
 
 docker stop $(docker ps -a -q)                 // stopp all containers
 docker rm $(docker ps -a -q)           // delete all containers
@@ -69,6 +71,7 @@ docker exec -it container id /name ls -all                     // to check docke
 docker exec mssql ls var/opt/
 docker exec -it jnks cat var/jenkins_home/secrets/initialAdminPassword                                  // read file on docker server
 docker exec -it jmtr sh                         // enter docker container console
+docker exec -it msslq2 ls -la                         // check files with permisions
 
 ==============================================================================================================================
 //some linux usefull

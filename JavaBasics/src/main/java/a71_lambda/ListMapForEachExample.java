@@ -9,8 +9,8 @@ import java.util.stream.Collectors;
 public class ListMapForEachExample {
 
     public static void main(String[] args) {
-//        listExample();
-        mapExample();
+        listExample();
+//        mapExample();
     }
 
     static void listExample(){

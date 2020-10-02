@@ -1,3 +1,4 @@
+import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -11,11 +12,46 @@ import java.util.stream.Collectors;
 public class FixCheck {
 
     public static void main(String[] args) {
-        listTypes(List.of(1L, 2L));
+        testNotNull();
+    }
+
+    static void testNotNull(){
+        NotNullObject test = new NotNullObject();
+        System.out.println(test.toString());
     }
 
 
+    static void replaceObject(){
+        int x = 9;
+        System.out.println(x);
+        x += 2;
+        System.out.println(x);
+        replaceInt(x);
+        System.out.println(x);
+    }
+
+    static void replaceInt(int input){
+        input += 2;
+    }
+
+    static void filterOutSmth(){
+        ArrayList<Integer> integerList = new ArrayList<>();
+        integerList.add(1);
+        integerList.add(2);
+        integerList.add(3);
+        integerList.add(4);
+        System.out.println(integerList);
+        filter(integerList);
+        System.out.println("finally " + integerList);
+    }
+    static void filter(ArrayList<Integer> input){
+        System.out.println(input);
+        System.out.println(input.size());
+        input.remove(1);
+    }
+
     static void listTypes(List<Long> listToCheck){
+        listToCheck = List.of(1L, 2L);
         System.out.println(listToCheck);
     }
 
@@ -282,5 +318,44 @@ class SomeAnotherSetObject {
 
     public void setSomeSet(Set<SomeSetObject> someSet) {
         this.someSet = someSet;
+    }
+}
+
+class NotNullObject{
+
+    @NotNull
+    private String name;
+
+    @NotNull
+    private Integer age;
+
+
+    public NotNullObject() {
+    }
+
+    public NotNullObject(String name, Integer age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Name is " + name + ", age is " + age;
     }
 }
