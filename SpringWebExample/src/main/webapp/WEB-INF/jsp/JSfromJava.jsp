@@ -10,7 +10,7 @@
 <body>
 <center>
 <form action="jsFromJava" >
-  Test <input type="text" name="name">
+  Appication <input type="text" name="name">
         <br>
     <input type="submit" value="Try JS from JAVA">
 

@@ -11,6 +11,7 @@ import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfReader;
 import com.itextpdf.text.pdf.PdfStamper;
 import com.itextpdf.text.pdf.PdfWriter;
+import com.itextpdf.text.pdf.parser.PdfTextExtractor;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -26,11 +27,34 @@ public class createPDF {
 
     public static void main(String[] args) throws DocumentException, IOException, URISyntaxException {
 
-//        insertText();
+        insertText();
 //        insertImage();
 //        insertTable();
         encryptPDF();
+
+        readPDF();
     }
+
+    private static void readPDF(){
+        PdfReader reader;
+
+        try {
+
+            reader = new PdfReader("udownload-dir/6148_boolean_true.pdf");
+
+            // pageNumber = 1
+            String textFromPage = PdfTextExtractor.getTextFromPage(reader, 5);
+
+            System.out.println(textFromPage);
+
+            reader.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
 
     public static void insertText() throws FileNotFoundException, DocumentException {
         Document document = new Document();

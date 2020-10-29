@@ -96,7 +96,7 @@ public class JDBCdb implements DatabaseDAO {
         List temp = new ArrayList();
         try (
                 Connection conn = DriverManager.getConnection(
-                        "jdbc:mysql://localhost:3306/bookaplication", "root", "12345678");
+                        "jdbc:mysql://localhost:3306/bookaplication", "root", "123456");
                 Statement stmt = conn.createStatement();
         ) {
             String strSelect = "select * from bookaplication.books;";

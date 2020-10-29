@@ -7,8 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="H2" />
-        <module name="JMS example of sub and message" />
+        <module name="JarPackaging" />
         <module name="SpringJmeter" />
+        <module name="Schedulling" />
         <module name="Get Info from page" />
         <module name="JavaBasics2" />
         <module name="SpringSwaggerExample" />
@@ -16,15 +17,15 @@
         <module name="Rest Hypermedia example" />
         <module name="WarTomcat" />
         <module name="MockSpy" />
-        <module name="FBapi - DevelopersForFacebook" />
+        <module name="SeleniumTests" />
         <module name="CURL examples" />
         <module name="testModule" />
-        <module name="JarPackaging" />
         <module name="JPA example" />
         <module name="thymeleaf examples" />
         <module name="Rest With 3 Databases" />
         <module name="Reading Data Copying into File" />
         <module name="JavaArchUnit" />
+        <module name="ApachePOI" />
         <module name="Converting CSV adding to DB" />
         <module name="myproject" />
         <module name="QuotingSomeLinks" />
@@ -35,8 +36,10 @@
         <module name="Some Hibernate Tutorials and Tests" />
         <module name="spring boot basics app with SWAGGER/h2" />
         <module name="Module3" />
-        <module name="Simple Web hello with increment" />
+        <module name="FlyWay" />
+        <module name="@path, Json examples" />
         <module name="Thymleaf.POST.GET" />
+        <module name="PDF" />
         <module name="UploadAFile" />
         <module name="Path.Json.Log.Jersey" />
         <module name="Micrometer.Path.Context" />
@@ -44,21 +47,19 @@
         <module name="java Basics, spring context , spring boot basics" />
         <module name="YML" />
         <module name="OneToOneToMany , Exceptions" />
+        <module name="JWTSManager" />
         <module name="JQueryTable" />
-        <module name="Apache" />
         <module name="Testing Web Pages with Mockito" />
-        <module name="SeleniumTests" />
         <module name="Some Input Validation" />
         <module name="Parametrizes Tests" />
         <module name="simple swagger with arrayList as DB / with h2 DB" />
-        <module name="SpringPDFexample" />
         <module name="Security Simple Example" />
-        <module name="Schedulling" />
-        <module name="JWTSManager" />
+        <module name="FBapi - DevelopersForFacebook" />
+        <module name="Simple Web hello with increment" />
         <module name="Docker.JAR.SpringApp" />
         <module name="Simple DB example without queries" />
         <module name="Email." />
-        <module name="@path, Json examples" />
+        <module name="JMS example of sub and message" />
         <module name="Simple swagger exam with array as DB / or h2 as DB" />
         <module name="ModuleDepenencyBetween" />
         <module name="junit5-parallel" />
@@ -67,7 +68,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Apache" target="11" />
+      <module name="ApachePOI" target="11" />
       <module name="com.auth0.auth0-servlet.main" target="1.8" />
       <module name="com.auth0.auth0-servlet.test" target="1.8" />
       <module name="Converting CSV adding to DB" target="1.8" />
@@ -76,6 +77,7 @@
       <module name="Docker.Jar" target="1.8" />
       <module name="Email." target="1.5" />
       <module name="FBapi - DevelopersForFacebook" target="1.8" />
+      <module name="FlyWay" target="9" />
       <module name="Get Info from page" target="8" />
       <module name="H2" target="1.8" />
       <module name="JaCoCo" target="1.6" />
@@ -97,6 +99,7 @@
       <module name="OneToOneToMany , Exceptions" target="1.8" />
       <module name="Parametrizes Tests" target="1.7" />
       <module name="Path.Json.Log.Jersey" target="1.8" />
+      <module name="PDF" target="1.8" />
       <module name="QuotingSomeLinks" target="1.8" />
       <module name="Reading Data Copying into File" target="1.8" />
       <module name="Rest Hypermedia example" target="1.8" />
@@ -110,7 +113,6 @@
       <module name="Some Input Validation" target="1.8" />
       <module name="someSortOfWebPages" target="1.8" />
       <module name="SpringJmeter" target="11" />
-      <module name="SpringPDFexample" target="1.8" />
       <module name="SpringSwaggerExample" target="1.8" />
       <module name="Testing Web Pages with Mockito" target="1.8" />
       <module name="thymeleaf examples" target="1.8" />
@@ -123,11 +125,12 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Apache" options="" />
+      <module name="ApachePOI" options="" />
       <module name="CURL examples" options="-parameters" />
       <module name="Converting CSV adding to DB" options="-parameters" />
       <module name="Docker.Jar" options="-parameters" />
       <module name="Email." options="" />
+      <module name="FlyWay" options="" />
       <module name="Get Info from page" options="" />
       <module name="H2" options="-parameters" />
       <module name="JMS example of sub and message" options="-parameters" />
@@ -143,6 +146,7 @@
       <module name="Module3" options="" />
       <module name="ModuleDepenencyBetween" options="" />
       <module name="OneToOneToMany , Exceptions" options="-parameters" />
+      <module name="PDF" options="-parameters" />
       <module name="Path.Json.Log.Jersey" options="-parameters" />
       <module name="QuotingSomeLinks" options="-parameters" />
       <module name="Reading Data Copying into File" options="-parameters" />
@@ -154,7 +158,6 @@
       <module name="Simple DB example without queries" options="-parameters" />
       <module name="Some Input Validation" options="-parameters" />
       <module name="SpringJmeter" options="-parameters" />
-      <module name="SpringPDFexample" options="-parameters" />
       <module name="SpringSwaggerExample" options="-parameters" />
       <module name="Thymleaf.POST.GET" options="-parameters" />
       <module name="UploadAFile" options="-parameters" />

@@ -1,6 +1,6 @@
 1. JWT token encryption - added method from authorisation project
 2. Integrate client with APIs - Aleksandrs 1 task, should Nordea client be integrated with Aleksandrs KeyMapper?
-3. Test Nordea client somehow... - impossible without redirectUri and no info that they are applied our public key
+3. Appication Nordea client somehow... - impossible without redirectUri and no info that they are applied our public key
 4. Fix pull request suggestions on arrive. - WAITING
 5. Check keys from §3.1, Nordea provided exponent and key value modulus not encoded
 6. Requires redirect url - WAITING
@@ -17,7 +17,7 @@
 
 https://openid.net/specs/openid-connect-core-1_0.html	- our case isn't Implicit flow but Authorization Code Flow (response_type=code)
 client must use TLS
-1. Are we provided Test public key to Nordea that they can update JWK key set URL?
+1. Are we provided Appication public key to Nordea that they can update JWK key set URL?
 
 When testing the service, “acr_values” parameter can be set to value “http://ftn.ficora.fi/2017/loatest2”.
 §4.1 Are we have all required data for testing except redirect_uri? - seems that yes
