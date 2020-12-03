@@ -16,6 +16,21 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: com.tngtech.archunit:archunit-junit5:0.13.0" level="project" />
+    <orderEntry type="library" name="Maven: com.tngtech.archunit:archunit-junit5-api:0.13.0" level="project" />
+    <orderEntry type="library" name="Maven: com.tngtech.archunit:archunit:0.13.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.tngtech.archunit:archunit-junit5-engine:0.13.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.tngtech.archunit:archunit-junit5-engine-api:0.13.0" level="project" />
+    <orderEntry type="library" name="Maven: com.tngtech.archunit:archunit-junit5:0.13.0" level="project" />
+    <orderEntry type="library" name="Maven: com.tngtech.archunit:archunit-junit5-api:0.13.0" level="project" />
+    <orderEntry type="library" name="Maven: com.tngtech.archunit:archunit:0.13.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.tngtech.archunit:archunit-junit5-engine:0.13.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.tngtech.archunit:archunit-junit5-engine-api:0.13.0" level="project" />
+    <orderEntry type="library" name="Maven: com.tngtech.archunit:archunit-junit5:0.13.0" level="project" />
+    <orderEntry type="library" name="Maven: com.tngtech.archunit:archunit-junit5-api:0.13.0" level="project" />
+    <orderEntry type="library" name="Maven: com.tngtech.archunit:archunit:0.13.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.tngtech.archunit:archunit-junit5-engine:0.13.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.tngtech.archunit:archunit-junit5-engine-api:0.13.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:5.2.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.2.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:5.2.1.RELEASE" level="project" />

@@ -102,6 +102,8 @@ class Person {
        rooster.add(new Person("Vicky", 23, FEMALE));
        rooster.add(new Person("OldHarry", 65, MALE));
        rooster.add(new Person("OldBetty", 64, FEMALE));
+       rooster.add(new Person("Eva", 32, FEMALE));
+       rooster.add(new Person("Samira", 40, FEMALE));
         return rooster;
    }
 }

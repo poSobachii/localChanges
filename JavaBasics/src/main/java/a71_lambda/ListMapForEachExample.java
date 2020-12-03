@@ -18,16 +18,26 @@ public class ListMapForEachExample {
         List<Person> rooster = person.fillTheRooster();
 
         getAnotherList(rooster);
+        getOnePerson(rooster);
     }
 
     static void getAnotherList(List<Person> persons){
         List<Person> personOlderThan30 = persons
                 .stream()
-                .filter(c -> c.getAge() > 30)
+                .filter(c -> c.getAge() > 30 && c.getGender().equals(Person.Sex.FEMALE))
+                .sorted((p1, p2) -> Integer.compare(p2.getAge(), p1.getAge()))
                 .collect(Collectors.toList());
 
         personOlderThan30.forEach(x -> x.printPerson());
 
+    }
+
+    static void getOnePerson(List<Person> persons){
+        Person person = persons.stream()
+                .filter(c -> c.getAge() > 30 && c.getGender().equals(Person.Sex.FEMALE))
+
+                .findFirst().orElse(null);
+        System.out.println("person is - " + person.getName() + " aged: " + person.getAge());
     }
 
     static void mapExample(){
