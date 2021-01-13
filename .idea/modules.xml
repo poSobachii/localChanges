@@ -5,13 +5,16 @@
       <module fileurl="file://$PROJECT_DIR$/JavaExcelTricks/ApachePOI.iml" filepath="$PROJECT_DIR$/JavaExcelTricks/ApachePOI.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringRestApp/CURL examples.iml" filepath="$PROJECT_DIR$/SpringRestApp/CURL examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringConvertingBatch/Converting CSV adding to DB.iml" filepath="$PROJECT_DIR$/SpringConvertingBatch/Converting CSV adding to DB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringJavers/DiffCheck.iml" filepath="$PROJECT_DIR$/SpringJavers/DiffCheck.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaDockerExample/Docker.Jar.iml" filepath="$PROJECT_DIR$/JavaDockerExample/Docker.Jar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaDockerExample/DockerExample.iml" filepath="$PROJECT_DIR$/JavaDockerExample/DockerExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaDockerExample/DockerSpringBootApp.iml" filepath="$PROJECT_DIR$/JavaDockerExample/DockerSpringBootApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaSendingEmail/Email..iml" filepath="$PROJECT_DIR$/JavaSendingEmail/Email..iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringFacebookApi/FBapi - DevelopersForFacebook.iml" filepath="$PROJECT_DIR$/SpringFacebookApi/FBapi - DevelopersForFacebook.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringFlyWayMigration/FlyWay.iml" filepath="$PROJECT_DIR$/SpringFlyWayMigration/FlyWay.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaExtractingWebPage/Get Info from page.iml" filepath="$PROJECT_DIR$/JavaExtractingWebPage/Get Info from page.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringDatabaseAccess/H2.iml" filepath="$PROJECT_DIR$/SpringDatabaseAccess/H2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaHibernateTutorials/HibernateTutorial.iml" filepath="$PROJECT_DIR$/JavaHibernateTutorials/HibernateTutorial.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJMSmessaging/JMS example of sub and message.iml" filepath="$PROJECT_DIR$/SpringJMSmessaging/JMS example of sub and message.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringSimpleJPAdatabase/JPA example.iml" filepath="$PROJECT_DIR$/SpringSimpleJPAdatabase/JPA example.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJQueryDataTable/JQueryTable.iml" filepath="$PROJECT_DIR$/SpringJQueryDataTable/JQueryTable.iml" />
@@ -41,6 +44,7 @@
       <module fileurl="file://$PROJECT_DIR$/JavaHibernateTutorials/Some Hibernate Tutorials and Tests.iml" filepath="$PROJECT_DIR$/JavaHibernateTutorials/Some Hibernate Tutorials and Tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringWebValidation/Some Input Validation.iml" filepath="$PROJECT_DIR$/SpringWebValidation/Some Input Validation.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJsonExample/SomeOutputExampleOfJson.iml" filepath="$PROJECT_DIR$/SpringJsonExample/SomeOutputExampleOfJson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringEhcache/SpringEhcache.iml" filepath="$PROJECT_DIR$/SpringEhcache/SpringEhcache.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJmeter/SpringJmeter.iml" filepath="$PROJECT_DIR$/SpringJmeter/SpringJmeter.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringSwagger/SpringSwaggerExample.iml" filepath="$PROJECT_DIR$/SpringSwagger/SpringSwaggerExample.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringSwagger/Swagger.iml" filepath="$PROJECT_DIR$/SpringSwagger/Swagger.iml" />
@@ -57,6 +61,7 @@
       <module fileurl="file://$PROJECT_DIR$/SpringJunit5Tests/junit5-parallel.iml" filepath="$PROJECT_DIR$/SpringJunit5Tests/junit5-parallel.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringSomeWebTests/myproject.iml" filepath="$PROJECT_DIR$/SpringSomeWebTests/myproject.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringWebExample/someSortOfWebPages.iml" filepath="$PROJECT_DIR$/SpringWebExample/someSortOfWebPages.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringFacebookApi/stackabuse.iml" filepath="$PROJECT_DIR$/SpringFacebookApi/stackabuse.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringThymeleaf/thymeleaf examples.iml" filepath="$PROJECT_DIR$/SpringThymeleaf/thymeleaf examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringSomeWebTests/x024.REF.iml" filepath="$PROJECT_DIR$/SpringSomeWebTests/x024.REF.iml" />
     </modules>

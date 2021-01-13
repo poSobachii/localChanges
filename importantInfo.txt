@@ -1,3 +1,8 @@
+-ea                 // assertions enbling in VM options
+spring.profiles.active=dev                  // in enviroment variables to turn on specific spring profile
+
+==============================================================================================================================
+
 ?variable=input      //post form QUERY
 
 ps -ef | grep java     //to see all java processers MAC
