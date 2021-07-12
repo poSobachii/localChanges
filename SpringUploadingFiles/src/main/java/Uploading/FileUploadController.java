@@ -1,25 +1,13 @@
 package Uploading;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
-import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
-
 import Uploading.dynamicJson.AgreementObject;
 import Uploading.dynamicJson.CardsMapper;
 import Uploading.dynamicJson.CustomerMapper;
 import Uploading.dynamicJson.StripeMapper;
+import Uploading.storage.StorageFileNotFoundException;
+import Uploading.storage.StorageService;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
@@ -37,18 +25,33 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBuilder;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import Uploading.storage.StorageFileNotFoundException;
-import Uploading.storage.StorageService;
-
+import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.Consumes;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 import static javax.ws.rs.core.MediaType.MULTIPART_FORM_DATA;
 
 @Controller
 public class FileUploadController {
 
-    private final StorageService storageService;
     public static ObjectMapper mapper = new ObjectMapper();
+    private final StorageService storageService;
 
 
     @Autowired
@@ -74,6 +77,17 @@ public class FileUploadController {
                 "attachment; filename=\"" + file.getFilename() + "\"").body(file);
     }
 
+
+//    public void anotherMethod(HttpServletResponse response) {
+//        Path file = Paths.get("pdf_orders").resolve("order.pdf");
+//        File resource = new File(file.toUri());
+//
+//        InputStream inputStream = new FileInputStream(resource);
+//        IOUtils.copy(inputStream, response.getOutputStream());
+//        response.flushBuffer();
+//    }
+
+
     @PostMapping("/")
     public String handleFileUpload(@RequestParam("file") MultipartFile file, RedirectAttributes redirectAttributes) {
         storageService.store(file);
@@ -93,12 +107,12 @@ public class FileUploadController {
     public List<?> listAllFiles() {
         List<Path> pathList = storageService.loadSpecificRoot();
         List<String> stringList = new ArrayList<>();
-        for (Path e: pathList) {
+        for (Path e : pathList) {
             System.out.println(e);
             System.out.println(e.toString());
         }
 
-        for ( String e: storageService.loadSpecificRoot().stream().map(Path::toString).collect(Collectors.toList())){
+        for (String e : storageService.loadSpecificRoot().stream().map(Path::toString).collect(Collectors.toList())) {
             e = e.replace("\\", "/");
             String[] parts = e.split("/attachment");
             stringList.add("/attachment" + parts[1]);

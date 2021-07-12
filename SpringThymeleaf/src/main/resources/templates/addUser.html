@@ -20,5 +20,16 @@
     </p>
 </form>
 
+<div th:each="usr:${users}">
+    <hr/>
+    <b th:text="${usr.name}"></b>
+    <p>
+        <a th:text="'maybe here is a text ' + ${usr.name}"></a>
+        <a>Another text here ?</a>
+    </p>
+    <p th:text="${usr.occupation}"></p>
+    <hr/>
+</div>
+
 </body>
 </html>

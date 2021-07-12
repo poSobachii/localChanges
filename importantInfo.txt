@@ -1,5 +1,6 @@
 -ea                 // assertions enbling in VM options
 spring.profiles.active=dev                  // in enviroment variables to turn on specific spring profile
+netstat -ano         ------ check your localhost PID to shut it down
 
 ==============================================================================================================================
 

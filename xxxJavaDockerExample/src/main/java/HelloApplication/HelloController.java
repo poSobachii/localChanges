@@ -21,7 +21,7 @@ import java.net.URISyntaxException;
 @RequestMapping("/dog")
 public class HelloController {
 
-    @Value("${dog.message}")
+    @Value("{dog.message}")
     private String note;
 
 

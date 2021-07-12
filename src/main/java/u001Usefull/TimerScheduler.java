@@ -9,7 +9,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-public class Check {
+public class TimerScheduler {
 
     public static void main(String[] args) {
 
@@ -40,7 +40,7 @@ public class Check {
 //    }
 
 
-        Timer timer = new Timer();
+        java.util.Timer timer = new java.util.Timer();
         timer.schedule(new SayHello(), 0, 5000);
     }
 }

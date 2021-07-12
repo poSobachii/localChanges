@@ -1,5 +1,7 @@
 package libraryDatabase.Entity;
 
+import org.hibernate.annotations.Type;
+
 import javax.persistence.*;
 
 import static javax.persistence.GenerationType.IDENTITY;
@@ -13,6 +15,13 @@ public class Book {
     @Column(name="BOOKNAME") private String name;
     @Column(name="BOOKAUTHOR") private String author;
     @Column(name="PRICE") private int price;
+    @Column(name="IS_FAVORITE")
+    private boolean isFavorited = true;
+    @Column(name="IS_SOLD_OUT", columnDefinition="INT(1)")
+    private boolean isSoldOut = true;
+    @Column(name="is_documentary")
+    @Type(type = "numeric_boolean")
+    private boolean isDocumentary;
 
     Book(){
     }
@@ -55,5 +64,29 @@ public class Book {
 
     public void setPrice(int price) {
         this.price = price;
+    }
+
+    public boolean isFavorited() {
+        return isFavorited;
+    }
+
+    public void setFavorited(boolean favorited) {
+        isFavorited = favorited;
+    }
+
+    public boolean isSoldOut() {
+        return isSoldOut;
+    }
+
+    public void setSoldOut(boolean soldOut) {
+        isSoldOut = soldOut;
+    }
+
+    public boolean isDocumentary() {
+        return isDocumentary;
+    }
+
+    public void setDocumentary(boolean documentary) {
+        isDocumentary = documentary;
     }
 }

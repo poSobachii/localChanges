@@ -7,10 +7,14 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public interface BookRepository extends JpaRepository<Book, Long> {
 
     public Book findByAuthor(String author);
+
+    public List<Book> findByPublisher(String publisher);
 
     @Query("select b from BOOKSHELF b where BOOKNAME = :value")
     Book findBookByName(@Param("value")String input);

@@ -33,6 +33,10 @@ public class H2 implements DatabaseDAO {
     @Override
     public String getPrint() {
         Book tempbk = (bookrep.findByAuthor("testAuthor"));
+        List<Book> tempList = (bookrep.findByPublisher("PrintUK"));
+        for (Book b:tempList) {
+            System.out.println("lists are: " + b.getPublication_date());
+        }
         System.out.println("testDate is : " + tempbk.getPublication_date());
         return message;
     }

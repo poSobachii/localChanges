@@ -13,11 +13,11 @@ import java.util.Set;
 public class Collections {
 
     public static void main(String[] args) {
-        arrayList();
+//        arrayList();
 //        set();
 //        hashMap();
-//        queue();
-//        deque();
+        queue();
+        deque();
     }
 
     static void arrayList() {

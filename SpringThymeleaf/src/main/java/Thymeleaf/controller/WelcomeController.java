@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -23,6 +24,12 @@ public class WelcomeController {
     private String message;
 
     private List<String> tasks = Arrays.asList("a", "b", "c", "d", "e", "f", "g");
+
+    private List<User> userList  = new ArrayList<User>() {{
+        add(new User("Tom", "Jerry"));
+        add(new User("Batman", "Robin"));
+    }};
+
 
     @GetMapping("/")
     public String main(Model model) {
@@ -44,15 +51,17 @@ public class WelcomeController {
     }
 
     @GetMapping("/addUser")
-    public String sendForm(User user) {
-
+    public String sendForm(User user, Model model) {
+        model.addAttribute("users", userList);
         return "addUser";
     }
 
     @PostMapping("/addUser")
-    public String processForm(User user) {
+    public String processForm(User user, Model model) {
         System.out.println("Name: " + user.getName());
         System.out.println("Occupation: " + user.getOccupation());
+        userList.add(user);
+        model.addAttribute("users", userList);
         return "addUser";
     }
 

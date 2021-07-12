@@ -48,6 +48,7 @@ public class BookService  implements DatabaseDAO {
 
 
     public void addBooks(Book in){
+        bookRepository.save(in);
         bookList.add(in);
     }
 

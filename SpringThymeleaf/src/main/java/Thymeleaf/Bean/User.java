@@ -1,9 +1,17 @@
 package Thymeleaf.Bean;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class User {
 
     private String name;
     private String occupation;
+
+    public User(String name, String occupation) {
+        this.name = name;
+        this.occupation = occupation;
+    }
 
     public String getName() {
         return name;

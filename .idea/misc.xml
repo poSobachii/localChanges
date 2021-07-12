@@ -75,6 +75,8 @@
         <option value="$PROJECT_DIR$/DiffCheck/pom.xml" />
         <option value="$PROJECT_DIR$/JavaJavers/pom.xml" />
         <option value="$PROJECT_DIR$/SpringEhcache/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringJavers/pom.xml" />
+        <option value="$PROJECT_DIR$/xxxJavaDockerExample/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

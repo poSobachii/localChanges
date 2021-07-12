@@ -6,9 +6,9 @@
       <module fileurl="file://$PROJECT_DIR$/SpringRestApp/CURL examples.iml" filepath="$PROJECT_DIR$/SpringRestApp/CURL examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringConvertingBatch/Converting CSV adding to DB.iml" filepath="$PROJECT_DIR$/SpringConvertingBatch/Converting CSV adding to DB.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringJavers/DiffCheck.iml" filepath="$PROJECT_DIR$/SpringJavers/DiffCheck.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JavaDockerExample/Docker.Jar.iml" filepath="$PROJECT_DIR$/JavaDockerExample/Docker.Jar.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JavaDockerExample/DockerExample.iml" filepath="$PROJECT_DIR$/JavaDockerExample/DockerExample.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JavaDockerExample/DockerSpringBootApp.iml" filepath="$PROJECT_DIR$/JavaDockerExample/DockerSpringBootApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xxxJavaDockerExample/Docker.Jar.iml" filepath="$PROJECT_DIR$/xxxJavaDockerExample/Docker.Jar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xxxJavaDockerExample/DockerExample.iml" filepath="$PROJECT_DIR$/xxxJavaDockerExample/DockerExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xxxJavaDockerExample/DockerSpringBootApp.iml" filepath="$PROJECT_DIR$/xxxJavaDockerExample/DockerSpringBootApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaSendingEmail/Email..iml" filepath="$PROJECT_DIR$/JavaSendingEmail/Email..iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringFacebookApi/FBapi - DevelopersForFacebook.iml" filepath="$PROJECT_DIR$/SpringFacebookApi/FBapi - DevelopersForFacebook.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringFlyWayMigration/FlyWay.iml" filepath="$PROJECT_DIR$/SpringFlyWayMigration/FlyWay.iml" />
