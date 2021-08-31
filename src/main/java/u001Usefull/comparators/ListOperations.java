@@ -42,8 +42,8 @@ public class ListOperations {
         list.add(new Employee(3, "Brian", "Suxena"));
 
         System.out.println(list.toString());
-//        Collections.sort(list, Comparator.comparing(Employee::getId).thenComparing(Employee::getName));
-//        list.sort(Comparator.comparing(Employee::getId).thenComparing(Employee::getName));
+        Collections.sort(list, Comparator.comparing(Employee::getId).thenComparing(Employee::getName));
+        list.sort(Comparator.comparing(Employee::getId).thenComparing(Employee::getName));
 
 //        list.sort(Comparator.comparing(Employee::getId));
 //        Collections.sort(list.subList(2, list.size()), Comparator.comparing(Employee::getName));
